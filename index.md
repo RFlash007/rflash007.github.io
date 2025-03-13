@@ -64,57 +64,31 @@ layout: home
     
     <div class="projects-grid">
       <div class="project-card fade-in-up">
-        <div class="project-image">
-          <img src="/assets/images/project-fred.jpg" alt="F.R.E.D. AI Assistant" />
+        <div class="project-icon">
+          <i class="fas fa-robot"></i>
         </div>
         <div class="project-content">
-          <span class="project-category">AI Development</span>
-          <h3 class="project-title">F.R.E.D. AI Assistant</h3>
-          <p class="project-description">A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">LLMs</span>
-            <span class="project-tag">RAG</span>
-          </div>
+          <h3>F.R.E.D. AI Assistant</h3>
+          <p>A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation.</p>
+          <a href="/projects#fred-ai" class="btn btn-outline">Learn More</a>
         </div>
       </div>
       
       <div class="project-card fade-in-up" style="animation-delay: 0.2s;">
-        <div class="project-image">
-          <img src="/assets/images/project-portfolio.jpg" alt="Portfolio Website" />
+        <div class="project-icon">
+          <i class="fas fa-laptop"></i>
         </div>
         <div class="project-content">
-          <span class="project-category">Web Development</span>
-          <h3 class="project-title">Portfolio Website</h3>
-          <p class="project-description">A responsive portfolio website built with Jekyll to showcase my projects and skills in a clean, modern design.</p>
-          <div class="project-tags">
-            <span class="project-tag">Jekyll</span>
-            <span class="project-tag">HTML/CSS</span>
-            <span class="project-tag">JavaScript</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="project-card fade-in-up" style="animation-delay: 0.4s;">
-        <div class="project-image">
-          <img src="/assets/images/project-cybersecurity.jpg" alt="Cybersecurity Tools" />
-        </div>
-        <div class="project-content">
-          <span class="project-category">Cybersecurity</span>
-          <h3 class="project-title">Cybersecurity Tools</h3>
-          <p class="project-description">A collection of security tools developed for educational purposes, demonstrating various cybersecurity concepts.</p>
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Linux</span>
-            <span class="project-tag">Network Security</span>
-          </div>
+          <h3>Portfolio Website</h3>
+          <p>A modern, responsive portfolio website built with Jekyll and custom CSS to showcase my projects and skills.</p>
+          <a href="/projects#portfolio-website" class="btn btn-outline">Learn More</a>
         </div>
       </div>
     </div>
     
-    <div class="text-center mt-5">
+    <div class="section-cta">
       <a href="/projects" class="btn btn-primary btn-icon">
-        <i class="fas fa-th-large"></i> View All Projects
+        <i class="fas fa-briefcase"></i> View All Projects
       </a>
     </div>
   </div>

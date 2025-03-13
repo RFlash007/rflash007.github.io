@@ -13,8 +13,8 @@ permalink: /projects/
     
     <div class="projects-grid">
       <div class="project-card fade-in-up" id="fred-ai">
-        <div class="project-image">
-          <img src="/assets/images/project-fred.jpg" alt="F.R.E.D. AI Assistant" />
+        <div class="project-icon">
+          <i class="fas fa-robot"></i>
         </div>
         <div class="project-content">
           <span class="project-category">AI Development</span>
@@ -47,8 +47,8 @@ permalink: /projects/
       </div>
       
       <div class="project-card fade-in-up" id="portfolio-website">
-        <div class="project-image">
-          <img src="/assets/images/project-portfolio.jpg" alt="Portfolio Website" />
+        <div class="project-icon">
+          <i class="fas fa-laptop"></i>
         </div>
         <div class="project-content">
           <span class="project-category">Web Development</span>
@@ -80,8 +80,8 @@ permalink: /projects/
       </div>
       
       <div class="project-card fade-in-up" id="cybersecurity-tools">
-        <div class="project-image">
-          <img src="/assets/images/project-cybersecurity.jpg" alt="Cybersecurity Tools" />
+        <div class="project-icon">
+          <i class="fas fa-shield-alt"></i>
         </div>
         <div class="project-content">
           <span class="project-category">Cybersecurity</span>
@@ -113,8 +113,8 @@ permalink: /projects/
       </div>
       
       <div class="project-card fade-in-up" id="roberta-emotion">
-        <div class="project-image">
-          <img src="/assets/images/project-roberta.jpg" alt="RoBERTa Emotion Detection" />
+        <div class="project-icon">
+          <i class="fas fa-heart"></i>
         </div>
         <div class="project-content">
           <span class="project-category">Machine Learning</span>
@@ -202,14 +202,13 @@ permalink: /projects/
       align-items: stretch;
     }
     
-    .project-image {
+    .project-icon {
       width: 40%;
       height: auto;
     }
     
-    .project-image img {
-      height: 100%;
-      object-fit: cover;
+    .project-icon i {
+      font-size: 2rem;
     }
     
     .project-content {
@@ -218,7 +217,7 @@ permalink: /projects/
   }
   
   @media (max-width: 991px) {
-    .project-image {
+    .project-icon {
       height: 300px;
     }
   }
