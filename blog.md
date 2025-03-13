@@ -41,7 +41,7 @@ permalink: /blog/
               </div>
               <span class="blog-author-name">Ian Mullins</span>
             </div>
-            <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/2024/07/10/locally-run-llms-using-ollama/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ permalink: /blog/
               </div>
               <span class="blog-author-name">Ian Mullins</span>
             </div>
-            <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="/blog/2024/03/12/prompt-engineering-techniques/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>

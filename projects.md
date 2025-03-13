@@ -19,10 +19,10 @@ permalink: /projects/
         <div class="project-content">
           <span class="project-category">AI Development</span>
           <h3 class="project-title">F.R.E.D. AI Assistant</h3>
-          <p>A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation. F.R.E.D. (Friendly Responsive Electronic Device) can perform various tasks through voice commands and text input.</p>
+          <p class="project-description">A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation. F.R.E.D. (Friendly Responsive Electronic Device) can perform various tasks through voice commands and text input.</p>
           
           <h4>Key Features:</h4>
-          <ul>
+          <ul class="feature-list">
             <li>Built on Qwen 2.5:14b Model using Ollama API</li>
             <li>Integrated custom relational database for memory-based contextual responses</li>
             <li>Retrieval-Augmented Generation (RAG) for enhanced knowledge access</li>
@@ -53,10 +53,10 @@ permalink: /projects/
         <div class="project-content">
           <span class="project-category">Web Development</span>
           <h3 class="project-title">Portfolio Website</h3>
-          <p>A responsive portfolio website built with Jekyll to showcase my projects and skills in a clean, modern design. This website serves as a central hub for my professional presence online.</p>
+          <p class="project-description">A responsive portfolio website built with Jekyll to showcase my projects and skills in a clean, modern design. This website serves as a central hub for my professional presence online.</p>
           
           <h4>Key Features:</h4>
-          <ul>
+          <ul class="feature-list">
             <li>Responsive design that works on all devices</li>
             <li>Modern UI with smooth animations and transitions</li>
             <li>Optimized performance and accessibility</li>
@@ -86,10 +86,10 @@ permalink: /projects/
         <div class="project-content">
           <span class="project-category">Cybersecurity</span>
           <h3 class="project-title">Cybersecurity Tools</h3>
-          <p>A collection of security tools developed for educational purposes, demonstrating various cybersecurity concepts and techniques. These tools were created as part of my learning journey in cybersecurity.</p>
+          <p class="project-description">A collection of security tools developed for educational purposes, demonstrating various cybersecurity concepts and techniques. These tools were created as part of my learning journey in cybersecurity.</p>
           
           <h4>Key Features:</h4>
-          <ul>
+          <ul class="feature-list">
             <li>Network scanning and reconnaissance tools</li>
             <li>Password strength analysis utilities</li>
             <li>Encryption/decryption demonstrations</li>
@@ -119,10 +119,10 @@ permalink: /projects/
         <div class="project-content">
           <span class="project-category">Machine Learning</span>
           <h3 class="project-title">RoBERTa Emotion Detection</h3>
-          <p>Developed an emotion detection system using the RoBERTa model fine-tuned on the tweet_eval/emotion dataset. The system can accurately classify text into different emotional categories.</p>
+          <p class="project-description">Developed an emotion detection system using the RoBERTa model fine-tuned on the tweet_eval/emotion dataset. The system can accurately classify text into different emotional categories.</p>
           
           <h4>Key Features:</h4>
-          <ul>
+          <ul class="feature-list">
             <li>Fine-tuned RoBERTa model with 81.5% accuracy</li>
             <li>Emotion classification across 6 categories</li>
             <li>Optimized for real-time text analysis</li>

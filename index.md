@@ -70,7 +70,7 @@ layout: home
         <div class="project-content">
           <span class="project-category">AI Development</span>
           <h3 class="project-title">F.R.E.D. AI Assistant</h3>
-          <p>A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation.</p>
+          <p class="project-description">A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation.</p>
           <div class="project-tags">
             <span class="project-tag">Python</span>
             <span class="project-tag">LLMs</span>
@@ -86,7 +86,7 @@ layout: home
         <div class="project-content">
           <span class="project-category">Web Development</span>
           <h3 class="project-title">Portfolio Website</h3>
-          <p>A responsive portfolio website built with Jekyll to showcase my projects and skills in a clean, modern design.</p>
+          <p class="project-description">A responsive portfolio website built with Jekyll to showcase my projects and skills in a clean, modern design.</p>
           <div class="project-tags">
             <span class="project-tag">Jekyll</span>
             <span class="project-tag">HTML/CSS</span>
@@ -102,7 +102,7 @@ layout: home
         <div class="project-content">
           <span class="project-category">Cybersecurity</span>
           <h3 class="project-title">Cybersecurity Tools</h3>
-          <p>A collection of security tools developed for educational purposes, demonstrating various cybersecurity concepts.</p>
+          <p class="project-description">A collection of security tools developed for educational purposes, demonstrating various cybersecurity concepts.</p>
           <div class="project-tags">
             <span class="project-tag">Python</span>
             <span class="project-tag">Linux</span>
