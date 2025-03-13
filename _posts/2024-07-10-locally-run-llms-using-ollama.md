@@ -1,0 +1,50 @@
+---
+layout: post
+title: "Locally Run LLMs Using Ollama"
+date: 2024-07-10 09:00:00 -0400
+categories: research llm ai
+tags: [ollama, llm, ai, privacy, prompt-engineering]
+---
+
+Ollama is a software tool that lets you run large language models (LLMs) directly on your own computer. It supports any open-source model that your hardware can handle. This means that, unlike enterprise/cloud-based models like ChatGPT, Grok, or Claude, your data stays on your computer, offering better privacy and control (Kumari). Ollama stands out because it is free and lets you customize how the models respond by "prompt engineering" your system prompts, which is something I have really grown to enjoy ("Prompt Engineering Guide").
+
+In simple terms, Ollama works by managing different open-source LLMs, some of which you may have heard of: Llama (Meta), DeepSeek-r1 (Deepseek), Phi-4 (Microsoft), and Gemma (Google). The software loads these models locally, so you don't have to send your "chatting" data to any external computer. Many people in fields like government or industries with high security needs might prefer Ollama (or locally running their LLMs in general) because it keeps their data safe within their own systems, keeping sensitive government information from ever leaving their own computers, increasing security (Ollama).
+
+The way Ollama uses AI is through natural language processing (NLP). These LLMs have been trained in huge amounts of text, and Ollama makes it easy for users to try all of them, customize prompts, or even fine-tune the models on their own data and deploy them on Ollama (Kumari). Although I'm not an expert on all the technical details, there are many open-source UIs and tools like LangChain that work with Ollama, which makes it accessible to both beginners and experienced developers ("Prompt Engineering Guide").
+
+## Why I Chose Ollama
+
+I chose Ollama because I enjoy experimenting with chatbots and system prompting. I've built simple chatbots before, and I love tweaking system prompts to give models different characters. This hobby has grown into a career interest of mine to the point of my dream job being a "Prompt Engineer" and Ollama allows me to improve my prompting skills. 
+
+Additionally, with cybersecurity being such a big topic these days, having the ability to run these models locally adds some "peace of mind". Running LLMs locally increases data privacy and security since your data never leaves your machine, which is very appealing when compared to enterprise solutions such as ChatGPT, Claude, or Grok, where the companies' data usage is not as transparent as I'd like it to be.
+
+## Ethical Implications
+
+There are some important societal and ethical implications to consider with open-source and locally run LLMs. Being open-source allows users to fine-tune or directly alter model weights, making it possible to remove censored responses of production-sized models such as DeepSeek-V3 by using techniques such as "Abliterating" (Labonne). This means that anything ChatGPT might refuse, an "Abliterated" Model would likely answer. 
+
+As you might expect, this brings about all sorts of ethical considerations about what people could use these models for. Just imagine for a moment a prompt on how to carry out something like robbery (or worse) and these models will abide. This will likely be an increasingly controversial topic as these models get more complex (especially in the open-source realm).
+
+## Benefits and Limitations
+
+This level of personalization is not all bad, personally it's my favorite part of open-source models. Being able to fine-tune and system prompt a large variety of models allows for an extreme level of personalization. This means that different users can tailor their models to fit their exact needs, whatever they may be. 
+
+Going back to the negatives, there're some harsh hardware requirements for some of the larger models. Some of the larger models, like DeepSeek-V3, have 671B parameters (B as in Billion); this many parameters would require hundreds of GB of RAM to run. This makes them less accessible to the average user, limiting their use to those with high-end computing resources. While DeepSeek-V3 is currently one of the best when it comes to open-source performance, there's plenty of small models that are perfect for basic chatting (such as Llama 3.2 3B) (Ollama).
+
+## Research Project Goals
+
+Overall, my project will explore the practical benefits and challenges of running LLMs locally using Ollama, with a dive into Prompt Engineering. I will conduct prompting experiments to investigate how different system prompts alter the responses of various open-source LLMs, such as but not limited to: Llama, DeepSeek (Distilled as I cannot run the 671B Model), Phi-4, and Qwen2.5, when deployed locally.
+
+By comparing metrics such as but not limited to: willingness to perform tool calls, semantic similarity between responses across models and the original query, and sentiment analysis of responses, I want to show how prompt modifications affect AI behavior.
+
+## Conclusion
+
+In conclusion, Ollama gives end-users the ability to easily run open-source LLMs locally, giving users full control over their data and model behavior. As a sophomore computer scientist with a keen interest in LLMs, chatbot development, and particularly prompt engineering, I find this topic both accessible and growing increasingly relevant every day as LLMs are adopted in diverse areas of life. 
+
+This project will not only expand my technical understanding of prompt-engineering, but also contribute to broader discussions on how small adjustments in prompts can significantly impact AI adherence to instructions.
+
+## References
+
+* Kumari, Janvi. "How to Run LLM Models Locally with Ollama." Analytics Vidhya, 23 July 2024, www.analyticsvidhya.com/blog/2024/07/local-llm-deployment-with-ollama/.
+* "Ollama." Ollama, 2025, https://ollama.com/.
+* "Prompt Engineering Guide." PromptingGuide.ai, 7 January 2025, www.promptingguide.ai/.
+* Labonne, Maxime. "Uncensor any LLM with Abliteration." Hugging Face Blog, 13 June 2024, https://huggingface.co/blog/mlabonne/abliteration. 

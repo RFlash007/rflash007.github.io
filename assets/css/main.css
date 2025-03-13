@@ -1074,7 +1074,17 @@ textarea.form-control {
   background-color: var(--secondary);
 }
 
-/* Dark mode styles */
+/* Improved readability for all modes */
+.blog-excerpt, .card p, .project-description, .testimonial-text, .feature-description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.blog-title, .card h3, .project-title, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+}
+
+/* Improve contrast in dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --text-dark: #f8fafc;
@@ -1125,5 +1135,55 @@ textarea.form-control {
   
   .title-name {
     color: var(--text-dark);
+  }
+  
+  /* Improved contrast for dark mode */
+  p, li, .blog-excerpt {
+    color: #e2e8f0;
+  }
+  
+  .blog-title, h1, h2, h3, h4, h5, h6 {
+    color: #f8fafc;
+  }
+  
+  .blog-tag {
+    background-color: rgba(0, 85, 255, 0.3);
+    color: #a5c8ff;
+  }
+  
+  .section-title p {
+    color: #e2e8f0;
+  }
+  
+  .site-subtitle, .text-light {
+    color: #d1d5db;
+  }
+  
+  /* Adjust dark backgrounds for better contrast */
+  .hero-background {
+    background: linear-gradient(135deg, rgba(0, 85, 255, 0.15) 0%, rgba(22, 36, 71, 0.1) 100%);
+  }
+
+  /* Add stronger shadow to cards for better separation from dark background */
+  .card, .blog-card, .project-card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Improve button contrast */
+  .btn-primary, .blog-search-button {
+    background-color: #2563eb;
+  }
+  
+  .btn-primary:hover, .blog-search-button:hover {
+    background-color: #3b82f6;
+  }
+  
+  /* Ensure links stand out */
+  a {
+    color: #60a5fa;
+  }
+  
+  a:hover {
+    color: #93c5fd;
   }
 } 
