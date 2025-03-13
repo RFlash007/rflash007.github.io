@@ -68,9 +68,9 @@ layout: home
           <i class="fas fa-robot"></i>
         </div>
         <div class="project-content">
-          <h3>F.R.E.D. AI Assistant</h3>
+          <h3>AI Assistant</h3>
           <p>A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation.</p>
-          <a href="/projects#fred-ai" class="btn btn-outline">Learn More</a>
+          <a href="/projects#ai-assistant" class="btn btn-outline">Learn More</a>
         </div>
       </div>
       

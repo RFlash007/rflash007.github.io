@@ -12,14 +12,14 @@ permalink: /projects/
     </div>
     
     <div class="projects-grid">
-      <div class="project-card fade-in-up" id="fred-ai">
+      <div class="project-card fade-in-up" id="ai-assistant">
         <div class="project-icon">
           <i class="fas fa-robot"></i>
         </div>
         <div class="project-content">
           <span class="project-category">AI Development</span>
-          <h3 class="project-title">F.R.E.D. AI Assistant</h3>
-          <p class="project-description">A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation. F.R.E.D. (Friendly Responsive Electronic Device) can perform various tasks through voice commands and text input.</p>
+          <h3 class="project-title">AI Assistant</h3>
+          <p class="project-description">A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation. This assistant can perform various tasks through voice commands and text input.</p>
           
           <h4>Key Features:</h4>
           <ul class="feature-list">
@@ -172,24 +172,50 @@ permalink: /projects/
   }
   
   .project-content {
-    padding: 2rem;
+    padding: 2.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
   }
   
+  .project-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  
   .project-content h4 {
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
   }
   
   .project-content ul {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+    padding-left: 1.5rem;
+  }
+  
+  .project-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
   }
   
   .project-tags {
     margin-top: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  
+  .project-tag {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
   }
   
   .project-links {
@@ -203,22 +229,33 @@ permalink: /projects/
     }
     
     .project-icon {
-      width: 40%;
+      width: 30%;
       height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
     }
     
     .project-icon i {
-      font-size: 2rem;
+      font-size: 5rem;
     }
     
     .project-content {
-      width: 60%;
+      width: 70%;
     }
   }
   
   @media (max-width: 991px) {
     .project-icon {
-      height: 300px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .project-icon i {
+      font-size: 4rem;
     }
   }
 </style> 
