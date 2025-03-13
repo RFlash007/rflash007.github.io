@@ -29,10 +29,47 @@ twitter_username:
 github_username: RFlash007
 linkedin_username: ianjcmullins
 
+# Additional social links
+social_links:
+  github: RFlash007
+  linkedin: ianjcmullins
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+# Permalinks
+permalink: /blog/:year/:month/:day/:title/
+
+# Blog settings
+show_excerpts: true
+excerpt_separator: <!--more-->
+
+# Navigation
+header_pages:
+  - about.md
+  - projects.md
+  - blog.md
+  - contact.md
+
+# Default settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "post"
+      author: "Ian Mullins"
+      comments: false
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "page"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +90,5 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - chat_with_ollama.py
+  - cs_portfolio_website_guide.txt

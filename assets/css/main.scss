@@ -1,0 +1,356 @@
+@import "minima";
+
+// Custom styles to enhance site appearance
+
+// Color scheme
+$primary-color: #0366d6;
+$secondary-color: #2ea44f;
+$accent-color: #6f42c1;
+$text-color: #24292e;
+$background-color: #ffffff;
+$light-gray: #f6f8fa;
+$border-color: #e1e4e8;
+
+// General styling
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+a {
+  color: $primary-color;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: darken($primary-color, 10%);
+    text-decoration: none;
+  }
+}
+
+// Header and navigation
+.site-header {
+  border-top: 5px solid $primary-color;
+  border-bottom: 1px solid $border-color;
+  background-color: $background-color;
+  padding: 15px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.site-title {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.site-nav .page-link {
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+// Home page
+.home {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $text-color;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: $text-color;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 0.5rem;
+  }
+}
+
+// Page content
+.page-content {
+  padding: 30px 0;
+  
+  h1, h2, h3, h4 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 0.5rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+// Projects styling
+.projects-container {
+  margin-top: 2rem;
+}
+
+.project-item {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $border-color;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+  
+  img {
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  
+  .project-tech {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: $accent-color;
+    font-weight: 500;
+  }
+  
+  .project-links {
+    margin-top: 1.5rem;
+    
+    a.btn-primary {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: $primary-color;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+      
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+}
+
+// Blog post list
+.post-list-container {
+  margin-top: 2rem;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+  
+  li {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid $border-color;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  .post-meta {
+    font-size: 0.9rem;
+    color: lighten($text-color, 30%);
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-link {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .post-excerpt {
+    color: lighten($text-color, 10%);
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    display: inline-block;
+    font-weight: 500;
+    color: $primary-color;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Blog post
+.post {
+  .post-header {
+    margin-bottom: 2rem;
+  }
+  
+  .post-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  
+  .post-meta {
+    font-size: 0.9rem;
+    color: lighten($text-color, 30%);
+  }
+  
+  .post-content {
+    margin-bottom: 2rem;
+    
+    h2 {
+      font-size: 1.75rem;
+      margin-top: 2rem;
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 0.5rem;
+    }
+    
+    h3 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    
+    p, ul, ol {
+      margin-bottom: 1.5rem;
+    }
+    
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+      display: block;
+      margin: 1.5rem auto;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+    
+    pre, code {
+      background-color: $light-gray;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    
+    pre {
+      padding: 1rem;
+      overflow-x: auto;
+      margin-bottom: 1.5rem;
+    }
+    
+    code {
+      padding: 0.2em 0.4em;
+    }
+  }
+}
+
+// Footer
+.site-footer {
+  border-top: 1px solid $border-color;
+  padding: 30px 0;
+  background-color: $light-gray;
+  
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social-media-list {
+    margin-bottom: 0;
+  }
+}
+
+// Contact page styling
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  
+  .contact-methods, .contact-interests {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .contact-methods ul {
+    list-style: none;
+    margin-left: 0;
+    
+    li {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      
+      i {
+        width: 20px;
+        margin-right: 10px;
+        color: $primary-color;
+        text-align: center;
+      }
+    }
+  }
+  
+  .contact-interests {
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+      
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+.contact-message {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid $border-color;
+  text-align: center;
+  font-style: italic;
+}
+
+// Fix for Font Awesome icons
+.contact-methods ul li i.fa,
+.contact-methods ul li i.fab,
+.contact-methods ul li i.fas {
+  width: 20px;
+  margin-right: 10px;
+  color: $primary-color;
+  text-align: center;
+}
+
+// Responsive adjustments
+@media screen and (max-width: 800px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 15px;
+    background-color: $background-color;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    text-align: right;
+    
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      margin-left: 0;
+    }
+  }
+  
+  .contact-container {
+    flex-direction: column;
+  }
+} 
