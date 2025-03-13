@@ -33,4 +33,8 @@ GPA: 3.9 (In Major GPA: 4.0)
 ## Contact
 
 Based in Mechanicsville, VA  
-[Contact me](/contact) for collaboration opportunities or questions about my work. 
+[Contact me](/contact) for collaboration opportunities or questions about my work.
+
+<div class="site-creation-note">
+  <p><strong>A Note on This Website's Creation:</strong> This portfolio was built through iterative refinement and prompt engineering of Claude 3.7 Sonnet. The site demonstrates the power of AI collaboration in web development, with all design elements and content optimized through strategic prompting.</p>
+</div> 

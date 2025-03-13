@@ -28,6 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username: RFlash007
 linkedin_username: ianjcmullins
+author: Ian Mullins
 
 # Additional social links
 social_links:
@@ -36,6 +37,12 @@ social_links:
 
 # Build settings
 theme: minima
+minima:
+  skin: classic
+  date_format: "%b %-d, %Y"
+  social_links:
+    github: RFlash007
+    linkedin: ianjcmullins
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

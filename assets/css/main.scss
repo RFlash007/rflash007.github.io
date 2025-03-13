@@ -322,6 +322,25 @@ a {
   font-style: italic;
 }
 
+// Site creation note
+.site-creation-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $light-gray;
+  border-left: 4px solid $accent-color;
+  border-radius: 4px;
+  
+  p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: darken($text-color, 5%);
+  }
+  
+  strong {
+    color: $accent-color;
+  }
+}
+
 // Fix for Font Awesome icons
 .contact-methods ul li i.fa,
 .contact-methods ul li i.fab,
