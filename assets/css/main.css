@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  color: var(--text-dark);
+  color: #000000;
   line-height: 1.6;
   background-color: var(--bg-white);
   font-size: 16px;
@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
+  color: #000000;
 }
 
 h1 {
@@ -142,6 +143,8 @@ pre code {
   position: relative;
   display: inline-block;
   margin-bottom: var(--spacing-sm);
+  color: #000000;
+  font-weight: 800;
 }
 
 .section-title h1::after,
@@ -157,10 +160,11 @@ pre code {
 }
 
 .section-title p {
-  color: #343a40;
+  color: #222222;
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .bg-light {
@@ -283,8 +287,8 @@ pre code {
     top: 70px;
     left: 0;
     right: 0;
-    background-color: #1a1a1a;
-    box-shadow: var(--shadow-sm);
+    background-color: var(--bg-white);
+    box-shadow: var(--shadow-md);
     padding: var(--spacing-md);
     transform: translateY(-100%);
     opacity: 0;
@@ -304,7 +308,7 @@ pre code {
   }
 
   .main-navigation a {
-    color: #ffffff;
+    color: var(--text-dark);
     display: block;
     padding: var(--spacing-xs);
     border-radius: var(--border-radius-sm);
@@ -313,7 +317,7 @@ pre code {
   
   .main-navigation a:hover,
   .main-navigation a.active {
-    color: #ffffff;
+    color: white;
     background-color: var(--primary);
     border-radius: var(--border-radius-sm);
   }
@@ -356,8 +360,9 @@ pre code {
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: var(--text-dark);
+  color: white;
   margin-bottom: var(--spacing-lg);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 .hero-cta {
@@ -491,6 +496,16 @@ pre code {
   color: white;
 }
 
+.card h3, .project-title, .blog-title {
+  color: #000000;
+  font-weight: 700;
+}
+
+.feature-card h3 {
+  color: #000000;
+  font-weight: 700;
+}
+
 /* Projects */
 .projects-grid {
   display: grid;
@@ -530,59 +545,73 @@ pre code {
 }
 
 .project-content {
-  padding: var(--spacing-md);
+  padding: var(--spacing-lg);
+  background-color: var(--bg-white);
 }
 
 .project-title {
-  margin-bottom: var(--spacing-xs);
-  color: var(--text-dark);
-  font-size: 1.6rem;
+  margin-bottom: var(--spacing-sm);
+  color: #000000;
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 
 .project-category {
   color: var(--primary);
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--spacing-sm);
   display: block;
   letter-spacing: 0.5px;
 }
 
 .project-description {
-  color: var(--text-dark);
-  margin-bottom: var(--spacing-md);
+  color: #000000;
+  margin-bottom: var(--spacing-lg);
   line-height: 1.7;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .project-content ul.feature-list {
-  margin-bottom: var(--spacing-md);
-  color: var(--text-dark);
+  margin-bottom: var(--spacing-lg);
+  color: #000000;
   list-style-type: circle;
+  padding-left: 1.5rem;
 }
 
 .project-content ul.feature-list li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   position: relative;
   padding-left: 5px;
+  line-height: 1.6;
+  font-size: 1.05rem;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: var(--spacing-md);
+  gap: 0.7rem;
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
 }
 
 .project-tag {
   background-color: var(--primary-light);
-  color: var(--primary);
+  color: #0044cc;
   border-radius: 50px;
   padding: 0.5rem 1rem;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+}
+
+.project-links {
+  margin-top: var(--spacing-md);
+}
+
+.project-links .btn {
+  font-weight: 600;
 }
 
 /* Skills */
@@ -675,7 +704,9 @@ pre code {
 .form-label {
   display: block;
   margin-bottom: var(--spacing-xs);
-  font-weight: 500;
+  font-weight: 600;
+  color: #000000;
+  font-size: 1.1rem;
 }
 
 .form-control {
@@ -990,14 +1021,17 @@ textarea.form-control {
 
 .blog-title {
   font-size: 1.4rem;
-  margin-bottom: var(--spacing-xs);
-  color: var(--text-dark);
+  margin-bottom: var(--spacing-sm);
+  color: #000000;
+  font-weight: 700;
 }
 
 .blog-excerpt {
-  color: var(--text-dark);
+  color: #000000;
   margin-bottom: var(--spacing-md);
   flex-grow: 1;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .blog-tags {
@@ -1036,14 +1070,14 @@ textarea.form-control {
 
 .blog-author-name {
   font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--text-dark);
+  font-weight: 600;
+  color: #000000;
 }
 
 .blog-read-more {
   color: var(--primary);
-  font-weight: 500;
-  font-size: 0.875rem;
+  font-weight: 600;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1072,8 +1106,8 @@ textarea.form-control {
   height: 40px;
   border-radius: 50%;
   background-color: var(--bg-light);
-  color: var(--text-dark);
-  font-weight: 500;
+  color: #000000;
+  font-weight: 600;
   transition: var(--transition);
 }
 
@@ -1091,8 +1125,8 @@ textarea.form-control {
   height: 40px;
   border-radius: 20px;
   background-color: var(--bg-light);
-  color: var(--text-dark);
-  font-weight: 500;
+  color: #000000;
+  font-weight: 600;
   transition: var(--transition);
 }
 
@@ -1140,37 +1174,78 @@ textarea.form-control {
   background-color: var(--secondary);
 }
 
-/* Improved readability for all modes */
-.blog-excerpt, .card p, .project-description, .testimonial-text, .feature-description {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: var(--text-dark);
+/* Ensure all text has good contrast */
+p, li, blockquote, td, th, .project-description, .blog-excerpt {
+  color: #000000;
 }
 
-.about-content p, .education-details p, .experience-card p, .activity-card p {
-  color: var(--text-dark);
-  font-weight: 500;
+.text-light {
+  color: #222222;
 }
 
-.blog-title, .card h3, .project-title, h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
-  color: var(--text-dark);
+.text-lighter {
+  color: #343a40;
 }
 
 /* Improve contrast in dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-dark: #e2e8f0;
-    --text-light: #cbd5e1;
-    --text-lighter: #94a3b8;
+    --text-dark: #ffffff;
+    --text-light: #f0f9ff;
+    --text-lighter: #e2e8f0;
     --bg-light: #1e293b;
     --bg-white: #0f172a;
     --primary-light: rgba(0, 85, 255, 0.2);
   }
 
+  body {
+    color: #ffffff;
+  }
+  
+  p, li, blockquote, td, th, .project-description, .blog-excerpt {
+    color: #f0f9ff;
+  }
+
+  h1, h2, h3, h4, h5, h6, .card h3, .project-title, .blog-title, .feature-card h3 {
+    color: #ffffff;
+  }
+  
+  .section-title h1,
+  .section-title h2 {
+    color: #ffffff;
+  }
+  
+  .section-title p {
+    color: #e2e8f0;
+  }
+  
+  .education-title h2 {
+    color: #ffffff;
+  }
+  
+  .education-title p {
+    color: #e2e8f0;
+  }
+  
+  .form-label {
+    color: #ffffff;
+  }
+
   .site-header,
   .main-navigation {
     background-color: #0f172a;
+  }
+  
+  .title-name {
+    color: #ffffff;
+  }
+  
+  .site-subtitle {
+    color: #e2e8f0;
+  }
+  
+  .main-navigation a {
+    color: #e2e8f0;
   }
 
   .card,
@@ -1190,7 +1265,7 @@ textarea.form-control {
 
   .form-control {
     background-color: #1e293b;
-    color: var(--text-dark);
+    color: #ffffff;
     border-color: #334155;
   }
 
@@ -1200,37 +1275,17 @@ textarea.form-control {
 
   code {
     background-color: #334155;
+    color: #e2e8f0;
   }
 
   pre {
     background-color: #334155;
   }
   
-  .title-name {
-    color: #000000;
-  }
-  
-  /* Improved contrast for dark mode */
-  p, li, .blog-excerpt {
-    color: #f0f9ff;
-  }
-  
-  .blog-title, h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
-  }
-  
   .blog-tag, .project-tag {
     background-color: rgba(59, 130, 246, 0.5);
     color: #ffffff;
     font-weight: 600;
-  }
-  
-  .section-title p {
-    color: #f0f9ff;
-  }
-  
-  .site-subtitle, .text-light {
-    color: #e2e8f0;
   }
   
   /* Adjust dark backgrounds for better contrast */
@@ -1261,9 +1316,24 @@ textarea.form-control {
     color: #93c5fd;
   }
 
-  /* Improved project contrast for dark mode */
-  .project-description, .project-content p, .project-content li {
-    color: #f0f9ff;
+  .hero-subtitle {
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .main-navigation {
+      background-color: #1a1a1a;
+    }
+    
+    .main-navigation a {
+      color: #e2e8f0;
+    }
+    
+    .main-navigation a:hover,
+    .main-navigation a.active {
+      color: #ffffff;
+      background-color: #3b82f6;
+    }
   }
 }
 
@@ -1301,4 +1371,19 @@ textarea.form-control {
   .project-card {
     margin-bottom: var(--spacing-lg);
   }
+}
+
+.section-cta {
+  text-align: center;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-md);
+}
+
+.education-title h2 {
+  color: #000000;
+}
+
+.education-title p {
+  color: #222222;
+  font-weight: 500;
 } 

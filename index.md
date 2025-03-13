@@ -96,7 +96,7 @@ layout: home
 
 <section class="section">
   <div class="wrapper">
-    <div class="section-title">
+    <div class="section-title education-title">
       <h2>Education</h2>
       <p>My academic journey</p>
     </div>
