@@ -7,7 +7,7 @@ permalink: /contact/
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h1 class="fade-in" style="color: var(--primary);">Get In Touch</h1>
+      <h1 class="fade-in" style="color: var(--secondary);">Get In Touch</h1>
       <p style="color: var(--text-dark);">I'd love to hear from you! Feel free to reach out for collaborations, questions, or just to say hello.</p>
     </div>
     

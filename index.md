@@ -6,7 +6,7 @@ layout: home
   <div class="hero-background"></div>
   <div class="wrapper">
     <div class="hero-content fade-in">
-      <h1 class="hero-title">Hi, I'm <span>Ian Mullins</span></h1>
+      <h1 class="hero-title">Hi, I'm <span style="color: var(--secondary);">Ian Mullins</span></h1>
       <p class="hero-subtitle">Computer Science student specializing in Artificial Intelligence</p>
       <div class="hero-cta">
         <a href="/projects" class="btn btn-primary btn-icon">
@@ -23,7 +23,7 @@ layout: home
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h2 style="color: var(--primary);">My Expertise</h2>
+      <h2 style="color: var(--secondary);">My Expertise</h2>
       <p style="color: var(--text-dark);">Areas where I excel and continue to grow</p>
     </div>
     
@@ -58,7 +58,7 @@ layout: home
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2 style="color: var(--primary);">Featured Projects</h2>
+      <h2 style="color: var(--secondary);">Featured Projects</h2>
       <p style="color: var(--text-dark);">A selection of my recent work</p>
     </div>
     
@@ -97,7 +97,7 @@ layout: home
 <section class="section">
   <div class="wrapper">
     <div class="section-title education-title">
-      <h2 style="color: var(--primary);">Education</h2>
+      <h2 style="color: var(--secondary);">Education</h2>
       <p style="color: var(--text-dark);">My academic journey</p>
     </div>
     
@@ -120,7 +120,7 @@ layout: home
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2 style="color: var(--primary);">Get In Touch</h2>
+      <h2 style="color: var(--secondary);">Get In Touch</h2>
       <p style="color: var(--text-dark);">Let's connect and discuss potential collaborations</p>
     </div>
     

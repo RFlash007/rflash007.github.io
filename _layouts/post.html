@@ -6,7 +6,7 @@ layout: default
   <div class="wrapper">
     <article class="post">
       <header class="post-header">
-        <h1 class="post-title" style="color: var(--primary);">{{ page.title }}</h1>
+        <h1 class="post-title" style="color: var(--secondary);">{{ page.title }}</h1>
         <div class="post-meta">
           <span class="post-date">
             <i class="far fa-calendar-alt"></i> {{ page.date | date: "%B %-d, %Y" }}
@@ -81,7 +81,7 @@ layout: default
   }
   
   .post-meta {
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: var(--spacing-md);
     display: flex;
     justify-content: center;
@@ -115,12 +115,13 @@ layout: default
   .post-content h2, .post-content h3, .post-content h4 {
     margin-top: var(--spacing-2xl);
     margin-bottom: var(--spacing-md);
+    color: var(--text-dark);
   }
   
   .post-content h2 {
     font-size: 1.8rem;
     padding-bottom: var(--spacing-xs);
-    border-bottom: 2px solid var(--primary-light);
+    border-bottom: 2px solid var(--secondary-light);
   }
   
   .post-content h3 {
@@ -146,15 +147,17 @@ layout: default
   }
   
   .post-content a:hover {
-    border-bottom-color: var(--primary);
+    border-bottom-color: var(--secondary);
+    color: var(--accent);
   }
   
   .post-content blockquote {
     margin: var(--spacing-lg) 0;
     padding: var(--spacing-md) var(--spacing-lg);
-    border-left: 4px solid var(--primary);
-    background-color: var(--primary-light);
+    border-left: 4px solid var(--secondary);
+    background-color: var(--secondary-light);
     border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    color: var(--text-dark);
   }
   
   .post-content code {
@@ -182,7 +185,7 @@ layout: default
   .post-navigation {
     margin-top: var(--spacing-2xl);
     padding-top: var(--spacing-lg);
-    border-top: 1px solid var(--primary-light);
+    border-top: 1px solid var(--secondary-light);
   }
   
   .post-navigation-links {
@@ -196,7 +199,7 @@ layout: default
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     transition: var(--transition);
     max-width: 45%;
   }
@@ -240,19 +243,33 @@ layout: default
   /* Dark mode adjustments */
   @media (prefers-color-scheme: dark) {
     .post {
-      background-color: #243046;
+      background-color: var(--bg-white);
+    }
+    
+    .post-content h2, .post-content h3, .post-content h4 {
+      color: var(--text-light);
+    }
+    
+    .post-meta, .post-previous, .post-next {
+      color: var(--text-light);
     }
     
     .post-content code {
-      background-color: #334155;
+      background-color: var(--bg-dark);
+      color: var(--text-light);
     }
     
     .post-content pre {
-      background-color: #334155;
+      background-color: var(--bg-dark);
     }
     
     .post-content blockquote {
-      background-color: rgba(0, 85, 255, 0.1);
+      background-color: var(--secondary-light);
+      color: var(--text-light);
+    }
+    
+    .post-previous:hover, .post-next:hover {
+      color: var(--secondary);
     }
   }
 </style> 
