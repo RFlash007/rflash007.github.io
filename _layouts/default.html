@@ -8,12 +8,35 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+      {{ content }}
     </main>
 
     {%- include footer.html -%}
+
+    <script>
+      // Add active class to current navigation item
+      document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = window.location.pathname;
+        const navLinks = document.querySelectorAll('.main-navigation a');
+        
+        navLinks.forEach(link => {
+          const linkPath = link.getAttribute('href');
+          if (currentLocation === linkPath || (currentLocation === '/' && linkPath === '/')) {
+            link.classList.add('active');
+          }
+        });
+        
+        // Mobile navigation toggle
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const mainNavigation = document.querySelector('.main-navigation');
+        
+        if (navbarToggle) {
+          navbarToggle.addEventListener('click', function() {
+            mainNavigation.classList.toggle('active');
+          });
+        }
+      });
+    </script>
 
   </body>
 

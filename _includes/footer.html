@@ -1,58 +1,37 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
+<footer class="site-footer">
   <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <h2 class="footer-heading">Connect With Me</h2>
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {%- endif -%}
-        </ul>
-        
-        <div class="social-icons">
-          {%- if site.github_username -%}
-          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i>
-          </a>
-          {%- endif -%}
-          
-          {%- if site.linkedin_username -%}
-          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          {%- endif -%}
+    <div class="footer-container">
+      <div class="footer-widget">
+        <h3>About Me</h3>
+        <p>Computer Science student at Virginia Commonwealth University specializing in Artificial Intelligence, with a focus on LLMs and RAG systems.</p>
+        <div class="footer-social">
+          <a href="https://github.com/RFlash007" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-
-      <div class="footer-col">
-        <h2 class="footer-heading">About</h2>
-        <p>{{ site.description | escape }}</p>
-      </div>
-
-      <div class="footer-col">
-        <h2 class="footer-heading">Navigation</h2>
-        <ul class="footer-links">
+      
+      <div class="footer-widget">
+        <h3>Quick Links</h3>
+        <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/projects">Projects</a></li>
-          <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-widget">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fas fa-envelope"></i> <a href="mailto:ianjcmullins@gmail.com">ianjcmullins@gmail.com</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> Richmond, Virginia</li>
         </ul>
       </div>
     </div>
     
-    <div class="footer-copyright">
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <span class="with-love">❤</span> and AI assistance.</p>
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} Ian Mullins. All rights reserved.</p>
+      <p>Built with <i class="fas fa-heart" style="color: #ff7b00;"></i> using Jekyll and Claude 3.7 Sonnet</p>
     </div>
-
   </div>
-
 </footer> 

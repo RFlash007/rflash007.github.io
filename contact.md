@@ -4,70 +4,152 @@ title: Contact
 permalink: /contact/
 ---
 
-<h1 class="fade-in">Contact Me</h1>
-
-<p class="lead text-center fade-in">I'm always open to discussing AI projects, research collaborations, or opportunities to contribute to innovative solutions.</p>
-
-<div class="contact-methods fade-in">
-  <div class="card contact-card">
-    <div class="contact-card-icon">
-      <i class="fas fa-envelope"></i>
+<section class="section">
+  <div class="wrapper">
+    <div class="section-title">
+      <h1 class="fade-in">Get In Touch</h1>
+      <p>I'd love to hear from you! Feel free to reach out for collaborations, questions, or just to say hello.</p>
     </div>
-    <h3>Email</h3>
-    <p>For project inquiries and formal communications</p>
-    <a href="mailto:mullinsij@vcu.edu" class="btn btn-accent">mullinsij@vcu.edu</a>
-  </div>
-  
-  <div class="card contact-card">
-    <div class="contact-card-icon">
-      <i class="fas fa-phone-alt"></i>
+    
+    <div class="two-column-grid">
+      <div class="contact-info fade-in-right">
+        <div class="card">
+          <h3>Contact Information</h3>
+          <p>You can reach me through any of these channels:</p>
+          
+          <ul style="list-style: none; margin-left: 0;">
+            <li style="margin-bottom: 1.5rem;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.25rem;"></i>
+                </div>
+                <div>
+                  <h4 style="margin: 0;">Email</h4>
+                  <a href="mailto:ianjcmullins@gmail.com">ianjcmullins@gmail.com</a>
+                </div>
+              </div>
+            </li>
+            
+            <li style="margin-bottom: 1.5rem;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <i class="fab fa-github" style="color: var(--primary); font-size: 1.25rem;"></i>
+                </div>
+                <div>
+                  <h4 style="margin: 0;">GitHub</h4>
+                  <a href="https://github.com/RFlash007" target="_blank">github.com/RFlash007</a>
+                </div>
+              </div>
+            </li>
+            
+            <li style="margin-bottom: 1.5rem;">
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <i class="fab fa-linkedin" style="color: var(--primary); font-size: 1.25rem;"></i>
+                </div>
+                <div>
+                  <h4 style="margin: 0;">LinkedIn</h4>
+                  <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank">linkedin.com/in/ianjcmullins</a>
+                </div>
+              </div>
+            </li>
+            
+            <li>
+              <div style="display: flex; align-items: center;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                  <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 1.25rem;"></i>
+                </div>
+                <div>
+                  <h4 style="margin: 0;">Location</h4>
+                  <p style="margin: 0;">Richmond, Virginia</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="card" style="margin-top: 2rem;">
+          <h3>Current Status</h3>
+          <p>I'm currently:</p>
+          <ul>
+            <li>Studying Computer Science at Virginia Commonwealth University</li>
+            <li>Open to internship opportunities in AI and software development</li>
+            <li>Available for research collaborations in machine learning</li>
+            <li>Interested in connecting with fellow AI enthusiasts</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="contact-form-container fade-in-up">
+        <div class="card">
+          <h3>Send Me a Message</h3>
+          <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+          
+          <form class="contact-form" action="https://formspree.io/f/xdoqgkrw" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" id="email" name="_replyto" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-icon">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
-    <h3>Phone</h3>
-    <p>For direct and urgent communications</p>
-    <a href="tel:+17576348262" class="btn btn-accent">+1 (757) 634-8262</a>
   </div>
-  
-  <div class="card contact-card">
-    <div class="contact-card-icon">
-      <i class="fab fa-linkedin"></i>
-    </div>
-    <h3>LinkedIn</h3>
-    <p>Connect professionally and view my experience</p>
-    <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank" class="btn btn-accent">ianjcmullins</a>
-  </div>
-  
-  <div class="card contact-card">
-    <div class="contact-card-icon">
-      <i class="fab fa-github"></i>
-    </div>
-    <h3>GitHub</h3>
-    <p>View my code repositories and projects</p>
-    <a href="https://github.com/rflash007" target="_blank" class="btn btn-accent">RFlash007</a>
-  </div>
-</div>
+</section>
 
-<div class="card interests-card fade-in">
-  <h2>Let's Connect</h2>
-  <p>Whether you have questions about my projects, internship opportunities in AI Engineering or Prompt Engineering, or just want to discuss the latest developments in LLMs and AI technology, I'll try my best to get back to you as soon as possible!</p>
-  
-  <h3>My Areas of Interest</h3>
-  <div class="skill-container">
-    <span class="skill-tag">Large Language Models (LLMs)</span>
-    <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
-    <span class="skill-tag">Prompt Engineering</span>
-    <span class="skill-tag">AI System Design</span>
-    <span class="skill-tag">Model Fine-tuning</span>
+<section class="section bg-light">
+  <div class="wrapper">
+    <div class="section-title">
+      <h2>Response Time</h2>
+      <p>I typically respond to messages within 24-48 hours</p>
+    </div>
+    
+    <div class="three-column-grid">
+      <div class="feature-card text-center">
+        <div class="feature-icon">
+          <i class="fas fa-handshake"></i>
+        </div>
+        <h3>Collaboration</h3>
+        <p>Interested in working together on a project? Let me know the details and we can discuss how to make it happen.</p>
+      </div>
+      
+      <div class="feature-card text-center">
+        <div class="feature-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3>Opportunities</h3>
+        <p>Looking for a motivated Computer Science student with AI expertise? I'm open to internships and research positions.</p>
+      </div>
+      
+      <div class="feature-card text-center">
+        <div class="feature-icon">
+          <i class="fas fa-comments"></i>
+        </div>
+        <h3>Just Chat</h3>
+        <p>Want to discuss AI, programming, or technology in general? I'm always happy to connect with like-minded individuals.</p>
+      </div>
+    </div>
   </div>
-</div>
-
-<div class="location-card fade-in">
-  <div class="location-info">
-    <i class="fas fa-map-marker-alt"></i>
-    <h3>Location</h3>
-    <p>Mechanicsville, Virginia</p>
-    <p class="text-light">Available for remote and local opportunities</p>
-  </div>
-</div>
+</section>
 
 <style>
   .contact-methods {
