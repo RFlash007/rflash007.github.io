@@ -7,8 +7,8 @@ permalink: /projects/
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h1 class="fade-in">My Projects</h1>
-      <p>A showcase of my work in AI, software development, and more</p>
+      <h1 class="fade-in" style="color: var(--primary);">My Projects</h1>
+      <p style="color: var(--text-dark);">A showcase of my work in AI, software development, and more</p>
     </div>
     
     <div class="projects-grid">

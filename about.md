@@ -7,8 +7,8 @@ permalink: /about/
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h1 class="fade-in">About Me</h1>
-      <p>Computer Science student with a passion for AI and machine learning</p>
+      <h1 class="fade-in" style="color: var(--primary);">About Me</h1>
+      <p style="color: var(--text-dark);">Computer Science student with a passion for AI and machine learning</p>
     </div>
 
     <div class="about-container fade-in-up">
@@ -34,8 +34,8 @@ permalink: /about/
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Education</h2>
-      <p>My academic journey and credentials</p>
+      <h2 style="color: var(--primary);">Education</h2>
+      <p style="color: var(--text-dark);">My academic journey and credentials</p>
     </div>
     
     <div class="education-card fade-in-up">

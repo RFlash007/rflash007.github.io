@@ -23,8 +23,8 @@ layout: home
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h2>My Expertise</h2>
-      <p>Areas where I excel and continue to grow</p>
+      <h2 style="color: var(--primary);">My Expertise</h2>
+      <p style="color: var(--text-dark);">Areas where I excel and continue to grow</p>
     </div>
     
     <div class="three-column-grid">
@@ -58,8 +58,8 @@ layout: home
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Featured Projects</h2>
-      <p>A selection of my recent work</p>
+      <h2 style="color: var(--primary);">Featured Projects</h2>
+      <p style="color: var(--text-dark);">A selection of my recent work</p>
     </div>
     
     <div class="projects-grid">
@@ -97,8 +97,8 @@ layout: home
 <section class="section">
   <div class="wrapper">
     <div class="section-title education-title">
-      <h2>Education</h2>
-      <p>My academic journey</p>
+      <h2 style="color: var(--primary);">Education</h2>
+      <p style="color: var(--text-dark);">My academic journey</p>
     </div>
     
     <div class="card fade-in-up">
@@ -120,8 +120,8 @@ layout: home
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Get In Touch</h2>
-      <p>Let's connect and discuss potential collaborations</p>
+      <h2 style="color: var(--primary);">Get In Touch</h2>
+      <p style="color: var(--text-dark);">Let's connect and discuss potential collaborations</p>
     </div>
     
     <div class="two-column-grid">

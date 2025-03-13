@@ -7,7 +7,7 @@ permalink: /blog/
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h1 class="fade-in">Blog</h1>
+      <h1 class="fade-in" style="color: var(--primary);">Blog</h1>
       <p>Thoughts, insights, and updates from my journey in AI and Computer Science</p>
     </div>
     

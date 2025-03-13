@@ -39,7 +39,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  color: #000000;
+  color: var(--text-dark);
   line-height: 1.6;
   background-color: var(--bg-white);
   font-size: 16px;
@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: var(--spacing-sm);
-  color: #000000;
+  color: var(--text-dark);
 }
 
 h1 {
@@ -143,7 +143,7 @@ pre code {
   position: relative;
   display: inline-block;
   margin-bottom: var(--spacing-sm);
-  color: #000000;
+  color: var(--text-dark);
   font-weight: 800;
 }
 
@@ -160,7 +160,7 @@ pre code {
 }
 
 .section-title p {
-  color: #222222;
+  color: var(--primary);
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
@@ -214,7 +214,7 @@ pre code {
 }
 
 .title-name {
-  color: #000000;
+  color: var(--primary);
   display: inline-block;
   margin-right: 3px;
   font-weight: 800;
@@ -245,13 +245,14 @@ pre code {
   color: #222222;
   position: relative;
   padding: 0.5rem 0.25rem;
+  background: none;
 }
 
 .main-navigation a::after {
   content: '';
   position: absolute;
+  bottom: 0;
   left: 0;
-  bottom: -5px;
   width: 0;
   height: 2px;
   background-color: var(--primary);
@@ -308,18 +309,16 @@ pre code {
   }
 
   .main-navigation a {
-    color: var(--text-dark);
-    display: block;
-    padding: var(--spacing-xs);
-    border-radius: var(--border-radius-sm);
-    transition: var(--transition);
+    color: #e2e8f0;
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: none;
   }
   
   .main-navigation a:hover,
   .main-navigation a.active {
-    color: white;
+    color: #ffffff;
     background-color: var(--primary);
-    border-radius: var(--border-radius-sm);
   }
 }
 
@@ -350,8 +349,9 @@ pre code {
 
 .hero-title {
   font-size: 3.5rem;
-  margin-bottom: var(--spacing-md);
-  line-height: 1.1;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-dark);
+  font-weight: 800;
 }
 
 .hero-title span {
@@ -359,10 +359,10 @@ pre code {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
-  color: white;
+  font-size: 1.4rem;
   margin-bottom: var(--spacing-lg);
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  color: var(--text-dark);
+  font-weight: 500;
 }
 
 .hero-cta {
@@ -1022,12 +1022,12 @@ textarea.form-control {
 .blog-title {
   font-size: 1.4rem;
   margin-bottom: var(--spacing-sm);
-  color: #000000;
+  color: var(--primary);
   font-weight: 700;
 }
 
 .blog-excerpt {
-  color: #000000;
+  color: var(--text-light);
   margin-bottom: var(--spacing-md);
   flex-grow: 1;
   line-height: 1.7;
@@ -1071,7 +1071,7 @@ textarea.form-control {
 .blog-author-name {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
 }
 
 .blog-read-more {
@@ -1176,15 +1176,15 @@ textarea.form-control {
 
 /* Ensure all text has good contrast */
 p, li, blockquote, td, th, .project-description, .blog-excerpt {
-  color: #000000;
+  color: var(--text-dark);
 }
 
 .text-light {
-  color: #222222;
+  color: var(--text-dark);
 }
 
 .text-lighter {
-  color: #343a40;
+  color: var(--text-light);
 }
 
 /* Improve contrast in dark mode */
@@ -1335,6 +1335,22 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
       background-color: #3b82f6;
     }
   }
+
+  .blog-author-name {
+    color: #ffffff;
+  }
+  
+  .blog-title {
+    color: #ffffff;
+  }
+  
+  .project-title {
+    color: #ffffff;
+  }
+  
+  .title-name {
+    color: #ffffff;
+  }
 }
 
 .project-icon {
@@ -1386,4 +1402,11 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
 .education-title p {
   color: #222222;
   font-weight: 500;
+}
+
+.about-content p {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
 } 
