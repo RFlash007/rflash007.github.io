@@ -1,15 +1,21 @@
 @import "minima";
 
-// Custom styles to enhance site appearance
+// Modern Portfolio Color Scheme
+$primary-color: #3a86ff;       // Vibrant blue for primary elements
+$secondary-color: #8338ec;     // Purple for secondary elements 
+$accent-color: #ff006e;        // Pink accent for highlights
+$success-color: #06d6a0;       // Teal green for success states
+$warning-color: #ffbe0b;       // Yellow for attention
+$text-color: #2b2d42;          // Dark blue-gray for text
+$text-light: #8d99ae;          // Lighter text color
+$background-color: #ffffff;    // White background
+$light-gray: #f8f9fa;          // Light gray for sections
+$border-color: #e9ecef;        // Border color
 
-// Color scheme
-$primary-color: #0366d6;
-$secondary-color: #2ea44f;
-$accent-color: #6f42c1;
-$text-color: #24292e;
-$background-color: #ffffff;
-$light-gray: #f6f8fa;
-$border-color: #e1e4e8;
+// Typography
+$base-font-size: 16px;
+$heading-font-weight: 700;
+$body-font-weight: 400;
 
 // General styling
 body {
@@ -17,14 +23,17 @@ body {
   line-height: 1.6;
   color: $text-color;
   background-color: $background-color;
+  font-size: $base-font-size;
+  transition: all 0.3s ease;
 }
 
+// Links
 a {
   color: $primary-color;
-  transition: color 0.2s ease;
+  transition: all 0.3s ease;
   
   &:hover {
-    color: darken($primary-color, 10%);
+    color: darken($primary-color, 15%);
     text-decoration: none;
   }
 }
@@ -34,18 +43,347 @@ a {
   border-top: 5px solid $primary-color;
   border-bottom: 1px solid $border-color;
   background-color: $background-color;
-  padding: 15px 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .site-title {
-  font-weight: 600;
-  letter-spacing: -0.5px;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  
+  .title-highlight {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $primary-color;
+  }
+  
+  .title-subtitle {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: $text-light;
+  }
 }
 
-.site-nav .page-link {
-  font-weight: 500;
-  margin-left: 25px;
+.site-nav {
+  .page-link {
+    font-weight: 600;
+    margin-left: 25px;
+    position: relative;
+    
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 2px;
+      right: 0;
+      background: $primary-color;
+      transition: width 0.3s ease;
+    }
+    
+    &:hover:after {
+      width: 100%;
+      left: 0;
+      background: $primary-color;
+    }
+  }
+}
+
+// Content
+.page-content {
+  padding: 3rem 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $heading-font-weight;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $primary-color;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  color: $secondary-color;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  color: darken($text-color, 10%);
+}
+
+// Profile section
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid $light-gray;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  .profile-text {
+    flex: 1;
+  }
+}
+
+// Cards
+.card {
+  background: $background-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 4px solid $primary-color;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: $primary-color;
+  }
+  
+  &.project-card {
+    border-top: 4px solid $secondary-color;
+    
+    h3 {
+      color: $secondary-color;
+    }
+  }
+  
+  &.contact-card {
+    border-top: 4px solid $accent-color;
+    
+    h3 {
+      color: $accent-color;
+    }
+  }
+}
+
+// Skills section
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.skill-tag {
+  background: $light-gray;
+  color: $primary-color;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  border: 1px solid $border-color;
+  
+  &:hover {
+    background: $primary-color;
+    color: white;
+  }
+}
+
+// Projects section
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+// Footer
+.site-footer {
+  background-color: $light-gray;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  border-top: 1px solid $border-color;
+}
+
+.footer-col-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-col {
+  margin-bottom: 0;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.footer-links {
+  list-style: none;
+  margin-left: 0;
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  a {
+    color: $text-color;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      color: $primary-color;
+      margin-left: 5px;
+    }
+  }
+}
+
+.footer-copyright {
+  text-align: center;
+  border-top: 1px solid $border-color;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: $text-light;
+  
+  .with-love {
+    color: $accent-color;
+  }
+}
+
+// Site creation note
+.site-creation-note {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: $light-gray;
+  border-left: 4px solid $secondary-color;
+  border-radius: 4px;
+  
+  p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+  }
+  
+  strong {
+    color: $secondary-color;
+  }
+}
+
+// Button styles
+.btn {
+  display: inline-block;
+  background-color: $primary-color;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  &.btn-secondary {
+    background-color: $secondary-color;
+    
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+  
+  &.btn-accent {
+    background-color: $accent-color;
+    
+    &:hover {
+      background-color: darken($accent-color, 10%);
+    }
+  }
+}
+
+// About page
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Contact page
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+// Animation classes
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// Dark mode toggle (for future implementation)
+.dark-mode-toggle {
+  cursor: pointer;
+  margin-left: 1rem;
+  font-size: 1.2rem;
 }
 
 // Home page
@@ -251,22 +589,6 @@ a {
   }
 }
 
-// Footer
-.site-footer {
-  border-top: 1px solid $border-color;
-  padding: 30px 0;
-  background-color: $light-gray;
-  
-  h2 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-  
-  .social-media-list {
-    margin-bottom: 0;
-  }
-}
-
 // Contact page styling
 .contact-container {
   display: flex;
@@ -322,25 +644,6 @@ a {
   font-style: italic;
 }
 
-// Site creation note
-.site-creation-note {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: $light-gray;
-  border-left: 4px solid $accent-color;
-  border-radius: 4px;
-  
-  p {
-    margin-bottom: 0;
-    font-size: 0.95rem;
-    color: darken($text-color, 5%);
-  }
-  
-  strong {
-    color: $accent-color;
-  }
-}
-
 // Fix for Font Awesome icons
 .contact-methods ul li i.fa,
 .contact-methods ul li i.fab,
@@ -372,4 +675,16 @@ a {
   .contact-container {
     flex-direction: column;
   }
+}
+
+// Utility classes
+.text-center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  color: $text-light;
 } 

@@ -5,7 +5,7 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        <h2 class="footer-heading">Connect With Me</h2>
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
@@ -16,15 +16,41 @@
           <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {%- endif -%}
         </ul>
+        
+        <div class="social-icons">
+          {%- if site.github_username -%}
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          {%- endif -%}
+          
+          {%- if site.linkedin_username -%}
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          {%- endif -%}
+        </div>
       </div>
 
       <div class="footer-col">
+        <h2 class="footer-heading">About</h2>
         <p>{{ site.description | escape }}</p>
       </div>
 
       <div class="footer-col">
-        {%- include social.html -%}
+        <h2 class="footer-heading">Navigation</h2>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/projects">Projects</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </div>
+    </div>
+    
+    <div class="footer-copyright">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author }}. Built with <span class="with-love">❤</span> and AI assistance.</p>
     </div>
 
   </div>

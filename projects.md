@@ -4,47 +4,57 @@ title: Projects
 permalink: /projects/
 ---
 
-# My Projects
+<h1 class="fade-in">My Projects</h1>
 
-<div class="projects-container">
+<div class="projects-container fade-in">
 
-  <div class="project-item">
+  <div class="card project-card" id="llm-assistant">
     <h2>LLM Personal Assistant with RAG Database</h2>
     
-    <img src="/assets/images/llm_assistant.jpg" alt="LLM Assistant Project" />
+    <img src="/assets/images/llm_assistant.jpg" alt="LLM Assistant Project" class="project-img" />
     
-    <div class="project-tech">
-      <strong>Technologies used:</strong> Python, Ollama API, Qwen 2.5:14b Model, Retrieval-Augmented Generation (RAG), JSON Database
+    <div class="skill-container">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Ollama API</span>
+      <span class="skill-tag">Qwen 2.5:14b</span>
+      <span class="skill-tag">RAG</span>
+      <span class="skill-tag">JSON Database</span>
     </div>
     
     <div class="project-description">
+      <p>An AI assistant built with state-of-the-art language models and memory capabilities.</p>
       <ul>
         <li>Built on Qwen 2.5:14b Model using Ollama API</li>
         <li>Implemented Retrieval-Augmented Generation (RAG) and a custom relational database to store memory-based JSON objects for context-aware responses</li>
         <li>Optimized query execution by integrating prompt chaining workflows, improving response accuracy and reducing size of "memories" stored by 50%</li>
         <li>Implemented embedding caching for memory objects increasing processing speed significantly</li>
-        <li>Developed dynamic memory management system which consolidates recently accessed memory objects based on semantic similarity using cosine similarity function, drastically reducing redundancy in JSON database</li>
-        <li>Utilized prompt chaining techniques to drastically increase digestibility of complex prompts for smaller models, significantly increasing response accuracy</li>
+        <li>Developed dynamic memory management system which consolidates recently accessed memory objects based on semantic similarity using cosine similarity function</li>
+        <li>Utilized prompt chaining techniques to drastically increase digestibility of complex prompts for smaller models</li>
         <li>Crafted complex system prompt to urge model to utilize features such as: chain-of-thought, alignment tuning, and "curiosity"</li>
         <li>Designated "Memory Management" language model for crafting unique memories utilizing zero-shot prompting</li>
       </ul>
     </div>
     
     <div class="project-links">
-      <a href="https://github.com/RFlash007/personal-llm-assistant" class="btn-primary">View Code</a>
+      <a href="https://github.com/RFlash007/personal-llm-assistant" class="btn btn-secondary">View Code</a>
     </div>
   </div>
 
-  <div class="project-item">
+  <div class="card project-card" id="roberta-emotion">
     <h2>RoBERTa Fine-tune for Emotion Detection</h2>
     
-    <img src="/assets/images/roberta_emotion.jpg" alt="Emotion Detection Project" />
+    <img src="/assets/images/roberta_emotion.jpg" alt="Emotion Detection Project" class="project-img" />
     
-    <div class="project-tech">
-      <strong>Technologies used:</strong> Python, PyTorch, Hugging Face Transformers, RoBERTa, tweet_eval/emotion dataset
+    <div class="skill-container">
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">PyTorch</span>
+      <span class="skill-tag">Hugging Face</span>
+      <span class="skill-tag">RoBERTa</span>
+      <span class="skill-tag">Tweet_eval</span>
     </div>
     
     <div class="project-description">
+      <p>An emotion detection system that identifies emotions in text with high accuracy.</p>
       <ul>
         <li>Developed an emotion detection system using RoBERTa model fine-tuned on tweet_eval/emotion dataset</li>
         <li>Implemented text classification pipeline for detecting anger, joy, optimism, and sadness with 81.5% accuracy</li>
@@ -56,22 +66,58 @@ permalink: /projects/
     </div>
     
     <div class="project-links">
-      <a href="https://huggingface.co/RFlash/emotion-detector" class="btn-primary">View Code</a>
+      <a href="https://huggingface.co/RFlash/emotion-detector" class="btn btn-secondary">View Code</a>
     </div>
   </div>
 
-  <div class="project-item">
+  <div class="card" id="current-projects">
     <h2>Current Projects</h2>
     
     <div class="project-description">
       <p>I'm currently working on expanding my AI capabilities through these projects:</p>
       
+      <div class="skill-container">
+        <span class="skill-tag">LLM Development</span>
+        <span class="skill-tag">Fine-tuning</span>
+        <span class="skill-tag">AI Research</span>
+      </div>
+      
       <ol>
-        <li><strong>Upgrade LLM assistant capabilities</strong> - Looking to make assistant more usable in everyday life</li>
+        <li><strong>Upgrading LLM assistant capabilities</strong> - Enhancing my personal assistant to be more useful in everyday scenarios, with improved memory management and contextual understanding.</li>
+        <li><strong>Exploring multimodal models</strong> - Researching and implementing vision-language models for more comprehensive AI applications.</li>
       </ol>
       
-      <p>Want to collaborate on a project? <a href="/contact">Contact me</a>!</p>
+      <div class="text-center" style="margin-top: 2rem;">
+        <p>Interested in collaborating on a project?</p>
+        <a href="/contact" class="btn btn-accent">Let's Connect</a>
+      </div>
     </div>
   </div>
 
-</div> 
+</div>
+
+<style>
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-description {
+    margin: 1.5rem 0;
+  }
+  
+  .project-links {
+    margin-top: 1.5rem;
+  }
+</style> 
