@@ -14,13 +14,13 @@ permalink: /contact/
     <div class="two-column-grid">
       <div class="contact-info fade-in-right">
         <div class="card">
-          <h3>Contact Information</h3>
-          <p>You can reach me through any of these channels:</p>
+          <h3 style="color: var(--text-dark);">Contact Information</h3>
+          <p style="color: var(--text-dark);">You can reach me through any of these channels:</p>
           
           <ul style="list-style: none; margin-left: 0;">
             <li style="margin-bottom: 1.5rem;">
               <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                   <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.25rem;"></i>
                 </div>
                 <div>
@@ -32,7 +32,7 @@ permalink: /contact/
             
             <li style="margin-bottom: 1.5rem;">
               <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                   <i class="fab fa-github" style="color: var(--primary); font-size: 1.25rem;"></i>
                 </div>
                 <div>
@@ -44,7 +44,7 @@ permalink: /contact/
             
             <li style="margin-bottom: 1.5rem;">
               <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                   <i class="fab fa-linkedin" style="color: var(--primary); font-size: 1.25rem;"></i>
                 </div>
                 <div>
@@ -56,7 +56,7 @@ permalink: /contact/
             
             <li>
               <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--primary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
                   <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 1.25rem;"></i>
                 </div>
                 <div>
@@ -69,9 +69,9 @@ permalink: /contact/
         </div>
         
         <div class="card" style="margin-top: 2rem;">
-          <h3>Current Status</h3>
-          <p>I'm currently:</p>
-          <ul>
+          <h3 style="color: var(--text-dark);">Current Status</h3>
+          <p style="color: var(--text-dark);">I'm currently:</p>
+          <ul style="color: var(--text-dark);">
             <li>Studying Computer Science at Virginia Commonwealth University</li>
             <li>Open to internship opportunities in AI and software development</li>
             <li>Available for research collaborations in machine learning</li>
@@ -82,8 +82,8 @@ permalink: /contact/
       
       <div class="contact-form-container fade-in-up">
         <div class="card">
-          <h3>Send Me a Message</h3>
-          <p>Fill out the form below and I'll get back to you as soon as possible.</p>
+          <h3 style="color: var(--text-dark);">Send Me a Message</h3>
+          <p style="color: var(--text-dark);">Fill out the form below and I'll get back to you as soon as possible.</p>
           
           <form class="contact-form" action="https://formspree.io/f/xdoqgkrw" method="POST">
             <div class="form-group">
@@ -119,8 +119,8 @@ permalink: /contact/
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Response Time</h2>
-      <p>I typically respond to messages within 24-48 hours</p>
+      <h2 style="color: var(--secondary);">Response Time</h2>
+      <p style="color: var(--text-dark);">I typically respond to messages within 24-48 hours</p>
     </div>
     
     <div class="three-column-grid">
@@ -128,24 +128,24 @@ permalink: /contact/
         <div class="feature-icon">
           <i class="fas fa-handshake"></i>
         </div>
-        <h3>Collaboration</h3>
-        <p>Interested in working together on a project? Let me know the details and we can discuss how to make it happen.</p>
+        <h3 style="color: var(--text-dark);">Collaboration</h3>
+        <p style="color: var(--text-dark);">Interested in working together on a project? Let me know the details and we can discuss how to make it happen.</p>
       </div>
       
       <div class="feature-card text-center">
         <div class="feature-icon">
           <i class="fas fa-briefcase"></i>
         </div>
-        <h3>Opportunities</h3>
-        <p>Looking for a motivated Computer Science student with AI expertise? I'm open to internships and research positions.</p>
+        <h3 style="color: var(--text-dark);">Opportunities</h3>
+        <p style="color: var(--text-dark);">Looking for a motivated Computer Science student with AI expertise? I'm open to internships and research positions.</p>
       </div>
       
       <div class="feature-card text-center">
         <div class="feature-icon">
           <i class="fas fa-comments"></i>
         </div>
-        <h3>Just Chat</h3>
-        <p>Want to discuss AI, programming, or technology in general? I'm always happy to connect with like-minded individuals.</p>
+        <h3 style="color: var(--text-dark);">Just Chat</h3>
+        <p style="color: var(--text-dark);">Want to discuss AI, programming, or technology in general? I'm always happy to connect with like-minded individuals.</p>
       </div>
     </div>
   </div>

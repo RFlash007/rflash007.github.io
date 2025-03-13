@@ -132,19 +132,19 @@ layout: home
           
           <ul style="list-style: none; margin-left: 0;">
             <li style="margin-bottom: 1rem;">
-              <i class="fas fa-envelope" style="color: var(--primary); margin-right: 0.5rem;"></i>
+              <i class="fas fa-envelope" style="color: var(--secondary); margin-right: 0.5rem;"></i>
               <a href="mailto:ianjcmullins@gmail.com">ianjcmullins@gmail.com</a>
             </li>
             <li style="margin-bottom: 1rem;">
-              <i class="fab fa-github" style="color: var(--primary); margin-right: 0.5rem;"></i>
+              <i class="fab fa-github" style="color: var(--secondary); margin-right: 0.5rem;"></i>
               <a href="https://github.com/RFlash007" target="_blank">github.com/RFlash007</a>
             </li>
             <li style="margin-bottom: 1rem;">
-              <i class="fab fa-linkedin" style="color: var(--primary); margin-right: 0.5rem;"></i>
+              <i class="fab fa-linkedin" style="color: var(--secondary); margin-right: 0.5rem;"></i>
               <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank">linkedin.com/in/ianjcmullins</a>
             </li>
             <li style="margin-bottom: 1rem;">
-              <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 0.5rem;"></i>
+              <i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 0.5rem;"></i>
               Richmond, Virginia
             </li>
           </ul>

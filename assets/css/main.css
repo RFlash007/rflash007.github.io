@@ -176,6 +176,7 @@ pre code {
 
 .text-center {
   text-align: center;
+  color: var(--text-dark);
 }
 
 .mt-5 {
@@ -358,7 +359,7 @@ pre code {
 }
 
 .hero-title span {
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 .hero-subtitle {
@@ -691,7 +692,7 @@ pre code {
 
 .testimonial-role {
   font-size: 0.875rem;
-  color: var(--text-light);
+  color: var(--text-dark);
 }
 
 /* Contact */
@@ -708,7 +709,7 @@ pre code {
   display: block;
   margin-bottom: var(--spacing-xs);
   font-weight: 600;
-  color: #000000;
+  color: var(--text-dark);
   font-size: 1.1rem;
 }
 
@@ -954,7 +955,7 @@ textarea.form-control {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: rgba(0, 85, 255, 0.1);
+  background-color: var(--secondary-light);
   color: var(--primary);
   display: flex;
   align-items: center;
@@ -1080,12 +1081,20 @@ textarea.form-control {
 }
 
 .blog-read-more {
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 600;
   font-size: 0.9rem;
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.blog-read-more:hover {
+  color: var(--primary);
+}
+
+.blog-read-more i {
+  transition: transform 0.3s ease;
 }
 
 .blog-read-more:hover i {
@@ -1238,6 +1247,10 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
     color: var(--text-light);
   }
 
+  .form-control::placeholder {
+    color: rgba(245, 245, 220, 0.5);
+  }
+
   .site-header,
   .main-navigation {
     background-color: var(--bg-dark);
@@ -1370,6 +1383,50 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   
   .blog-page-link:hover, .blog-page-link.active, .blog-page-nav:hover {
     background-color: var(--secondary);
+    color: var(--bg-dark);
+  }
+
+  .education-details h3,
+  .education-details p,
+  .experience-card h3,
+  .experience-card p,
+  .experience-card li {
+    color: var(--text-light);
+  }
+  
+  .testimonial-role,
+  .testimonial-text {
+    color: var(--text-light);
+  }
+
+  .activity-icon {
+    background-color: var(--secondary-light);
+    color: var(--text-light);
+  }
+  
+  .feature-icon {
+    background-color: var(--secondary-light);
+    color: var(--text-light);
+  }
+  
+  .education-icon {
+    color: var(--secondary);
+  }
+  
+  .project-icon {
+    background-color: var(--secondary-light);
+  }
+  
+  .project-icon i {
+    color: var(--text-light);
+  }
+
+  .social-link:hover, .feature-card:hover .feature-icon, .project-card:hover .project-icon {
+    background-color: var(--secondary);
+    color: var(--bg-dark);
+  }
+  
+  .project-card:hover .project-icon i {
     color: var(--bg-dark);
   }
 }

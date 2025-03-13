@@ -8,7 +8,7 @@ permalink: /blog/
   <div class="wrapper">
     <div class="section-title">
       <h1 class="fade-in" style="color: var(--secondary);">Blog</h1>
-      <p>Thoughts, insights, and updates from my journey in AI and Computer Science</p>
+      <p style="color: var(--text-dark);">Thoughts, insights, and updates from my journey in AI and Computer Science</p>
     </div>
     
     <div class="blog-search">
@@ -75,13 +75,13 @@ permalink: /blog/
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Newsletter</h2>
-      <p>Stay updated with the latest articles and insights</p>
+      <h2 style="color: var(--secondary);">Newsletter</h2>
+      <p style="color: var(--text-dark);">Stay updated with the latest articles and insights</p>
     </div>
     
     <div class="card" style="max-width: 600px; margin: 0 auto;">
-      <h3 class="text-center">Subscribe to My Newsletter</h3>
-      <p class="text-center">Get notified when I publish new articles about AI, computer science, and technology.</p>
+      <h3 class="text-center" style="color: var(--text-dark);">Subscribe to My Newsletter</h3>
+      <p class="text-center" style="color: var(--text-dark);">Get notified when I publish new articles about AI, computer science, and technology.</p>
       
       <form class="contact-form">
         <div class="form-group">

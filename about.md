@@ -55,8 +55,8 @@ permalink: /about/
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Technical Skills</h2>
-      <p>Technologies and tools I work with</p>
+      <h2 style="color: var(--secondary);">Technical Skills</h2>
+      <p style="color: var(--text-dark);">Technologies and tools I work with</p>
     </div>
     
     <div class="skills-grid fade-in-up">
@@ -107,8 +107,8 @@ permalink: /about/
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Work Experience</h2>
-      <p>Professional roles and responsibilities</p>
+      <h2 style="color: var(--secondary);">Work Experience</h2>
+      <p style="color: var(--text-dark);">Professional roles and responsibilities</p>
     </div>
     
     <div class="experience-card fade-in-up">
@@ -130,8 +130,8 @@ permalink: /about/
 <section class="section">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Extracurricular Activities</h2>
-      <p>Communities and groups I'm actively involved with</p>
+      <h2 style="color: var(--secondary);">Extracurricular Activities</h2>
+      <p style="color: var(--text-dark);">Communities and groups I'm actively involved with</p>
     </div>
     
     <div class="activities-grid fade-in-up">
@@ -181,8 +181,8 @@ permalink: /about/
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2>Personal Interests</h2>
-      <p>Things I enjoy outside of academics and work</p>
+      <h2 style="color: var(--secondary);">Personal Interests</h2>
+      <p style="color: var(--text-dark);">Things I enjoy outside of academics and work</p>
     </div>
     
     <div class="interests-container fade-in-up">
@@ -241,15 +241,15 @@ permalink: /about/
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgba(0, 85, 255, 0.1);
-    color: #0055ff;
+    background-color: var(--secondary-light);
+    color: var(--primary);
     font-size: 1.2rem;
     transition: all 0.3s ease;
   }
   
   .social-link:hover {
-    background-color: #0055ff;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--text-dark);
     transform: translateY(-5px);
   }
   
@@ -363,8 +363,8 @@ permalink: /about/
   }
   
   .interest-tag {
-    background-color: white;
-    color: #0055ff;
+    background-color: var(--secondary-light);
+    color: var(--primary);
     padding: 0.75rem 1.5rem;
     border-radius: 50px;
     display: flex;
@@ -375,8 +375,8 @@ permalink: /about/
   }
   
   .interest-tag:hover {
-    background-color: #0055ff;
-    color: white;
+    background-color: var(--secondary);
+    color: var(--text-dark);
     transform: translateY(-5px);
   }
 </style> 
