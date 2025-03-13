@@ -6,48 +6,62 @@ permalink: /about/
 
 # About Me
 
-I'm a sophomore Computer Science student with a passion for technology and software development. I'm currently focusing on building a strong foundation in programming and computer science principles.
+I'm a Computer Science student at Virginia Commonwealth University, specializing in Artificial Intelligence. With hands-on experience in Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and prompt engineering, I'm passionate about developing AI solutions that enhance human-computer interaction.
 
 ## Education
 
-- **Bachelor of Science in Computer Science** (Expected graduation: 2026)
-  - Relevant coursework: Data Structures, Algorithms, Object-Oriented Programming, Database Systems
+- **Virginia Commonwealth University** (2023 - 2027)
+  - Bachelor of Science, Computer Science
+  - Minor in Artificial Intelligence
+  - In Major GPA: 4.0 (Overall GPA: 3.9)
+  - **Coursework**: Calculus 2, Data Structures & Object-Oriented Programming, Computer Systems, Computer Organization, Software Engineering
 
 ## Technical Skills
 
+- **AI/ML:**
+  - Large Language Models (LLMs)
+  - Retrieval-Augmented Generation (RAG)
+  - Prompt Engineering and Prompt Chaining
+  - PyTorch
+  - Machine Learning and Fine-Tuning
 - **Programming Languages:**
-  - Proficient in: Java, Python
-  - Familiar with: C++, SQL
-- **Web Development:**
-  - HTML, CSS, JavaScript (learning)
-- **Tools & Technologies:**
+  - Proficient in: Python, Java, C
+- **Frameworks & Tools:**
+  - Hugging Face
   - Git/GitHub
-  - Visual Studio Code
-  - Linux/Unix
+  - Requests
+  - Ollama
+- **System & DevOps:**
+  - Linux System Administration
+  - Shell Scripting
+  - Version Control (Git)
+- **Soft Skills:**
+  - Problem-Solving
+  - Teamwork
+  - Critical Thinking
+  - Adaptability
+  - Time Management
+  - Communication
+
+## Work Experience
+
+**Fire Sprinkler Service | Technical Inspector Assistant** (May 2023 - Present)
+- Conducted thorough building inspections that successfully identified and resolved leak issues, enhancing structural safety
+- Ensured optimal functionality of fire sprinkler heads through regular maintenance and proactive repair, leading to improved system reliability and safety
+- Efficiently disassembled and repaired sprinkler system components, contributing to reliable fire safety operations
+
+## Extracurricular Activities
+
+- **AI Community:** Active member of Ollama, Anthropic, and OpenAI Discord servers discussing latest prompting and language model techniques
+- **Linux Command Line:** Completed certification in essential Linux commands, gaining skills in system management and administration
+- **VCU Grappling Club:** Competed in tournaments, demonstrating discipline and resilience
+- **VCU Inter-Varsity:** Engaged in campus outreach events, fostering teamwork and leadership skills
+- **Cyber CTF:** Participated in RAM CTF Cyber-Security Competition
 
 ## Interests
 
-- Software Development
-- Artificial Intelligence
-- Web Development
-- Data Science
-- Open Source Projects
-
-## Personal Projects
-
-Here are some of the projects I've worked on during my studies:
-
-1. **Project Name** - Brief description of what it does and technologies used
-2. **Project Name** - Brief description of what it does and technologies used
-
-[View all my projects](/projects)
-
-## Goals
-
-As a developing computer scientist, I aim to:
-- Continue expanding my technical knowledge
-- Contribute to impactful open-source projects
-- Develop applications that solve real-world problems
-- Collaborate with other passionate developers
+- Gaming
+- Building Computers
+- Sports: Soccer, Brazilian Jiu-Jitsu, Wrestling
 
 Feel free to [contact me](/contact) if you'd like to connect or collaborate on a project! 

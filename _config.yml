@@ -18,14 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My CS Portfolio
-email: your-email@example.com
+title: Ian Mullins | AI & Computer Science
+email: mullinsij@vcu.edu
 description: >-
-  A portfolio website showcasing my computer science projects, skills, and experience.
+  Computer Science student specializing in Artificial Intelligence with experience in 
+  Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and prompt engineering.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: yourtwitterhandle
-github_username:  yourgithubusername
+twitter_username: 
+github_username: RFlash007
+linkedin_username: ianjcmullins
 
 # Build settings
 theme: minima

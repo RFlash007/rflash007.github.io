@@ -3,28 +3,34 @@ layout: home
 title: Home
 ---
 
-# Welcome to My Portfolio
+# Ian Joseph-Carl Mullins
 
-I'm a sophomore Computer Science student passionate about technology and software development.
+Computer Science student specializing in Artificial Intelligence with hands-on experience in Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and prompt engineering.
 
-## Skills
+## Expertise
 
-- Programming Languages: Java, Python, C++
-- Web Development: HTML, CSS, JavaScript (learning)
-- Tools: Git, GitHub
+- **AI/ML**: Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), Prompt Engineering, Prompt Chaining, PyTorch, Machine Learning, Fine-Tuning
+- **Programming**: Python, Java, C
+- **Frameworks & Tools**: Hugging Face, Git/GitHub, Requests, Ollama
+- **System & DevOps**: Linux System Administration, Shell Scripting, Version Control (Git)
 
-## Projects
+## Featured Projects
 
-Check out my [projects](/projects) to see what I've been working on!
+### LLM Personal Assistant with RAG Database
+Built on Qwen 2.5:14b Model using Ollama API with integrated custom relational database for memory-based contextual responses.
 
-## About Me
+### RoBERTa Fine-tune for Emotion Detection
+Developed an emotion detection system using RoBERTa model fine-tuned on tweet_eval/emotion dataset with 81.5% accuracy.
 
-I'm currently pursuing my Computer Science degree, focusing on expanding my knowledge and building practical skills. I enjoy solving problems and creating useful applications.
+[View all projects](/projects)
 
-[Learn more about me](/about)
+## Education
+
+**Virginia Commonwealth University** (2023 - 2027)  
+Bachelor of Science, Computer Science | Minor in Artificial Intelligence  
+GPA: 3.9 (In Major GPA: 4.0)
 
 ## Contact
 
-Feel free to reach out if you'd like to collaborate or have any questions!
-
-[Contact me](/contact) 
+Based in Mechanicsville, VA  
+[Contact me](/contact) for collaboration opportunities or questions about my work. 
