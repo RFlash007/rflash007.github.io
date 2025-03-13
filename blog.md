@@ -70,31 +70,4 @@ permalink: /blog/
       </a>
     </div>
   </div>
-</section>
-
-<section class="section bg-light">
-  <div class="wrapper">
-    <div class="section-title">
-      <h2 style="color: var(--secondary);">Newsletter</h2>
-      <p style="color: var(--text-dark);">Stay updated with the latest articles and insights</p>
-    </div>
-    
-    <div class="card" style="max-width: 600px; margin: 0 auto;">
-      <h3 class="text-center" style="color: var(--text-dark);">Subscribe to My Newsletter</h3>
-      <p class="text-center" style="color: var(--text-dark);">Get notified when I publish new articles about AI, computer science, and technology.</p>
-      
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="newsletter-email" class="form-label">Email Address</label>
-          <input type="email" id="newsletter-email" class="form-control" required placeholder="your@email.com">
-        </div>
-        
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary btn-icon">
-            <i class="fas fa-envelope"></i> Subscribe
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
 </section> 

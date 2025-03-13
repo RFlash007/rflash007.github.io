@@ -3,7 +3,7 @@
   --primary: #0D3B66; /* Navy */
   --primary-light: rgba(13, 59, 102, 0.1);
   --secondary: #F4D35E; /* Yellow */
-  --secondary-light: rgba(244, 211, 94, 0.2);
+  --secondary-light: rgba(244, 211, 94, 0.4);
   --accent: #EE964B; /* Soft orange as a complementary accent */
   --bg-dark: #0D3B66; /* Navy */
   --bg-light: #F5F5DC; /* Beige */
@@ -513,8 +513,8 @@ pre code {
 /* Projects */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: var(--spacing-lg);
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: var(--spacing-xl);
 }
 
 .project-card {
@@ -525,6 +525,7 @@ pre code {
   overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
+  height: 100%;
 }
 
 .project-card:hover {
@@ -549,12 +550,15 @@ pre code {
 }
 
 .project-content {
-  padding: var(--spacing-lg);
+  padding: var(--spacing-xl);
   background-color: var(--bg-white);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-title {
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
   color: var(--text-dark);
   font-size: 1.7rem;
   font-weight: 700;
@@ -572,9 +576,10 @@ pre code {
 
 .project-description {
   color: var(--text-dark);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
   line-height: 1.7;
   font-size: 1.1rem;
+  flex-grow: 1;
 }
 
 .project-content ul.feature-list {

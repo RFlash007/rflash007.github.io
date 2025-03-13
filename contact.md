@@ -11,106 +11,71 @@ permalink: /contact/
       <p style="color: var(--text-dark);">I'd love to hear from you! Feel free to reach out for collaborations, questions, or just to say hello.</p>
     </div>
     
-    <div class="two-column-grid">
-      <div class="contact-info fade-in-right">
-        <div class="card">
-          <h3 style="color: var(--text-dark);">Contact Information</h3>
-          <p style="color: var(--text-dark);">You can reach me through any of these channels:</p>
-          
-          <ul style="list-style: none; margin-left: 0;">
-            <li style="margin-bottom: 1.5rem;">
-              <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.25rem;"></i>
-                </div>
-                <div>
-                  <h4 style="margin: 0;">Email</h4>
-                  <a href="mailto:ianjcmullins@gmail.com">ianjcmullins@gmail.com</a>
-                </div>
-              </div>
-            </li>
-            
-            <li style="margin-bottom: 1.5rem;">
-              <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <i class="fab fa-github" style="color: var(--primary); font-size: 1.25rem;"></i>
-                </div>
-                <div>
-                  <h4 style="margin: 0;">GitHub</h4>
-                  <a href="https://github.com/RFlash007" target="_blank">github.com/RFlash007</a>
-                </div>
-              </div>
-            </li>
-            
-            <li style="margin-bottom: 1.5rem;">
-              <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <i class="fab fa-linkedin" style="color: var(--primary); font-size: 1.25rem;"></i>
-                </div>
-                <div>
-                  <h4 style="margin: 0;">LinkedIn</h4>
-                  <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank">linkedin.com/in/ianjcmullins</a>
-                </div>
-              </div>
-            </li>
-            
-            <li>
-              <div style="display: flex; align-items: center;">
-                <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
-                  <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 1.25rem;"></i>
-                </div>
-                <div>
-                  <h4 style="margin: 0;">Location</h4>
-                  <p style="margin: 0;">Richmond, Virginia</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <div class="contact-info fade-in-right" style="max-width: 800px; margin: 0 auto;">
+      <div class="card">
+        <h3 style="color: var(--text-dark);">Contact Information</h3>
+        <p style="color: var(--text-dark);">You can reach me through any of these channels:</p>
         
-        <div class="card" style="margin-top: 2rem;">
-          <h3 style="color: var(--text-dark);">Current Status</h3>
-          <p style="color: var(--text-dark);">I'm currently:</p>
-          <ul style="color: var(--text-dark);">
-            <li>Studying Computer Science at Virginia Commonwealth University</li>
-            <li>Open to internship opportunities in AI and software development</li>
-            <li>Available for research collaborations in machine learning</li>
-            <li>Interested in connecting with fellow AI enthusiasts</li>
-          </ul>
-        </div>
+        <ul style="list-style: none; margin-left: 0;">
+          <li style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">Email</h4>
+                <a href="mailto:mullinsij@vcu.edu">mullinsij@vcu.edu</a>
+              </div>
+            </div>
+          </li>
+          
+          <li style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fab fa-github" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">GitHub</h4>
+                <a href="https://github.com/RFlash007" target="_blank">github.com/RFlash007</a>
+              </div>
+            </div>
+          </li>
+          
+          <li style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fab fa-linkedin" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank">linkedin.com/in/ianjcmullins</a>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">Location</h4>
+                <p style="margin: 0;">Richmond, Virginia</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
       
-      <div class="contact-form-container fade-in-up">
-        <div class="card">
-          <h3 style="color: var(--text-dark);">Send Me a Message</h3>
-          <p style="color: var(--text-dark);">Fill out the form below and I'll get back to you as soon as possible.</p>
-          
-          <form class="contact-form" action="https://formspree.io/f/xdoqgkrw" method="POST">
-            <div class="form-group">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" id="email" name="_replyto" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="subject" class="form-label">Subject</label>
-              <input type="text" id="subject" name="subject" class="form-control" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="message" class="form-label">Message</label>
-              <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-icon">
-              <i class="fas fa-paper-plane"></i> Send Message
-            </button>
-          </form>
-        </div>
+      <div class="card" style="margin-top: 2rem;">
+        <h3 style="color: var(--text-dark);">Current Status</h3>
+        <p style="color: var(--text-dark);">I'm currently:</p>
+        <ul style="color: var(--text-dark);">
+          <li>Studying Computer Science at Virginia Commonwealth University</li>
+          <li>Open to internship opportunities in AI and software development</li>
+          <li>Available for research collaborations in machine learning</li>
+          <li>Interested in connecting with fellow AI enthusiasts</li>
+        </ul>
       </div>
     </div>
   </div>

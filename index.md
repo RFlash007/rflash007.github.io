@@ -133,7 +133,7 @@ layout: home
           <ul style="list-style: none; margin-left: 0;">
             <li style="margin-bottom: 1rem;">
               <i class="fas fa-envelope" style="color: var(--secondary); margin-right: 0.5rem;"></i>
-              <a href="mailto:ianjcmullins@gmail.com">ianjcmullins@gmail.com</a>
+              <a href="mailto:mullinsij@vcu.edu">mullinsij@vcu.edu</a>
             </li>
             <li style="margin-bottom: 1rem;">
               <i class="fab fa-github" style="color: var(--secondary); margin-right: 0.5rem;"></i>
