@@ -1,0 +1,171 @@
+# Building Your Computer Science Portfolio Website: A Complete Guide
+
+## Portfolio Website Development Plan
+
+### PHASE 1: SETUP AND PLANNING
+
+**Step 1: Define Your Website Structure**
+- Homepage with introduction - Yes
+- Projects section (with detailed pages for each project) - Yes
+- Skills/Experience section - Yes
+- About Me section - Yes
+- Contact information - Yes
+- Blog section for technical posts and technical paper's
+
+**Step 2: Choose Your Development Approach**
+For a beginner with no web development experience, I recommend starting with one of these options:
+
+**OPTION A: Static Site Generator (Recommended)**
+- Use **GitHub Pages** with **Jekyll** 
+- Advantages: Free hosting, version control, beginner-friendly templates, supports Markdown
+- Perfect for CS portfolios and technical documentation
+
+Let's proceed with Option A as it's free, developer-focused, and provides valuable experience with tools that are relevant to your field.
+
+### PHASE 2: LOCAL DEVELOPMENT ENVIRONMENT SETUP
+
+**Step 1: Install Required Software**
+1. **Git** - Download and install from [git-scm.com](https://git-scm.com/)
+2. **GitHub Desktop** (optional but helpful) - [desktop.github.com](https://desktop.github.com/)
+3. **Visual Studio Code** - [code.visualstudio.com](https://code.visualstudio.com/)
+4. **Ruby** - Required for Jekyll, install from [ruby-lang.org](https://www.ruby-lang.org/en/downloads/)
+
+**Step 2: Set Up GitHub Account and Repository**
+1. Create a GitHub account if you don't have one at [github.com](https://github.com/)
+2. Create a new repository named `yourusername.github.io` (replace yourusername with your GitHub username)
+3. Clone the repository to your local machine
+
+**Step 3: Install Jekyll**
+1. Open a terminal or command prompt
+2. Install Bundler and Jekyll gems:
+   ```bash
+   gem install bundler jekyll
+   ```
+3. Navigate to your repository folder and create a new Jekyll site:
+   ```bash
+   cd yourusername.github.io
+   jekyll new .
+   ```
+4. Test your site locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+5. View your site at http://localhost:4000
+
+### PHASE 3: CUSTOMIZING YOUR SITE
+
+**Step 1: Choose a Professional Theme**
+1. Browse Jekyll themes at [jekyllthemes.io](https://jekyllthemes.io/) or [themes.jekyllrc.org](http://themes.jekyllrc.org/)
+2. Look for themes like "Minimal", "Hacker", "Slate", or "Academic" - these have clean, professional, technical aesthetics
+3. Follow the theme's installation instructions (typically modifying _config.yml)
+
+**Step 2: Customize Site Configuration**
+1. Edit the `_config.yml` file to add:
+   - Your name and title (e.g., "John Doe | Computer Science Student")
+   - Short bio
+   - Social media links
+   - Contact information
+
+**Step 3: Create Core Content Pages**
+1. **Homepage (_pages/home.md)**: Brief introduction and overview
+2. **About Me (_pages/about.md)**: More detailed background, education, interests
+3. **Projects (_pages/projects.md)**: List of projects with descriptions
+4. **Skills (_pages/skills.md)**: Technical skills, languages, tools
+5. **Contact (_pages/contact.md)**: How to reach you
+
+**Step 4: Create Individual Project Pages**
+For each project, create a detailed page including:
+- Project name and description
+- Technologies used
+- Your role and contributions
+- Challenges and solutions
+- Links to GitHub repositories
+- Screenshots or demos if applicable
+
+**Step 5: Add Visual Elements**
+1. **Logo/Avatar**: A professional photo or custom logo
+2. **Color Scheme**: Choose a professional palette (suggestions: blue-gray with accent colors, dark mode theme)
+3. **Typography**: Clean, readable fonts (Roboto, Source Sans Pro, or Open Sans)
+4. **Icons**: Use technology icons to visually represent your skills
+
+### PHASE 4: DEPLOYMENT AND GOING LIVE
+
+**Step 1: Prepare for Deployment**
+1. Ensure all links work correctly
+2. Check for responsive design (how it looks on mobile)
+3. Proofread all content
+
+**Step 2: Deploy to GitHub Pages**
+1. Commit all changes to your local repository:
+   ```bash
+   git add .
+   git commit -m "Initial portfolio website"
+   ```
+2. Push to GitHub:
+   ```bash
+   git push origin main
+   ```
+3. Enable GitHub Pages in your repository settings:
+   - Go to your repository on GitHub
+   - Navigate to Settings > Pages
+   - Set source to "main branch"
+   - Save
+
+**Step 3: Connect Custom Domain (Optional)**
+1. Purchase a domain from Namecheap, Google Domains, or similar (~$10-15/year)
+2. Add domain in GitHub Pages settings
+3. Configure DNS settings with your domain provider
+
+### PHASE 5: MAINTENANCE AND BLOG ADDITION
+
+**Step 1: Set Up Blog Section**
+1. Jekyll supports blogging out of the box with the `_posts` directory
+2. Create new posts in markdown format with filename format: `YYYY-MM-DD-title.md`
+3. Include front matter at the top of each post:
+   ```yaml
+   ---
+   layout: post
+   title: "Your Post Title"
+   date: YYYY-MM-DD
+   categories: [category1, category2]
+   ---
+   ```
+
+**Step 2: Regular Updates**
+1. Keep your projects section up-to-date as you complete new work
+2. Post to your blog regularly with technical content
+3. Update your skills as you learn new technologies
+
+### ALTERNATIVE OPTIONS
+
+If you find Jekyll challenging, consider these alternatives:
+
+**Option 1: HTML5 UP Templates + GitHub Pages**
+1. Download a free template from [HTML5 UP](https://html5up.net/)
+2. Customize the HTML and CSS files
+3. Deploy to GitHub Pages as above
+
+**Option 2: Simple Static Site Generators**
+- **Hugo** - Faster than Jekyll, but similar concept
+- **Gatsby** - JavaScript-based, more modern but slightly steeper learning curve
+
+**Option 3: Managed Services (Paid but Easy)**
+- **GitHub Pages + GitHub Codespaces** - Code in the browser
+- **Netlify Drop** - Drag and drop deployment
+- **Vercel** - Simple deployment platform with free tier
+
+## LEARNING RESOURCES
+
+To help you understand the basics of web development:
+
+1. **HTML/CSS Fundamentals**:
+   - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Learn)
+   - [W3Schools](https://www.w3schools.com/)
+
+2. **Jekyll Tutorials**:
+   - [Jekyll Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/)
+   - [Jekyll Video Tutorial Series](https://www.youtube.com/watch?v=T1itpPvFWHI&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB)
+
+3. **Git and GitHub**:
+   - [GitHub Skills](https://skills.github.com/)
+   - [Git Handbook](https://guides.github.com/introduction/git-handbook/) 
