@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="header-container">
       <a href="/" class="site-title">
-        Ian<span>Mullins</span>
+        <span class="title-name">Ian</span><span class="title-highlight">Mullins</span>
         <span class="site-subtitle">Computer Science Student</span>
       </a>
       
@@ -12,12 +12,12 @@
       
       <nav class="main-navigation">
         <ul>
+          <li><a href="/">Home</a></li>
           {% for page in site.pages %}
             {% if page.title and page.title != "Home" %}
               <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
             {% endif %}
           {% endfor %}
-          <li><a href="/">Home</a></li>
         </ul>
       </nav>
     </div>
