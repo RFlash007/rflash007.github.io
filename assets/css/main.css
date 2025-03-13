@@ -4,9 +4,9 @@
   --primary-light: rgba(0, 85, 255, 0.1);
   --secondary: #162447;
   --accent: #ff7b00;
-  --text-dark: #1a202c;
-  --text-light: #718096;
-  --text-lighter: #a0aec0;
+  --text-dark: #333333;
+  --text-light: #4a5568;
+  --text-lighter: #718096;
   --bg-light: #f8fafc;
   --bg-white: #ffffff;
   --shadow-sm: 0 5px 10px rgba(0, 0, 0, 0.05);
@@ -960,7 +960,7 @@ textarea.form-control {
 }
 
 .blog-excerpt {
-  color: var(--text-light);
+  color: var(--text-dark);
   margin-bottom: var(--spacing-md);
   flex-grow: 1;
 }
@@ -1109,16 +1109,23 @@ textarea.form-control {
 .blog-excerpt, .card p, .project-description, .testimonial-text, .feature-description {
   font-size: 1.05rem;
   line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.about-content p, .education-details p, .experience-card p, .activity-card p {
+  color: var(--text-dark);
+  font-weight: 500;
 }
 
 .blog-title, .card h3, .project-title, h1, h2, h3, h4, h5, h6 {
   line-height: 1.4;
+  color: var(--text-dark);
 }
 
 /* Improve contrast in dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-dark: #f8fafc;
+    --text-dark: #e2e8f0;
     --text-light: #cbd5e1;
     --text-lighter: #94a3b8;
     --bg-light: #1e293b;

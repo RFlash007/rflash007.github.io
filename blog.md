@@ -22,10 +22,6 @@ permalink: /blog/
     
     <div class="blog-grid">
       <div class="blog-card fade-in-up">
-        <div class="blog-image">
-          <img src="/assets/images/blog-ollama.jpg" alt="Locally Run LLMs Using Ollama">
-          <div class="blog-date">July 10, 2024</div>
-        </div>
         <div class="blog-content">
           <h2 class="blog-title">Locally Run LLMs Using Ollama</h2>
           <div class="blog-tags">
@@ -36,9 +32,6 @@ permalink: /blog/
           <p class="blog-excerpt">Ollama is a software tool that lets you run large language models (LLMs) directly on your own computer. It supports any open-source model that your hardware can handle. This means that, unlike enterprise/cloud-based models like ChatGPT, Grok, or Claude, your data stays on your computer, offering better privacy and control...</p>
           <div class="blog-footer">
             <div class="blog-author">
-              <div class="blog-author-avatar">
-                <img src="/assets/images/unnamed.jpg" alt="Ian Mullins">
-              </div>
               <span class="blog-author-name">Ian Mullins</span>
             </div>
             <a href="/blog/2024/07/10/locally-run-llms-using-ollama/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
@@ -47,10 +40,6 @@ permalink: /blog/
       </div>
       
       <div class="blog-card fade-in-up" style="animation-delay: 0.4s;">
-        <div class="blog-image">
-          <img src="/assets/images/blog-prompt-engineering.jpg" alt="The Art of Prompt Engineering">
-          <div class="blog-date">May 10, 2024</div>
-        </div>
         <div class="blog-content">
           <h2 class="blog-title">The Art of Prompt Engineering: Crafting Effective Instructions</h2>
           <div class="blog-tags">
@@ -61,9 +50,6 @@ permalink: /blog/
           <p class="blog-excerpt">Prompt engineering has evolved into a crucial skill for AI practitioners. This post explores advanced techniques for creating prompts that elicit the best responses from language models...</p>
           <div class="blog-footer">
             <div class="blog-author">
-              <div class="blog-author-avatar">
-                <img src="/assets/images/unnamed.jpg" alt="Ian Mullins">
-              </div>
               <span class="blog-author-name">Ian Mullins</span>
             </div>
             <a href="/blog/2024/03/12/prompt-engineering-techniques/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
@@ -111,20 +97,4 @@ permalink: /blog/
       </form>
     </div>
   </div>
-</section>
-
-<script>
-  // Create placeholder images for blog posts
-  document.addEventListener('DOMContentLoaded', function() {
-    // This is just for development, you would replace these with actual images
-    const blogImages = document.querySelectorAll('.blog-image img');
-    
-    blogImages.forEach(img => {
-      const src = img.getAttribute('src');
-      if (src.includes('blog-') && !src.includes('http')) {
-        // For now, use a placeholder
-        img.setAttribute('src', '/assets/images/project-portfolio.jpg');
-      }
-    });
-  });
-</script> 
+</section> 
