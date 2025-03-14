@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Research Project Proposal: Exploring Local LLMs with Ollama"
-date: 2024-07-10 09:00:00 -0400
+date: 2025-03-12 09:00:00 -0400
 categories: research llm ai
 tags: [ollama, llm, ai, privacy, research, class-project]
 ---
