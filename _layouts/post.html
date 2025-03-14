@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="post">
+<div class="blog-post-container">
   <header class="post-header">
     <div class="wrapper">
       <a href="/blog" class="btn btn-outline btn-icon" style="margin-bottom: 2rem;">
@@ -20,7 +20,7 @@ layout: default
     </div>
   </header>
 
-  <section class="section">
+  <section class="blog-section">
     <div class="wrapper">
       <article class="post">
         <header class="post-header">
@@ -80,6 +80,12 @@ layout: default
 </div>
 
 <style>
+  .blog-post-container {
+    background-color: var(--bg-light);
+    padding-bottom: var(--spacing-3xl);
+    padding-top: var(--spacing-lg);
+  }
+  
   .post {
     background-color: var(--bg-white);
     border-radius: var(--border-radius-lg);
@@ -88,8 +94,8 @@ layout: default
     margin-top: var(--spacing-xl);
   }
   
-  .section {
-    background-color: var(--bg-light);
+  .blog-section {
+    padding-top: var(--spacing-md);
     padding-bottom: var(--spacing-2xl);
   }
   
@@ -266,12 +272,17 @@ layout: default
   
   /* Dark mode adjustments */
   @media (prefers-color-scheme: dark) {
+    .blog-post-container {
+      background-color: var(--bg-dark);
+    }
+    
     .post {
       background-color: var(--bg-white);
+      color: var(--text-light);
     }
     
     .post-content h2, .post-content h3, .post-content h4 {
-      color: var(--text-light);
+      color: var(--secondary);
     }
     
     .post-meta, .post-previous, .post-next {

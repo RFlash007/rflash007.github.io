@@ -43,7 +43,7 @@ permalink: /about/
         <i class="fas fa-university"></i>
       </div>
       <div class="education-details">
-        <h3>Virginia Commonwealth University (2023 - 2027)</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">Virginia Commonwealth University (2023 - 2027)</h3>
         <p><strong>Bachelor of Science, Computer Science</strong> | Minor in Artificial Intelligence</p>
         <p><strong>GPA:</strong> 3.9 (In Major GPA: 4.0)</p>
         <p><strong>Key Coursework:</strong> Calculus 2, Data Structures & Object-Oriented Programming, Computer Systems, Computer Organization, Software Engineering</p>
@@ -60,7 +60,7 @@ permalink: /about/
     </div>
     
     <div class="skills-grid fade-in-up">
-      <div class="skill-category">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
         <h3 style="color: var(--secondary); font-weight: 700;">AI & Machine Learning</h3>
         <div class="skill-container">
           <span class="skill-tag">Large Language Models (LLMs)</span>
@@ -73,7 +73,7 @@ permalink: /about/
         </div>
       </div>
       
-      <div class="skill-category">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
         <h3 style="color: var(--secondary); font-weight: 700;">Programming Languages</h3>
         <div class="skill-container">
           <span class="skill-tag">Python</span>
@@ -82,7 +82,7 @@ permalink: /about/
         </div>
       </div>
       
-      <div class="skill-category">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
         <h3 style="color: var(--secondary); font-weight: 700;">Tools & Frameworks</h3>
         <div class="skill-container">
           <span class="skill-tag">Hugging Face</span>
@@ -92,7 +92,7 @@ permalink: /about/
         </div>
       </div>
       
-      <div class="skill-category">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
         <h3 style="color: var(--secondary); font-weight: 700;">System & DevOps</h3>
         <div class="skill-container">
           <span class="skill-tag">Linux Administration</span>
@@ -270,7 +270,7 @@ permalink: /about/
   
   .education-icon {
     font-size: 2.5rem;
-    color: #0055ff;
+    color: var(--secondary);
     flex-shrink: 0;
   }
   
@@ -282,6 +282,18 @@ permalink: /about/
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
+  }
+  
+  .skill-category {
+    transition: var(--transition);
+    box-shadow: var(--shadow-md);
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius-lg);
+  }
+  
+  .skill-category:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
   }
   
   .skill-category h3 {
@@ -346,8 +358,8 @@ permalink: /about/
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(0, 85, 255, 0.1);
-    color: #0055ff;
+    background-color: var(--secondary-light);
+    color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
