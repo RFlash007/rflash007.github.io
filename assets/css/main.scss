@@ -1890,7 +1890,7 @@ img {
   }
 }
 
-/* Safari-specific fixes */
+/* Safari and iOS specific fixes */
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
   .main-navigation {
@@ -1901,143 +1901,123 @@ img {
     max-width: 300px;
     height: 100vh;
     background-color: #191919 !important;
-    z-index: 1000;
-    transition: right 0.3s ease;
-    padding-top: 60px;
+    padding-top: 70px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    z-index: 1000;
+    transition: right 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
     
     &.active {
       right: 0;
-      display: block;
+      opacity: 1;
+      display: block !important;
     }
     
-    .navigation-list {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      margin: 0;
-      padding: 0;
+    ul, .navigation-list {
+      display: flex !important;
+      flex-direction: column !important;
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
       
       li {
-        margin: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
         
         a {
-          display: block;
-          padding: 12px 15px;
-          color: white;
-          font-size: 16px;
-          text-decoration: none;
-          border-bottom: 1px solid rgba(255,255,255,0.1);
+          display: block !important;
+          padding: 15px !important;
+          color: white !important;
+          font-size: 18px !important;
+          font-weight: 500 !important;
+          text-decoration: none !important;
+          border-bottom: 1px solid rgba(255,255,255,0.1) !important;
           
-          &:hover {
-            color: $accent-color;
+          &:hover, &.active {
+            color: $accent-color !important;
+            background-color: rgba(255,255,255,0.05) !important;
           }
         }
       }
     }
   }
   
-  /* Fix for the menu toggle button */
-  .navbar-toggle {
-    display: block;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
-    
-    span {
-      display: block;
-      width: 25px;
-      height: 2px;
-      margin-bottom: 5px;
-      background-color: white;
-      border-radius: 1px;
-      transition: all 0.3s ease;
-      
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
-    
-    &.active {
-      span {
-        &:first-child {
-          transform: rotate(45deg) translate(5px, 5px);
-        }
-        
-        &:nth-child(2) {
-          opacity: 0;
-        }
-        
-        &:last-child {
-          transform: rotate(-45deg) translate(5px, -5px);
-        }
-      }
-    }
-  }
-  
-  /* Fix for body scroll lock */
-  body.menu-open {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  /* Overlay for when menu is active */
-  .main-navigation::before {
+  /* Overlay for Safari */
+  body.menu-open::before {
     content: '';
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
   }
   
-  .main-navigation.active::before {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  /* Fix for Safari header */
-  .site-header {
-    position: sticky;
-    -webkit-position: sticky;
-    top: 0;
-    z-index: 100;
+  /* Hamburger menu styling for Safari */
+  .navbar-toggle {
+    background: transparent !important;
+    border: none !important;
+    padding: 10px !important;
+    z-index: 1001 !important;
+    
+    span {
+      display: block !important;
+      width: 25px !important;
+      height: 3px !important;
+      margin-bottom: 5px !important;
+      background-color: $secondary-color !important;
+      border-radius: 1px !important;
+      transition: all 0.3s ease !important;
+      
+      &:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    
+    &.active {
+      span {
+        &:first-child {
+          transform: rotate(45deg) translate(5px, 5px) !important;
+        }
+        
+        &:nth-child(2) {
+          opacity: 0 !important;
+        }
+        
+        &:last-child {
+          transform: rotate(-45deg) translate(5px, -5px) !important;
+        }
+      }
+    }
   }
 }
 
-/* Improve mobile navigation for all browsers */
+/* Force mobile navigation display in Safari with important flags */
 @media (max-width: 768px) {
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-  
-  .site-title {
-    z-index: 99;
-  }
-  
-  .navigation-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
   .main-navigation {
-    &.active {
-      display: block;
+    display: block;
+    
+    &:not(.active) {
+      right: -100%;
     }
+    
+    &.active {
+      right: 0;
+      opacity: 1;
+    }
+    
+    .navigation-list {
+      display: flex !important;
+    }
+  }
+  
+  .navbar-toggle {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    height: 20px !important;
   }
 } 

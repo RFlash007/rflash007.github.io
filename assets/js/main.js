@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+  console.log("DOM Content Loaded");
+  
   // Device detection helpers
   const isMobile = {
     Android: function() {
@@ -75,18 +77,56 @@ document.addEventListener('DOMContentLoaded', function() {
   // Mobile navigation toggle with enhanced Safari support
   const navbarToggle = document.querySelector('.navbar-toggle');
   const mainNav = document.querySelector('.main-navigation');
+  const navigationList = document.querySelector('.navigation-list');
+  
+  console.log("Navigation elements:", {
+    toggle: navbarToggle ? "Found" : "Not found",
+    nav: mainNav ? "Found" : "Not found",
+    list: navigationList ? "Found" : "Not found"
+  });
+  
+  // Safari-specific navigation fix
+  if (isMobile.Safari() && mainNav) {
+    console.log("Applying Safari-specific fixes");
+    
+    // Force navigation display style on Safari
+    mainNav.style.display = "block";
+    mainNav.style.right = "-100%";
+    mainNav.style.opacity = "0";
+    
+    if (navigationList) {
+      navigationList.style.display = "flex";
+      navigationList.style.flexDirection = "column";
+    }
+    
+    // Set all navigation items to be visible with proper styling
+    const navItems = mainNav.querySelectorAll('a');
+    navItems.forEach(item => {
+      item.style.color = "#FFFFFF";
+      item.style.display = "block";
+      item.style.padding = "15px";
+      item.style.borderBottom = "1px solid rgba(255,255,255,0.1)";
+    });
+  }
   
   if (navbarToggle && mainNav) {
+    // Check navigation visibility as a debug measure
+    console.log("Initial nav state:", {
+      display: window.getComputedStyle(mainNav).display,
+      right: window.getComputedStyle(mainNav).right,
+      opacity: window.getComputedStyle(mainNav).opacity
+    });
+    
     // Force repaint to fix Safari initial rendering
     setTimeout(() => {
-      mainNav.style.display = 'block';
-      mainNav.style.right = '-100%';
-      
-      // Force repaint
-      void mainNav.offsetWidth;
-      
-      if (!mainNav.classList.contains('active')) {
-        mainNav.style.display = '';
+      if (isMobile.Safari() || isMobile.iOS()) {
+        console.log("Forcing repaint for Safari");
+        mainNav.style.display = "block";
+        mainNav.style.right = "-100%";
+        mainNav.style.opacity = "0";
+        
+        // Force repaint
+        void mainNav.offsetWidth;
       }
     }, 50);
     
@@ -101,12 +141,22 @@ document.addEventListener('DOMContentLoaded', function() {
       navbarToggle.classList.toggle('active');
       document.body.classList.toggle('menu-open');
       
-      // Handle scroll locking (especially important for iOS Safari)
-      if (document.body.classList.contains('menu-open')) {
+      // Toggle additional navigation styles for Safari
+      if (mainNav.classList.contains('active')) {
+        console.log("Opening menu");
+        mainNav.style.right = "0";
+        mainNav.style.opacity = "1";
+        
+        // Handle scroll locking (especially important for iOS Safari)
         if (isMobile.iOS() || isMobile.Safari()) {
           lockScroll();
         }
       } else {
+        console.log("Closing menu");
+        mainNav.style.right = "-100%";
+        mainNav.style.opacity = "0";
+        
+        // Handle scroll unlocking
         if (isMobile.iOS() || isMobile.Safari()) {
           unlockScroll();
         }
@@ -115,6 +165,16 @@ document.addEventListener('DOMContentLoaded', function() {
       // Toggle aria-expanded attribute for accessibility
       const expanded = navbarToggle.getAttribute('aria-expanded') === 'true' || false;
       navbarToggle.setAttribute('aria-expanded', !expanded);
+      
+      // Check navigation visibility after toggle as a debug measure
+      setTimeout(() => {
+        console.log("Nav state after toggle:", {
+          display: window.getComputedStyle(mainNav).display,
+          right: window.getComputedStyle(mainNav).right,
+          opacity: window.getComputedStyle(mainNav).opacity,
+          isActive: mainNav.classList.contains('active')
+        });
+      }, 50);
     });
     
     // Initialize aria-expanded attribute
@@ -131,6 +191,12 @@ document.addEventListener('DOMContentLoaded', function() {
         navbarToggle.classList.remove('active');
         document.body.classList.remove('menu-open');
         navbarToggle.setAttribute('aria-expanded', 'false');
+        
+        // Additional style removal for Safari
+        if (isMobile.Safari() || isMobile.iOS()) {
+          mainNav.style.right = "-100%";
+          mainNav.style.opacity = "0";
+        }
         
         // Handle scroll unlocking on iOS/Safari
         if (isMobile.iOS() || isMobile.Safari()) {
@@ -150,6 +216,12 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.remove('menu-open');
       navbarToggle.setAttribute('aria-expanded', 'false');
       
+      // Additional style removal for Safari
+      if (isMobile.Safari() || isMobile.iOS()) {
+        mainNav.style.right = "-100%";
+        mainNav.style.opacity = "0";
+      }
+      
       // Handle scroll unlocking on iOS/Safari
       if (isMobile.iOS() || isMobile.Safari()) {
         unlockScroll();
@@ -168,6 +240,13 @@ document.addEventListener('DOMContentLoaded', function() {
           // Close the menu when a menu item is clicked
           if (mainNav) {
             mainNav.classList.remove('active');
+            
+            // Additional style removal for Safari
+            if (isMobile.Safari() || isMobile.iOS()) {
+              mainNav.style.right = "-100%";
+              mainNav.style.opacity = "0";
+            }
+            
             if (navbarToggle) {
               navbarToggle.classList.remove('active');
               navbarToggle.setAttribute('aria-expanded', 'false');
