@@ -1,24 +1,53 @@
 /* Base Styles */
 :root {
-  --primary: #0D3B66; /* Navy */
-  --primary-light: rgba(13, 59, 102, 0.1);
-  --secondary: #F4D35E; /* Yellow */
-  --secondary-light: rgba(244, 211, 94, 0.7); /* Increased opacity from 0.4 to 0.7 */
-  --accent: #EE964B; /* Soft orange as a complementary accent */
-  --bg-dark: #0D3B66; /* Navy */
-  --bg-light: #F5F5DC; /* Beige */
-  --bg-white: #FFFDF6; /* Off-white/lighter beige */
-  --text-dark: #0D3B66; /* Navy for text on light backgrounds */
-  --text-light: #F5F5DC; /* Beige for text on dark backgrounds */
-  --text-lighter: #FFFDF6; /* Off-white for text on dark backgrounds */
-  --text-accent: #F4D35E; /* Yellow for accent text */
-  --shadow-sm: 0 5px 10px rgba(13, 59, 102, 0.05);
-  --shadow-md: 0 10px 20px rgba(13, 59, 102, 0.08);
-  --shadow-lg: 0 20px 30px rgba(13, 59, 102, 0.1);
+  /* Primary Colors */
+  --primary: #191919;       /* Slate Dark */
+  --primary-dark: #000000;  /* Black */
+  --secondary: #CC785C;     /* Book Brown - promoted to secondary */
+  --secondary-dark: #B46A51; /* Darker Book Brown */
+  --accent: #D4A27F;        /* Book Medium - now accent */
+  --accent-light: #EBDBBC;  /* Manilla - added as accent light */
+  
+  /* Text Colors */
+  --text-dark: #191919;     /* Slate Dark for text on light */
+  --text-light: #FAFAF7;    /* Ivory Light for text on dark */
+  --text-medium: #91918D;   /* Cloud Medium for subtle text */
+  
+  /* Background Colors */
+  --background: #FFFFFF;    /* White background */
+  --dark-bg: #191919;       /* Slate Dark for dark sections */
+  --light-bg: #EBDBBC;      /* Manilla for light sections - changed from Ivory */
+  --border: #E5E4DE;        /* Ivory Dark border */
+  
+  /* Opacity Values for Dark Mode */
+  --text-light-high-opacity: rgba(250, 250, 247, 0.9);
+  --text-light-medium-opacity: rgba(250, 250, 247, 0.7);
+  --text-light-low-opacity: rgba(250, 250, 247, 0.1);
+  
+  /* Shadows */
+  --shadow-sm: 0 5px 10px rgba(25, 25, 25, 0.08);
+  --shadow-md: 0 10px 20px rgba(25, 25, 25, 0.12);
+  --shadow-lg: 0 15px 30px rgba(25, 25, 25, 0.15);
+  
+  /* Dark Mode Specific */
+  --dark-bg-light: #40403E; /* Slate Medium for dark mode */
+  --dark-bg-white: #2B2B29; /* Darker version of Slate Medium for card backgrounds */
+  --dark-bg-dark: #191919; /* Slate Dark for headers and footers */
+  
+  --dark-shadow-dark: rgba(0, 0, 0, 0.5);
+  --primary-opacity-low: rgba(25, 25, 25, 0.2);
+  --primary-opacity-medium: rgba(25, 25, 25, 0.5);
+  
+  /* Secondary Light */
+  --secondary-light: rgba(204, 120, 92, 0.2); /* Book Brown for backgrounds */
+  
+  /* Border Radii */
   --border-radius-sm: 8px;
   --border-radius-md: 12px;
   --border-radius-lg: 16px;
   --border-radius-xl: 24px;
+  
+  /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 1.5rem;
@@ -26,6 +55,7 @@
   --spacing-xl: 3rem;
   --spacing-2xl: 4rem;
   --spacing-3xl: 6rem;
+  
   --transition: all 0.3s ease;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -44,18 +74,18 @@ body {
   font-family: var(--font-sans);
   color: var(--text-dark);
   line-height: 1.6;
-  background-color: var(--bg-white);
+  background-color: var(--background);
   font-size: 16px;
 }
 
 a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--secondary); /* Changed to Book Brown */
   transition: var(--transition);
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--accent); /* Changed to Book Medium */
 }
 
 img {
@@ -158,7 +188,7 @@ pre code {
   bottom: -10px;
   width: 50px;
   height: 3px;
-  background: var(--secondary);
+  background: var(--accent);
   transform: translateX(-50%);
 }
 
@@ -171,7 +201,7 @@ pre code {
 }
 
 .bg-light {
-  background-color: var(--bg-light);
+  background-color: var(--light-bg);
 }
 
 .text-center {
@@ -189,11 +219,13 @@ pre code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--bg-dark);
+  background-color: #FFFFFF;
   box-shadow: var(--shadow-md);
   z-index: 1000;
   padding: var(--spacing-md) 0;
   transition: var(--transition);
+  border-top: 4px solid var(--secondary);
+  border-bottom: 1px solid rgba(204, 120, 92, 0.1);
 }
 
 .header-container {
@@ -205,7 +237,7 @@ pre code {
 .site-title {
   font-size: 1.6rem;
   font-weight: 700;
-  color: var(--text-light);
+  color: #4A3B30;
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -218,7 +250,7 @@ pre code {
 }
 
 .title-name {
-  color: var(--secondary);
+  color: #4A3B30;
   display: inline-block;
   margin-right: 3px;
   font-weight: 800;
@@ -231,7 +263,7 @@ pre code {
 
 .site-subtitle {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: #4A3B30;
   display: block;
   font-weight: 500;
 }
@@ -246,7 +278,7 @@ pre code {
 
 .main-navigation a {
   font-weight: 600;
-  color: var(--text-light);
+  color: #4A3B30;
   position: relative;
   padding: 0.5rem 0.25rem;
   background: none;
@@ -292,7 +324,7 @@ pre code {
     top: 70px;
     left: 0;
     right: 0;
-    background-color: var(--bg-dark);
+    background-color: var(--primary);
     box-shadow: var(--shadow-md);
     padding: var(--spacing-md);
     transform: translateY(-100%);
@@ -321,8 +353,8 @@ pre code {
   
   .main-navigation a:hover,
   .main-navigation a.active {
-    color: var(--secondary);
-    background-color: rgba(13, 59, 102, 0.2);
+    color: var(--accent-light);
+    background-color: rgba(15, 99, 86, 0.1);
   }
 }
 
@@ -344,7 +376,7 @@ pre code {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: linear-gradient(135deg, var(--primary-light) 0%, var(--bg-light) 100%);
+  background: linear-gradient(135deg, rgba(235, 219, 188, 0.3) 0%, rgba(25, 25, 25, 0.8) 100%);
 }
 
 .hero-content {
@@ -403,42 +435,42 @@ pre code {
 }
 
 .btn-primary {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--text-light);
-  box-shadow: 0 4px 14px rgba(13, 59, 102, 0.4);
+  box-shadow: 0 4px 14px rgba(204, 120, 92, 0.25);
 }
 
 .btn-primary:hover {
-  background-color: #0a2e50; /* Darker navy */
+  background-color: var(--secondary-dark);
   color: var(--text-light);
-  box-shadow: 0 6px 20px rgba(10, 46, 80, 0.5);
+  box-shadow: 0 6px 20px rgba(204, 120, 92, 0.4);
   transform: translateY(-3px);
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--primary);
-  border: 2px solid var(--primary);
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
   font-weight: 600;
 }
 
 .btn-outline:hover {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   color: var(--text-light);
   transform: translateY(-3px);
-  box-shadow: 0 4px 14px rgba(13, 59, 102, 0.3);
+  box-shadow: 0 4px 14px rgba(204, 120, 92, 0.25);
 }
 
 .btn-accent {
-  background-color: var(--secondary);
-  color: var(--text-dark);
-  box-shadow: 0 4px 14px rgba(244, 211, 94, 0.4);
+  background-color: var(--accent);
+  color: var(--text-light);
+  box-shadow: 0 4px 14px rgba(212, 162, 127, 0.25);
 }
 
 .btn-accent:hover {
-  background-color: #f0c93a; /* Slightly darker yellow */
-  color: var(--text-dark);
-  box-shadow: 0 6px 20px rgba(240, 201, 58, 0.3);
+  background-color: #C3916E; /* Darker Book Medium */
+  color: var(--text-light);
+  box-shadow: 0 6px 20px rgba(212, 162, 127, 0.4);
   transform: translateY(-3px);
 }
 
@@ -454,7 +486,7 @@ pre code {
 
 /* Cards & Features */
 .card {
-  background-color: var(--bg-white);
+  background-color: var(--background);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   padding: var(--spacing-xl);
@@ -464,12 +496,13 @@ pre code {
 .card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
+  border-top: 3px solid var(--secondary);
 }
 
 .feature-card {
   text-align: center;
   padding: var(--spacing-xl);
-  background-color: var(--bg-white);
+  background-color: var(--background);
   border-radius: var(--border-radius-lg);
   box-shadow: var(--shadow-md);
   transition: var(--transition);
@@ -478,6 +511,7 @@ pre code {
 .feature-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-lg);
+  border-top: 3px solid var(--secondary);
 }
 
 .feature-icon {
@@ -486,8 +520,8 @@ pre code {
   justify-content: center;
   width: 90px;
   height: 90px;
-  background-color: var(--secondary-light);
-  color: var(--primary);
+  background-color: rgba(235, 219, 188, 0.3); /* Manilla background */
+  color: var(--secondary);
   font-size: 2.25rem;
   border-radius: 50%;
   margin: 0 auto var(--spacing-lg);
@@ -497,7 +531,7 @@ pre code {
 .feature-card:hover .feature-icon {
   transform: translateY(-5px);
   background-color: var(--secondary);
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 .card h3, .project-title, .blog-title {
@@ -520,7 +554,7 @@ pre code {
 .project-card {
   display: flex;
   flex-direction: column;
-  background-color: var(--bg-white);
+  background-color: var(--background);
   border-radius: var(--border-radius-md);
   overflow: hidden;
   box-shadow: var(--shadow-md);
@@ -551,7 +585,7 @@ pre code {
 
 .project-content {
   padding: var(--spacing-xl);
-  background-color: var(--bg-white);
+  background-color: var(--background);
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -565,7 +599,7 @@ pre code {
 }
 
 .project-category {
-  color: var(--primary);
+  color: var(--secondary);
   font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -606,8 +640,8 @@ pre code {
 }
 
 .project-tag {
-  background-color: var(--secondary-light);
-  color: var(--text-dark);
+  background-color: rgba(235, 219, 188, 0.4); /* Manilla background */
+  color: var(--primary);
   border-radius: 50px;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
@@ -637,7 +671,7 @@ pre code {
 
 .skill-tag:hover {
   background-color: var(--secondary);
-  color: var(--text-dark);
+  color: var(--text-light);
   transform: translateY(-3px);
 }
 
@@ -647,7 +681,7 @@ pre code {
 
 /* Testimonials */
 .testimonial-card {
-  background-color: var(--bg-white);
+  background-color: var(--background);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-md);
@@ -741,7 +775,7 @@ textarea.form-control {
 
 /* Footer */
 .site-footer {
-  background-color: var(--bg-dark);
+  background-color: var(--secondary-dark);
   color: var(--text-light);
   padding: var(--spacing-2xl) 0;
 }
@@ -756,7 +790,7 @@ textarea.form-control {
   margin-bottom: var(--spacing-md);
   position: relative;
   padding-bottom: var(--spacing-xs);
-  color: var(--text-light);
+  color: #FFFFFF;
 }
 
 .footer-widget h3::after {
@@ -766,7 +800,7 @@ textarea.form-control {
   bottom: 0;
   width: 50px;
   height: 3px;
-  background: var(--secondary);
+  background: var(--accent);
 }
 
 .footer-widget ul {
@@ -779,13 +813,14 @@ textarea.form-control {
   margin-bottom: var(--spacing-xs);
 }
 
-.footer-widget a {
-  color: rgba(245, 245, 220, 0.7);
+.footer-widget a,
+.footer-widget p {
+  color: #FFFFFF;
   transition: var(--transition);
 }
 
 .footer-widget a:hover {
-  color: var(--secondary);
+  color: var(--accent-light);
 }
 
 .footer-social {
@@ -800,24 +835,24 @@ textarea.form-control {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(245, 245, 220, 0.1);
+  background-color: var(--text-light-low-opacity);
   color: var(--text-light);
   border-radius: 50%;
   transition: var(--transition);
 }
 
 .social-icon:hover {
-  background-color: var(--secondary);
-  color: var(--text-dark);
+  background-color: var(--accent);
+  color: var(--text-light);
   transform: translateY(-5px);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(245, 245, 220, 0.1);
+  border-top: 1px solid var(--text-light-low-opacity);
   text-align: center;
   padding-top: var(--spacing-lg);
   margin-top: var(--spacing-xl);
-  color: rgba(245, 245, 220, 0.5);
+  color: var(--text-light-medium-opacity);
   font-size: 0.875rem;
 }
 
@@ -905,7 +940,7 @@ textarea.form-control {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
-  background-color: var(--bg-white);
+  background-color: var(--background);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-md);
@@ -913,7 +948,7 @@ textarea.form-control {
 
 .education-icon {
   font-size: 2.5rem;
-  color: var(--primary);
+  color: var(--secondary);
   flex-shrink: 0;
 }
 
@@ -939,7 +974,7 @@ textarea.form-control {
 }
 
 .activity-card {
-  background-color: var(--bg-white);
+  background-color: var(--background);
   border-radius: 12px;
   padding: 2rem;
   text-align: center;
@@ -960,157 +995,13 @@ textarea.form-control {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--secondary-light);
-  color: var(--primary);
+  background-color: rgba(235, 219, 188, 0.3); /* Manilla background */
+  color: var(--secondary);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
   margin: 0 auto 1.5rem;
-}
-
-/* Blog Section Styling */
-.blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: var(--spacing-lg);
-  margin-top: var(--spacing-xl);
-}
-
-.blog-card {
-  background-color: var(--bg-white);
-  border-radius: var(--border-radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.blog-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-lg);
-}
-
-.blog-image {
-  height: 220px;
-  overflow: hidden;
-  position: relative;
-}
-
-.blog-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.blog-card:hover .blog-image img {
-  transform: scale(1.05);
-}
-
-.blog-date {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--primary);
-  color: var(--text-light);
-  padding: 0.4rem 0.8rem;
-  border-radius: var(--border-radius-sm);
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-
-.blog-content {
-  padding: var(--spacing-lg);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  background-color: var(--bg-white);
-}
-
-.blog-title {
-  font-size: 1.4rem;
-  margin-bottom: var(--spacing-sm);
-  color: var(--text-dark);
-  font-weight: 700;
-}
-
-.blog-excerpt {
-  color: var(--text-dark);
-  margin-bottom: var(--spacing-md);
-  flex-grow: 1;
-  line-height: 1.7;
-  font-size: 1.05rem;
-}
-
-.blog-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: var(--spacing-md);
-}
-
-.blog-tag {
-  background-color: var(--secondary-light);
-  color: var(--text-dark);
-  border-radius: 50px;
-  padding: 0.3rem 0.75rem;
-  font-size: 0.75rem;
-}
-
-.blog-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.blog-author {
-  display: flex;
-  align-items: center;
-}
-
-.blog-author-avatar {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px;
-}
-
-.blog-author-name {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--text-dark);
-}
-
-.blog-read-more {
-  color: var(--secondary);
-  font-weight: 600;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.blog-read-more:hover {
-  color: var(--primary);
-}
-
-.blog-read-more i {
-  transition: transform 0.3s ease;
-}
-
-.blog-read-more:hover i {
-  transform: translateX(3px);
-}
-
-.blog-pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--spacing-xl);
-  gap: var(--spacing-xs);
 }
 
 .blog-page-link {
@@ -1168,7 +1059,7 @@ textarea.form-control {
   font-family: var(--font-sans);
   font-size: 1rem;
   transition: var(--transition);
-  background-color: var(--bg-white);
+  background-color: var(--background);
   color: var(--text-dark);
 }
 
@@ -1188,8 +1079,8 @@ textarea.form-control {
 }
 
 .blog-search-button:hover {
-  background-color: var(--accent);
-  color: var(--text-dark);
+  background-color: var(--secondary);
+  color: var(--text-light);
 }
 
 /* Ensure all text has good contrast */
@@ -1208,19 +1099,20 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
 /* Improve contrast in dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --text-dark: #F5F5DC; /* Beige for text on dark backgrounds */
-    --text-light: #F5F5DC; /* Beige for text on dark backgrounds */
-    --text-lighter: #FFFDF6; /* Off-white for text */
-    --bg-light: #112D4E; /* Slightly lighter navy for backgrounds */
-    --bg-white: #0D3B66; /* Navy for card backgrounds */
-    --bg-dark: #071E34; /* Darker navy for headers and footers */
-    --primary-light: rgba(13, 59, 102, 0.3);
-    --secondary-light: rgba(244, 211, 94, 0.7); /* Match light mode opacity */
+    --text-dark: #FAFAF7; /* Ivory Light for text on dark backgrounds */
+    --text-light: #FAFAF7; /* Ivory Light for text on dark backgrounds */
+    --text-lighter: #FFFFFF; /* Pure White for text */
+    --bg-light: var(--dark-bg-light);
+    --bg-white: var(--dark-bg-white);
+    --bg-dark: var(--dark-bg-dark);
+    --primary-light: rgba(25, 25, 25, 0.3);
+    --secondary-light: rgba(204, 120, 92, 0.2); /* Book Brown for backgrounds in dark mode */
+    --primary-shadow-dark: var(--dark-shadow-dark);
   }
 
   body {
     color: var(--text-light);
-    background-color: var(--bg-light);
+    background-color: #191919; /* Slate Dark background for better card contrast */
   }
   
   p, li, blockquote, td, th, .project-description, .blog-excerpt {
@@ -1233,7 +1125,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   
   .section-title h1,
   .section-title h2 {
-    color: var(--secondary);
+    color: var(--accent-light);
   }
   
   .section-title p {
@@ -1241,7 +1133,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   }
   
   .education-title h2 {
-    color: var(--secondary);
+    color: var(--accent-light);
   }
   
   .education-title p {
@@ -1253,16 +1145,16 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   }
 
   .form-control::placeholder {
-    color: rgba(245, 245, 220, 0.5);
+    color: var(--text-light-medium-opacity);
   }
 
   .site-header,
   .main-navigation {
-    background-color: var(--bg-dark);
+    background-color: var(--dark-bg-dark);
   }
   
   .title-name {
-    color: var(--secondary);
+    color: var(--text-light);
   }
   
   .site-subtitle {
@@ -1271,6 +1163,9 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   
   .main-navigation a {
     color: var(--text-light);
+    padding: var(--spacing-sm);
+    border-bottom: 1px solid var(--text-light-low-opacity);
+    background: none;
   }
 
   .card,
@@ -1279,9 +1174,9 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   .feature-card,
   .experience-card,
   .activity-card,
-  .education-card,
   .blog-card {
     background-color: var(--bg-white);
+    border: 1px solid rgba(250, 250, 247, 0.1);
   }
   
   .project-content, .blog-content {
@@ -1295,7 +1190,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   }
 
   .form-control:focus {
-    border-color: var(--secondary);
+    border-color: var(--accent);
   }
 
   code {
@@ -1307,143 +1202,108 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
     background-color: var(--bg-dark);
   }
   
+  /* Education section - ensure high contrast */
+  .education-details h3 {
+    color: var(--accent-light);
+    font-weight: 700;
+  }
+  
+  .education-details p, 
+  .education-details li {
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  
+  .education-card {
+    background-color: #2B2B29; /* Match card background */
+    border-left: 4px solid var(--secondary);
+  }
+  
   .blog-tag, .project-tag {
-    background-color: var(--secondary-light);
+    background-color: rgba(235, 219, 188, 0.3); /* Manilla for backgrounds in dark mode */
     color: var(--text-lighter);
     font-weight: 600;
   }
   
   /* Adjust dark backgrounds for better contrast */
   .hero-background {
-    background: linear-gradient(135deg, var(--primary-light) 0%, var(--bg-dark) 100%);
+    background: linear-gradient(135deg, rgba(235, 219, 188, 0.3) 0%, rgba(25, 25, 25, 0.8) 100%);
   }
 
   /* Add stronger shadow to cards for better separation from dark background */
   .card, .blog-card, .project-card {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 20px var(--dark-shadow-dark);
   }
   
   /* Improve button contrast */
   .btn-primary, .blog-search-button {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: var(--text-light);
   }
   
   .btn-primary:hover, .blog-search-button:hover {
-    background-color: var(--secondary);
-    color: var(--bg-dark);
+    background-color: var(--secondary-dark);
+    color: var(--text-lighter);
   }
   
   /* Ensure links stand out */
   a {
-    color: var(--secondary);
+    color: var(--accent);
   }
   
   a:hover {
-    color: var(--accent);
+    color: var(--accent-light);
   }
 
   .hero-subtitle {
     color: var(--text-light);
   }
-  
-  @media (max-width: 768px) {
-    .main-navigation {
-      background-color: var(--bg-dark);
-    }
-    
-    .main-navigation a {
-      color: var(--text-light);
-    }
-    
-    .main-navigation a:hover,
-    .main-navigation a.active {
-      color: var(--secondary);
-      background-color: rgba(13, 59, 102, 0.5);
-    }
+
+  /* Improved site header contrast */
+  .site-header {
+    background-color: var(--dark-bg-dark);
+    border-top-color: var(--accent);
   }
 
-  .blog-author-name {
-    color: var(--text-light);
+  /* Card improvements for better contrast against background */
+  .card,
+  .project-card,
+  .testimonial-card,
+  .feature-card,
+  .experience-card,
+  .activity-card,
+  .blog-card {
+    background-color: var(--bg-white);
+    border: 1px solid rgba(250, 250, 247, 0.1);
   }
   
-  .blog-title {
-    color: var(--secondary);
-  }
-  
-  .project-title {
-    color: var(--secondary);
-  }
-  
-  .blog-search-input {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    border: 2px solid var(--primary-light);
-  }
-  
-  .blog-page-link, .blog-page-nav {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-  }
-  
-  .blog-page-link:hover, .blog-page-link.active, .blog-page-nav:hover {
-    background-color: var(--secondary);
-    color: var(--bg-dark);
+  /* Section backgrounds for better variety */
+  .bg-light {
+    background-color: rgba(25, 25, 25, 0.1); /* Very subtle slate tint */
   }
 
-  .education-details h3,
-  .education-details p,
-  .experience-card h3,
-  .experience-card p,
-  .experience-card li {
-    color: var(--text-light);
-  }
-  
-  .testimonial-role,
-  .testimonial-text {
-    color: var(--text-light);
+  /* Footer - distinguish from header and body */
+  .site-footer {
+    background-color: var(--dark-bg-dark);
+    border-top: 1px solid var(--accent);
   }
 
-  .activity-icon {
-    background-color: var(--secondary-light);
-    color: var(--text-light);
+  /* Education card improvements with less emerald */
+  .education-card {
+    background-color: #2B2B29; /* Match card background */
+    border-left: 4px solid var(--accent);
   }
   
-  .feature-icon {
-    background-color: var(--secondary-light);
-    color: var(--text-light);
+  /* Hero section with accent accents */
+  .hero-background {
+    background: linear-gradient(135deg, rgba(235, 219, 188, 0.3) 0%, rgba(25, 25, 25, 0.8) 100%);
   }
   
-  .education-icon {
-    color: var(--secondary);
-  }
-  
-  .project-icon {
-    background-color: var(--secondary-light);
-  }
-  
-  .project-icon i {
-    color: var(--text-light);
-  }
-
-  .social-link:hover, .feature-card:hover .feature-icon, .project-card:hover .project-icon {
-    background-color: var(--secondary);
-    color: var(--bg-dark);
-  }
-  
-  .project-card:hover .project-icon i {
-    color: var(--bg-dark);
-  }
-
-  .skill-tag {
-    background-color: var(--secondary-light);
-    color: var(--bg-dark);
-    font-weight: 700;
-  }
-  
-  .skill-tag:hover {
-    background-color: var(--secondary);
-    color: var(--bg-dark);
+  /* Blog/project tags */
+  .blog-tag, .project-tag {
+    background-color: rgba(235, 219, 188, 0.3); /* Manilla for backgrounds in dark mode */
+    color: var(--text-lighter);
+    font-weight: 600;
   }
 }
 
@@ -1451,7 +1311,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-light);
+  background-color: rgba(235, 219, 188, 0.3); /* Manilla background */
   border-radius: var(--border-radius-md);
   padding: var(--spacing-xl);
   margin-bottom: var(--spacing-md);
@@ -1460,7 +1320,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
 
 .project-icon i {
   font-size: 3.5rem;
-  color: var(--primary);
+  color: var(--secondary);
   transition: var(--transition);
 }
 
@@ -1470,7 +1330,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
 }
 
 .project-card:hover .project-icon i {
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 @media (max-width: 768px) {
@@ -1503,4 +1363,111 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: var(--spacing-md);
+}
+
+.blog-date {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--secondary);
+  color: var(--text-light);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--border-radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.blog-tag {
+  background-color: rgba(235, 219, 188, 0.4); /* Manilla background */
+  color: var(--primary);
+  border-radius: 50px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.blog-read-more {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.blog-read-more:hover {
+  color: var(--accent);
+
+}
+
+/* Blog cards and grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  height: 100%;
+  position: relative;
+}
+
+.blog-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-8px);
+}
+
+.blog-content {
+  padding: var(--spacing-xl);
+  background-color: var(--background);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-title {
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.blog-excerpt {
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border);
+}
+
+.blog-author {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+}
+
+.blog-author-name {
+  font-weight: 600;
+  color: var(--text-dark);
 } 

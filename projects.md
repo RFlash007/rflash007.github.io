@@ -4,31 +4,38 @@ title: Projects
 permalink: /projects/
 ---
 
-<section class="section">
+<section class="section" style="background-color: #FFFFFF;">
   <div class="wrapper">
     <div class="section-title">
       <h1 class="fade-in" style="color: var(--secondary);">My Projects</h1>
-      <p style="color: var(--text-dark);">A showcase of my work in AI, software development, and more</p>
+      <p style="color: var(--text-medium);">A showcase of my work in AI, software development, and more</p>
     </div>
     
     <div class="projects-grid">
-      <div class="project-card fade-in-up" id="ai-assistant">
+      <div class="project-card fade-in-up ai-card" id="ai-assistant">
         <div class="project-icon">
           <i class="fas fa-robot"></i>
         </div>
         <div class="project-content">
-          <span class="project-category">AI Development</span>
-          <h3 class="project-title">AI Assistant</h3>
-          <p class="project-description">A personal AI assistant built with Python that leverages LLMs for natural language understanding and task automation. This assistant can perform various tasks through voice commands and text input.</p>
+          <div class="project-header">
+            <span class="project-category">AI Development</span>
+            <h3 class="project-title">LLM Personal Assistant with RAG</h3>
+          </div>
+          <p class="project-description">A personal AI assistant built with Python that leverages large language models for natural language understanding and task automation, enhanced with sophisticated memory and contextual awareness systems.</p>
           
-          <h4>Key Features:</h4>
-          <ul class="feature-list">
-            <li>Built on Qwen 2.5:14b Model using Ollama API</li>
-            <li>Integrated custom relational database for memory-based contextual responses</li>
-            <li>Retrieval-Augmented Generation (RAG) for enhanced knowledge access</li>
-            <li>Voice recognition and text-to-speech capabilities</li>
-            <li>Customizable personality and response styles</li>
-          </ul>
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul class="feature-list">
+              <li>Built on Qwen 2.5:14b Model using Ollama API</li>
+              <li>Implemented Retrieval-Augmented Generation (RAG) and a custom relational database to store memory-based JSON objects for context-aware responses</li>
+              <li>Optimized query execution by integrating prompt chaining workflows, improving response accuracy and reducing size of "memories" stored by 50%</li>
+              <li>Implemented embedding caching for memory objects increasing processing speed significantly</li>
+              <li>Developed dynamic memory management system which consolidates recently accessed memory objects based on semantic similarity using cosine similarity function drastically reducing redundancy in JSON database</li>
+              <li>Utilized prompt chaining techniques to drastically increase digestibility of complex prompts for smaller models, significantly increasing response accuracy</li>
+              <li>Crafted complex system prompt to urge model to utilize features such as: chain-of-thought, alignment tuning, and "curiosity"</li>
+              <li>Designated "Memory Management" language model designated to crafting unique memories utilizing zero-shot prompting</li>
+            </ul>
+          </div>
           
           <div class="project-tags">
             <span class="project-tag">Python</span>
@@ -46,29 +53,35 @@ permalink: /projects/
         </div>
       </div>
       
-      <div class="project-card fade-in-up" id="portfolio-website">
+      <div class="project-card fade-in-up ai-card" id="portfolio-website">
         <div class="project-icon">
           <i class="fas fa-laptop"></i>
         </div>
         <div class="project-content">
-          <span class="project-category">Web Development</span>
-          <h3 class="project-title">Portfolio Website</h3>
-          <p class="project-description">A responsive portfolio website built with Jekyll to showcase my projects and skills in a clean, modern design. This website serves as a central hub for my professional presence online.</p>
+          <div class="project-header">
+            <span class="project-category">Web Development</span>
+            <h3 class="project-title">Portfolio Website Development</h3>
+          </div>
+          <p class="project-description">A responsive portfolio website built using iterative refinement and prompt engineering techniques with Claude 3.7 Sonnet, showcasing advanced AI-assisted development methodologies.</p>
           
-          <h4>Key Features:</h4>
-          <ul class="feature-list">
-            <li>Responsive design that works on all devices</li>
-            <li>Modern UI with smooth animations and transitions</li>
-            <li>Optimized performance and accessibility</li>
-            <li>Built with Jekyll for easy content management</li>
-            <li>Custom CSS with dark mode support</li>
-          </ul>
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul class="feature-list">
+              <li>Developed a fully functional portfolio website using iterative refinement and prompt engineering techniques with Claude 3.7 Sonnet</li>
+              <li>Optimized AI-driven workflows to refine code, design, and content, demonstrating advanced LLM utilization and prompt engineering skills</li>
+              <li>Showcased expertise in AI-assisted development and efficient iteration cycles without traditional manual coding</li>
+              <li>Responsive design that works seamlessly across all devices</li>
+              <li>Modern UI with smooth animations and transitions</li>
+              <li>Optimized performance and accessibility</li>
+            </ul>
+          </div>
           
           <div class="project-tags">
             <span class="project-tag">Jekyll</span>
             <span class="project-tag">HTML/CSS</span>
             <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Responsive Design</span>
+            <span class="project-tag">Prompt Engineering</span>
+            <span class="project-tag">AI-Assisted Development</span>
           </div>
           
           <div class="project-links">
@@ -79,23 +92,28 @@ permalink: /projects/
         </div>
       </div>
       
-      <div class="project-card fade-in-up" id="roberta-emotion">
+      <div class="project-card fade-in-up ai-card" id="roberta-emotion">
         <div class="project-icon">
           <i class="fas fa-heart"></i>
         </div>
         <div class="project-content">
-          <span class="project-category">Machine Learning</span>
-          <h3 class="project-title">RoBERTa Emotion Detection</h3>
-          <p class="project-description">Developed an emotion detection system using the RoBERTa model fine-tuned on the tweet_eval/emotion dataset. The system can accurately classify text into different emotional categories.</p>
+          <div class="project-header">
+            <span class="project-category">Machine Learning</span>
+            <h3 class="project-title">RoBERTa Emotion Detection</h3>
+          </div>
+          <p class="project-description">A sophisticated emotion detection system using RoBERTa model fine-tuned on the tweet_eval/emotion dataset, designed to accurately classify text into different emotional categories for context-aware applications.</p>
           
-          <h4>Key Features:</h4>
-          <ul class="feature-list">
-            <li>Fine-tuned RoBERTa model with 81.5% accuracy</li>
-            <li>Emotion classification across 6 categories</li>
-            <li>Optimized for real-time text analysis</li>
-            <li>Visualization of confidence scores</li>
-            <li>API for integration with other applications</li>
-          </ul>
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul class="feature-list">
+              <li>Developed an emotion detection system using RoBERTa model fine-tuned on tweet_eval/emotion dataset</li>
+              <li>Implemented text classification pipeline for detecting anger, joy, optimism, and sadness with 81.5% accuracy</li>
+              <li>Designed model training workflow with hyperparameter optimization and evaluation metrics (accuracy, F1 score)</li>
+              <li>Integrated emotion detection with chatbot system to enable context-aware, empathetic responses</li>
+              <li>Built end-to-end solution including model training, evaluation, and deployment capabilities</li>
+              <li>Optimized system performance with GPU acceleration and efficient text preprocessing</li>
+            </ul>
+          </div>
           
           <div class="project-tags">
             <span class="project-tag">PyTorch</span>
@@ -116,11 +134,11 @@ permalink: /projects/
   </div>
 </section>
 
-<section class="section bg-light">
+<section class="section" style="background-color: #FAFAFA;">
   <div class="wrapper">
     <div class="section-title">
-      <h2>More Projects Coming Soon</h2>
-      <p>I'm constantly working on new projects. Check back later for updates!</p>
+      <h2 style="color: var(--primary);">More Projects Coming Soon</h2>
+      <p style="color: var(--text-medium);">I'm constantly working on new projects. Check back later for updates!</p>
     </div>
     
     <div class="text-center">
@@ -132,61 +150,162 @@ permalink: /projects/
 </section>
 
 <style>
-  .project-card {
-    margin-bottom: 3rem;
+  body {
+    background-color: #FFFFFF;
+  }
+  
+  .section {
+    padding: 3rem 0;
+    background-color: #FFFFFF;
+  }
+  
+  .projects-grid {
     display: flex;
     flex-direction: column;
+    gap: 3.5rem;
+    margin-top: 3rem;
+  }
+  
+  .project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.4s ease;
+    border: 1px solid #F0F0F0;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Card type-specific styling - all using the same rust/orange color now */
+  .ai-card {
+    border-top: 5px solid #CC785C;
+  }
+  
+  .ai-card .project-icon {
+    background: #FEF6F3;
+  }
+  
+  .ai-card .project-icon i {
+    color: #CC785C;
+  }
+  
+  .ai-card .project-category {
+    color: #CC785C;
   }
   
   .project-content {
-    padding: 2.5rem;
+    padding: 2.8rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    background-color: #FFFFFF;
   }
   
-  .project-content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-  
-  .project-content p {
-    font-size: 1.1rem;
-    line-height: 1.7;
+  .project-header {
     margin-bottom: 1.5rem;
   }
   
-  .project-content h4 {
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
+  .project-title {
+    font-size: 2rem;
+    margin: 0.5rem 0 0;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  .project-category {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.85rem;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #4A4A4A;
+  }
+  
+  .project-features {
+    margin-bottom: 2rem;
+  }
+  
+  .project-features h4 {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
     font-size: 1.4rem;
+    color: #333333;
+    font-weight: 600;
   }
   
-  .project-content ul {
-    margin-bottom: 1.8rem;
-    padding-left: 1.5rem;
+  .feature-list {
+    margin: 0;
+    padding-left: 1.8rem;
   }
   
-  .project-content li {
+  .feature-list li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
+    color: #4A4A4A;
+    position: relative;
+  }
+  
+  .feature-list li::before {
+    content: "•";
+    position: absolute;
+    left: -1.2rem;
+    color: #CC785C;
+    font-size: 1.2rem;
   }
   
   .project-tags {
     margin-top: auto;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.7rem;
+    gap: 0.8rem;
   }
   
   .project-tag {
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: #F5F6F7;
+    color: #4A4A4A;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  }
+  
+  .ai-card .project-tag:hover {
+    background-color: rgba(204, 120, 92, 0.08);
+    color: #CC785C;
   }
   
   .project-links {
     margin-top: auto;
+  }
+  
+  .btn-primary {
+    transition: all 0.3s ease;
+    color: #FFFFFF;
+    background-color: #CC785C;
+    border-color: #CC785C;
+  }
+  
+  .btn-primary:hover {
+    background-color: #B05B40;
+    border-color: #B05B40;
+    transform: translateY(-2px);
   }
   
   @media (min-width: 992px) {
@@ -196,12 +315,11 @@ permalink: /projects/
     }
     
     .project-icon {
-      width: 30%;
-      height: auto;
+      width: 25%;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 2rem;
     }
     
     .project-icon i {
@@ -209,20 +327,34 @@ permalink: /projects/
     }
     
     .project-content {
-      width: 70%;
+      width: 75%;
     }
   }
   
   @media (max-width: 991px) {
     .project-icon {
-      height: 250px;
+      height: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     
     .project-icon i {
-      font-size: 4rem;
+      font-size: 4.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .project-content {
+      padding: 2rem;
+    }
+    
+    .project-title {
+      font-size: 1.7rem;
+    }
+    
+    .project-description {
+      font-size: 1rem;
     }
   }
 </style> 

@@ -5,7 +5,7 @@ layout: default
 <div class="blog-post-container">
   <header class="post-header">
     <div class="wrapper">
-      <a href="/blog" class="btn btn-outline btn-icon" style="margin-bottom: 2rem;">
+      <a href="/blog" class="back-to-blog-btn">
         <i class="fas fa-arrow-left"></i> Back to Blog
       </a>
       <h1 class="post-title">{{ page.title }}</h1>
@@ -77,21 +77,88 @@ layout: default
       </article>
     </div>
   </section>
+  
+  <!-- Fixed Floating Back Button -->
+  <a href="/blog" class="floating-back-btn" aria-label="Back to Blog">
+    <i class="fas fa-arrow-left"></i>
+    <span>Blog</span>
+  </a>
 </div>
 
 <style>
+  /* Floating Back Button */
+  .back-to-blog-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius-md);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(176, 91, 64, 0.2);
+    transition: all 0.2s ease;
+  }
+  
+  .back-to-blog-btn:hover {
+    background-color: var(--secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(176, 91, 64, 0.3);
+  }
+  
+  /* Fixed Floating Back Button */
+  .floating-back-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--secondary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(176, 91, 64, 0.3);
+    z-index: 1000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .floating-back-btn:hover {
+    background-color: var(--secondary-dark);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(176, 91, 64, 0.4);
+  }
+  
+  .floating-back-btn i {
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .floating-back-btn {
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 16px;
+    }
+  }
+
   .blog-post-container {
-    background-color: var(--bg-light);
+    background-color: #FFFFFF;
     padding-bottom: var(--spacing-3xl);
     padding-top: var(--spacing-lg);
   }
   
   .post {
-    background-color: var(--bg-white);
+    background-color: #FFFFFF;
     border-radius: var(--border-radius-lg);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 8px 20px rgba(176, 91, 64, 0.07);
     padding: var(--spacing-xl);
     margin-top: var(--spacing-xl);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .blog-section {
@@ -108,10 +175,11 @@ layout: default
     font-size: 2.5rem;
     margin-bottom: var(--spacing-md);
     line-height: 1.3;
+    color: var(--secondary);
   }
   
   .post-meta {
-    color: var(--text-dark);
+    color: #333333;
     margin-bottom: var(--spacing-md);
     display: flex;
     justify-content: center;
@@ -136,22 +204,25 @@ layout: default
   .post-content {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: #191919;
+    font-weight: 400;
   }
   
   .post-content p, .post-content ul, .post-content ol {
     margin-bottom: var(--spacing-md);
+    color: #242424;
   }
   
   .post-content h2, .post-content h3, .post-content h4 {
     margin-top: var(--spacing-2xl);
     margin-bottom: var(--spacing-md);
-    color: var(--text-dark);
+    color: var(--secondary);
   }
   
   .post-content h2 {
     font-size: 1.8rem;
     padding-bottom: var(--spacing-xs);
-    border-bottom: 2px solid var(--secondary-light);
+    border-bottom: 2px solid rgba(204, 120, 92, 0.2);
   }
   
   .post-content h3 {
@@ -170,38 +241,41 @@ layout: default
   }
   
   .post-content a {
-    color: var(--primary);
+    color: #B05B40;
     text-decoration: none;
-    border-bottom: 1px solid var(--primary-light);
+    border-bottom: 1px solid rgba(204, 120, 92, 0.5);
+    font-weight: 500;
     transition: var(--transition);
   }
   
   .post-content a:hover {
     border-bottom-color: var(--secondary);
-    color: var(--accent);
+    color: var(--secondary-dark);
   }
   
   .post-content blockquote {
     margin: var(--spacing-lg) 0;
     padding: var(--spacing-md) var(--spacing-lg);
     border-left: 4px solid var(--secondary);
-    background-color: var(--secondary-light);
+    background-color: rgba(204, 120, 92, 0.05);
     border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
-    color: var(--text-dark);
+    color: #333333;
+    font-style: italic;
   }
   
   .post-content code {
-    background-color: var(--bg-light);
+    background-color: rgba(235, 219, 188, 0.2);
     padding: 0.2em 0.4em;
     border-radius: var(--border-radius-sm);
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
     font-size: 0.9em;
+    color: #191919;
   }
   
   .post-content pre {
     margin: var(--spacing-lg) 0;
     padding: var(--spacing-md);
-    background-color: var(--bg-light);
+    background-color: rgba(235, 219, 188, 0.2);
     border-radius: var(--border-radius-md);
     overflow-x: auto;
   }
@@ -215,7 +289,7 @@ layout: default
   .post-navigation {
     margin-top: var(--spacing-2xl);
     padding-top: var(--spacing-lg);
-    border-top: 1px solid var(--secondary-light);
+    border-top: 1px solid rgba(204, 120, 92, 0.1);
   }
   
   .post-navigation-links {
@@ -229,17 +303,23 @@ layout: default
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: var(--text-dark);
+    color: #333333;
+    font-weight: 500;
     transition: var(--transition);
     max-width: 45%;
+    background-color: rgba(204, 120, 92, 0.1);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid rgba(204, 120, 92, 0.2);
   }
   
   .post-previous:hover, .post-next:hover {
-    color: var(--primary);
+    background-color: rgba(204, 120, 92, 0.2);
+    color: #000000;
   }
   
   .post-previous span, .post-next span {
-    font-weight: 500;
+    font-weight: 600;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -270,7 +350,41 @@ layout: default
     }
   }
   
-  /* Dark mode adjustments */
+  /* References Section Styling */
+  .post-content h2:last-of-type {
+    margin-top: var(--spacing-2xl);
+    color: var(--secondary);
+    font-size: 1.8rem;
+    border-bottom: 2px solid rgba(204, 120, 92, 0.2);
+    padding-bottom: var(--spacing-xs);
+  }
+
+  .post-content ul:last-of-type {
+    background-color: rgba(235, 219, 188, 0.1);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    border-left: 4px solid var(--secondary);
+  }
+
+  .post-content ul:last-of-type li {
+    margin-bottom: var(--spacing-md);
+    color: #191919;
+    font-weight: 400;
+  }
+
+  .post-content ul:last-of-type a {
+    color: #B05B40;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(204, 120, 92, 0.5);
+  }
+
+  .post-content ul:last-of-type a:hover {
+    color: var(--secondary-dark);
+    border-bottom-color: var(--secondary-dark);
+  }
+  
+  /* Dark mode adjustments - DISABLED */
+  /*
   @media (prefers-color-scheme: dark) {
     .blog-post-container {
       background-color: var(--bg-dark);
@@ -307,4 +421,5 @@ layout: default
       color: var(--secondary);
     }
   }
+  */
 </style> 

@@ -22,6 +22,7 @@ permalink: /blog/
     
     <div class="blog-grid">
       <div class="blog-card fade-in-up">
+        <span class="blog-date">July 10, 2024</span>
         <div class="blog-content">
           <h2 class="blog-title">Research Project Proposal: Exploring Local LLMs with Ollama</h2>
           <div class="blog-tags">
@@ -40,14 +41,36 @@ permalink: /blog/
       </div>
     </div>
     
-    <div class="blog-pagination">
-      <a href="#" class="blog-page-nav">
-        <i class="fas fa-chevron-left"></i> Previous
+    {%- if paginator.total_pages > 1 -%}
+    <div class="blog-pagination" style="display: flex; justify-content: center; margin-top: 3rem; gap: 1rem; align-items: center;">
+      {%- if paginator.previous_page -%}
+      <a href="{{ paginator.previous_page_path }}" class="blog-page-nav prev-page" style="display: flex; align-items: center; gap: 0.5rem; background-color: rgba(204, 120, 92, 0.1); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 500; color: var(--secondary); transition: all 0.2s ease;">
+        <i class="fas fa-chevron-left"></i>
+        <span>Previous</span>
       </a>
-      <a href="#" class="blog-page-link active">1</a>
-      <a href="#" class="blog-page-nav">
-        Next <i class="fas fa-chevron-right"></i>
+      {%- else -%}
+      <span class="blog-page-nav prev-page disabled" style="display: flex; align-items: center; gap: 0.5rem; background-color: rgba(204, 120, 92, 0.05); padding: 0.5rem 1rem; border-radius: 8px; color: #b0afa9; cursor: not-allowed;">
+        <i class="fas fa-chevron-left"></i>
+        <span>Previous</span>
+      </span>
+      {%- endif -%}
+      
+      <span class="blog-page-link active" style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%; background-color: rgba(204, 120, 92, 0.2); color: var(--secondary); font-weight: 500;">
+        {{ paginator.page }}
+      </span>
+      
+      {%- if paginator.next_page -%}
+      <a href="{{ paginator.next_page_path }}" class="blog-page-nav next-page" style="display: flex; align-items: center; gap: 0.5rem; background-color: rgba(204, 120, 92, 0.1); padding: 0.5rem 1rem; border-radius: 8px; font-weight: 500; color: var(--secondary); transition: all 0.2s ease;">
+        <span>Next</span>
+        <i class="fas fa-chevron-right"></i>
       </a>
+      {%- else -%}
+      <span class="blog-page-nav next-page disabled" style="display: flex; align-items: center; gap: 0.5rem; background-color: rgba(204, 120, 92, 0.05); padding: 0.5rem 1rem; border-radius: 8px; color: #b0afa9; cursor: not-allowed;">
+        <span>Next</span>
+        <i class="fas fa-chevron-right"></i>
+      </span>
+      {%- endif -%}
     </div>
+    {%- endif -%}
   </div>
 </section> 

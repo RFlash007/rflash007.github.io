@@ -17,6 +17,7 @@ permalink: /about/
         <div class="about-social">
           <a href="https://github.com/RFlash007" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+          <a href="https://huggingface.co/RFlash" target="_blank" class="social-link">🤗</a>
         </div>
       </div>
       
@@ -38,15 +39,46 @@ permalink: /about/
       <p style="color: var(--text-dark);">My academic journey and credentials</p>
     </div>
     
-    <div class="education-card fade-in-up">
-      <div class="education-icon">
-        <i class="fas fa-university"></i>
+    <div class="project-card fade-in-up" style="background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 8px 20px rgba(176, 91, 64, 0.07); overflow: hidden; border: none; margin-bottom: 1.5rem;">
+      <div style="background: linear-gradient(135deg, #D4A27F 0%, #CC785C 100%); padding: 1.75rem; border-radius: 12px 12px 0 0; display: flex; align-items: center;">
+        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); display: flex; align-items: center; justify-content: center; margin-right: 1.25rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <i class="fas fa-university" style="color: #FFFFFF; font-size: 1.75rem;"></i>
+        </div>
+        <h3 style="color: #FFFFFF; margin: 0; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.5px;">Virginia Commonwealth University</h3>
+        <div style="margin-left: auto; background-color: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.9rem; color: #FFFFFF;">
+          2023 - 2027
+        </div>
       </div>
-      <div class="education-details">
-        <h3 style="color: var(--secondary); font-weight: 700;">Virginia Commonwealth University (2023 - 2027)</h3>
-        <p><strong>Bachelor of Science, Computer Science</strong> | Minor in Artificial Intelligence</p>
-        <p><strong>GPA:</strong> 3.9 (In Major GPA: 4.0)</p>
-        <p><strong>Key Coursework:</strong> Calculus 2, Data Structures & Object-Oriented Programming, Computer Systems, Computer Organization, Software Engineering</p>
+      
+      <div style="padding: 2rem; background-color: #FFFFFF;">
+        <div style="margin-bottom: 1.5rem; border-left: 3px solid var(--secondary); padding-left: 1rem;">
+          <h4 style="color: var(--secondary); margin: 0 0 0.5rem 0; font-weight: 600;">Bachelor of Science, Computer Science</h4>
+          <p style="color: #4A3B30; margin: 0; font-style: italic;">Minor in Artificial Intelligence</p>
+        </div>
+        
+        <div style="display: flex; margin-bottom: 1.5rem;">
+          <div style="flex: 1; border-radius: 6px; background-color: rgba(204, 120, 92, 0.1); padding: 1rem; text-align: center;">
+            <h5 style="color: var(--secondary); margin: 0 0 0.25rem 0; font-weight: 600;">GPA</h5>
+            <p style="color: #4A3B30; margin: 0; font-weight: 700; font-size: 1.2rem;">3.9</p>
+          </div>
+          <div style="flex: 1; border-radius: 6px; background-color: rgba(204, 120, 92, 0.1); padding: 1rem; text-align: center; margin-left: 1rem;">
+            <h5 style="color: var(--secondary); margin: 0 0 0.25rem 0; font-weight: 600;">Major GPA</h5>
+            <p style="color: #4A3B30; margin: 0; font-weight: 700; font-size: 1.2rem;">4.0</p>
+          </div>
+        </div>
+        
+        <div>
+          <h4 style="color: var(--secondary); margin: 0 0 1rem 0; font-weight: 600; display: flex; align-items: center;">
+            <i class="fas fa-book" style="margin-right: 0.5rem; font-size: 0.9rem;"></i> Key Coursework
+          </h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+            <span style="background-color: rgba(204, 120, 92, 0.1); color: #4A3B30; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Calculus 2</span>
+            <span style="background-color: rgba(204, 120, 92, 0.1); color: #4A3B30; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Data Structures & OOP</span>
+            <span style="background-color: rgba(204, 120, 92, 0.1); color: #4A3B30; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Computer Systems</span>
+            <span style="background-color: rgba(204, 120, 92, 0.1); color: #4A3B30; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Computer Organization</span>
+            <span style="background-color: rgba(204, 120, 92, 0.1); color: #4A3B30; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem;">Software Engineering</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -60,44 +92,44 @@ permalink: /about/
     </div>
     
     <div class="skills-grid fade-in-up">
-      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%; background-color: #FFFFFF; border-left: 4px solid var(--secondary);">
         <h3 style="color: var(--secondary); font-weight: 700;">AI & Machine Learning</h3>
         <div class="skill-container">
-          <span class="skill-tag">Large Language Models (LLMs)</span>
-          <span class="skill-tag">RAG</span>
-          <span class="skill-tag">Prompt Engineering</span>
-          <span class="skill-tag">Prompt Chaining</span>
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">Machine Learning</span>
-          <span class="skill-tag">Fine-Tuning</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Large Language Models (LLMs)</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">RAG</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Prompt Engineering</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Prompt Chaining</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">PyTorch</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Machine Learning</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Fine-Tuning</span>
         </div>
       </div>
       
-      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%; background-color: #FFFFFF; border-left: 4px solid var(--secondary);">
         <h3 style="color: var(--secondary); font-weight: 700;">Programming Languages</h3>
         <div class="skill-container">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">Java</span>
-          <span class="skill-tag">C</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Python</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Java</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">C</span>
         </div>
       </div>
       
-      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%; background-color: #FFFFFF; border-left: 4px solid var(--secondary);">
         <h3 style="color: var(--secondary); font-weight: 700;">Tools & Frameworks</h3>
         <div class="skill-container">
-          <span class="skill-tag">Hugging Face</span>
-          <span class="skill-tag">Git/GitHub</span>
-          <span class="skill-tag">Requests</span>
-          <span class="skill-tag">Ollama</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Hugging Face</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Git/GitHub</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Requests</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Ollama</span>
         </div>
       </div>
       
-      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%;">
+      <div class="skill-category card" style="padding: var(--spacing-lg); height: 100%; background-color: #FFFFFF; border-left: 4px solid var(--secondary);">
         <h3 style="color: var(--secondary); font-weight: 700;">System & DevOps</h3>
         <div class="skill-container">
-          <span class="skill-tag">Linux Administration</span>
-          <span class="skill-tag">Shell Scripting</span>
-          <span class="skill-tag">Version Control</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Linux Administration</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Shell Scripting</span>
+          <span class="skill-tag" style="background-color: rgba(235, 219, 188, 0.4); color: var(--primary);">Version Control</span>
         </div>
       </div>
     </div>
@@ -111,17 +143,33 @@ permalink: /about/
       <p style="color: var(--text-dark);">Professional roles and responsibilities</p>
     </div>
     
-    <div class="experience-card fade-in-up">
-      <div class="experience-header">
-        <h3 style="color: var(--secondary); font-weight: 700;">Fire Sprinkler Service | Technical Inspector Assistant</h3>
-        <span class="experience-date">May 2023 - Present</span>
+    <div class="project-card fade-in-up" style="background-color: #FFFFFF; border-radius: 12px; box-shadow: 0 8px 20px rgba(176, 91, 64, 0.07); overflow: hidden; border: none; margin-bottom: 1.5rem;">
+      <div style="background: linear-gradient(135deg, #D4A27F 0%, #CC785C 100%); padding: 1.75rem; border-radius: 12px 12px 0 0; display: flex; align-items: center;">
+        <div style="width: 60px; height: 60px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); display: flex; align-items: center; justify-content: center; margin-right: 1.25rem; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <i class="fas fa-fire-extinguisher" style="color: #FFFFFF; font-size: 1.75rem;"></i>
+        </div>
+        <h3 style="color: #FFFFFF; margin: 0; font-weight: 700; font-size: 1.5rem; letter-spacing: 0.5px;">Fire Sprinkler Service</h3>
+        <div style="margin-left: auto; background-color: rgba(255, 255, 255, 0.2); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.9rem; color: #FFFFFF;">
+          May 2023 - Present
+        </div>
       </div>
-      <div class="experience-content">
-        <ul>
-          <li>Conducted thorough building inspections that successfully identified and resolved leak issues, enhancing structural safety</li>
-          <li>Ensured optimal functionality of fire sprinkler heads through regular maintenance and proactive repair</li>
-          <li>Efficiently disassembled and repaired sprinkler system components, contributing to reliable fire safety operations</li>
-        </ul>
+      
+      <div style="padding: 2rem; background-color: #FFFFFF;">
+        <div style="margin-bottom: 1.5rem; border-left: 3px solid var(--secondary); padding-left: 1rem;">
+          <h4 style="color: var(--secondary); margin: 0 0 0.5rem 0; font-weight: 600;">Technical Inspector Assistant</h4>
+          <p style="color: #4A3B30; margin: 0; font-style: italic;">Building Safety & Fire Prevention</p>
+        </div>
+        
+        <div style="margin-top: 1.5rem;">
+          <h4 style="color: var(--secondary); margin: 0 0 1rem 0; font-weight: 600; display: flex; align-items: center;">
+            <i class="fas fa-tasks" style="margin-right: 0.5rem; font-size: 0.9rem;"></i> Key Responsibilities
+          </h4>
+          <ul style="margin: 0; padding-left: 1.5rem; line-height: 1.7; font-size: 1.05rem;">
+            <li style="margin-bottom: 0.75rem; color: var(--secondary); font-weight: 600;">Conducted thorough building inspections that successfully identified and resolved leak issues, enhancing structural safety</li>
+            <li style="margin-bottom: 0.75rem; color: var(--secondary); font-weight: 600;">Ensured optimal functionality of fire sprinkler heads through regular maintenance and proactive repair</li>
+            <li style="margin-bottom: 0; color: var(--secondary); font-weight: 600;">Efficiently disassembled and repaired sprinkler system components, contributing to reliable fire safety operations</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -330,7 +378,7 @@ permalink: /about/
   
   .experience-date {
     font-style: italic;
-    color: #718096;
+    color: #686565;
     font-size: 0.95rem;
   }
   

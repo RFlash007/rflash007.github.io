@@ -23,41 +23,72 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
   <style>
+    /* CSS Variables for the color scheme - WCAG Compliant for Accessibility */
+    :root {
+      /* Primary Colors */
+      --primary: #191919;       /* Slate Dark */
+      --primary-dark: #000000;  /* Black */
+      --secondary: #CC785C;     /* Book Brown - promoted to secondary */
+      --secondary-dark: #B46A51; /* Darker Book Brown */
+      --accent: #D4A27F;        /* Book Medium - now accent */
+      --accent-light: #EBDBBC;  /* Manilla - added as accent light */
+      
+      /* Text Colors */
+      --text-dark: #191919;     /* Slate Dark for text on light */
+      --text-light: #FAFAF7;    /* Ivory Light for text on dark */
+      --text-medium: #91918D;   /* Cloud Medium for subtle text */
+      
+      /* Background Colors */
+      --background: #FFFFFF;    /* White background */
+      --dark-bg: #191919;       /* Slate Dark for dark sections */
+      --light-bg: #EBDBBC;      /* Manilla for light sections - changed from Ivory */
+      --border: #E5E4DE;        /* Ivory Dark border */
+    }
+    
     /* Backup inline styles in case external CSS fails to load */
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      color: #24292e;
-      background-color: #ffffff;
+      color: #191919;
+      background-color: #FFFFFF;
       line-height: 1.6;
     }
     
     a {
-      color: #0366d6;
+      color: #CC785C; /* Changed to Book Brown for better visibility */
       text-decoration: none;
       transition: color 0.2s ease;
     }
     
     a:hover {
-      color: #044289;
+      color: #D4A27F; /* Changed to Book Medium for hover state */
     }
     
     .site-header {
-      border-top: 5px solid #0366d6;
-      border-bottom: 1px solid #e1e4e8;
-      background-color: #ffffff;
+      border-top: 5px solid #CC785C; /* Changed to Book Brown */
+      border-bottom: 1px solid rgba(250, 250, 247, 0.2);
+      background-color: #191919;
       padding: 15px 0;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .site-header a {
+      color: #FAFAF7;
+    }
+    
+    .site-header a:hover {
+      color: #EBDBBC; /* Changed to Manilla for warmer hover color */
     }
     
     h1, h2, h3, h4 {
       font-weight: 600;
       margin-top: 1.5em;
       margin-bottom: 0.5em;
+      color: #191919;
     }
     
     h1 {
       font-size: 2.25rem;
-      border-bottom: 1px solid #e1e4e8;
+      border-bottom: 1px solid #EBDBBC; /* Changed to Manilla for warmer border */
       padding-bottom: 0.5rem;
     }
     
@@ -68,18 +99,89 @@
     .site-creation-note {
       margin-top: 2rem;
       padding: 1rem;
-      background-color: #f6f8fa;
-      border-left: 4px solid #6f42c1;
+      background-color: #EBDBBC; /* Changed to Manilla for warmer background */
+      border-left: 4px solid #CC785C;
       border-radius: 4px;
     }
     
     .site-creation-note p {
       margin-bottom: 0;
       font-size: 0.95rem;
+      color: #191919;
     }
     
     .site-creation-note strong {
-      color: #6f42c1;
+      color: #CC785C; /* Changed to Book Brown for emphasis */
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary {
+      background-color: #CC785C; /* Changed to Book Brown for primary buttons */
+      color: #FAFAF7;
+      border: 2px solid #CC785C;
+    }
+    
+    .btn-primary:hover {
+      background-color: #B46A51; /* Darker Book Brown */
+      border-color: #B46A51;
+    }
+    
+    .btn-secondary {
+      background-color: #D4A27F; /* Changed to Book Medium for secondary */
+      color: #FAFAF7;
+      border: 2px solid #D4A27F;
+    }
+    
+    .btn-secondary:hover {
+      background-color: #C3916E; /* Darker Book Medium */
+      border-color: #C3916E;
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      color: #CC785C; /* Changed to Book Brown */
+      border: 2px solid #CC785C;
+    }
+    
+    .btn-outline:hover {
+      background-color: #CC785C; /* Changed to Book Brown */
+      color: #FAFAF7;
+    }
+    
+    /* Footer and Contact styling */
+    .site-footer {
+      background-color: #B46A51; /* Darker Book Brown */
+      color: #FFFFFF;
+    }
+    
+    .footer-widget h3,
+    .footer-widget p,
+    .footer-widget a,
+    .footer-widget ul li {
+      color: #FFFFFF;
+    }
+    
+    .footer-widget a:hover {
+      color: #EBDBBC; /* Manilla for hover state */
+    }
+    
+    /* Contact section - ensure all links have the same color */
+    .contact-info a,
+    .contact-info p,
+    .contact-info .location {
+      color: #CC785C;
+      transition: color 0.2s ease;
+    }
+    
+    .contact-info a:hover {
+      color: #D4A27F;
     }
   </style>
 </head> 
