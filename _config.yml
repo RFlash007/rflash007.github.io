@@ -53,6 +53,9 @@ permalink: /blog/:year/:month/:day/:title/
 # Blog settings
 show_excerpts: true
 excerpt_separator: <!--more-->
+future: true  # Show posts with future dates
+paginate: 5
+paginate_path: "/blog/page:num/"
 
 # Navigation
 header_pages:

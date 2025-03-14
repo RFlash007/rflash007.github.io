@@ -911,4 +911,164 @@ p {
       }
     }
   }
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 991px) {
+  // General spacing and layout
+  .wrapper {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  // Text scaling
+  h1 {
+    font-size: 2.2rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  // Spacing adjustments
+  .section {
+    padding: 3rem 0;
+  }
+  
+  // Card layouts
+  .card {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  // Further text scaling
+  h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  // Spacing reduction
+  .section {
+    padding: 2.5rem 0;
+  }
+  
+  .wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  
+  // Button adjustments
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+  
+  // Reduce margins 
+  .mb-md, .my-md {
+    margin-bottom: 1.5rem;
+  }
+  
+  .mt-md, .my-md {
+    margin-top: 1.5rem;
+  }
+  
+  // Fix grid items
+  .grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  // Smallest screen adjustments
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  p {
+    font-size: 0.95rem;
+  }
+  
+  // Tighten spacing
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  // Smaller buttons
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  // Tighten margins
+  .mb-md, .my-md {
+    margin-bottom: 1.2rem;
+  }
+  
+  .mt-md, .my-md {
+    margin-top: 1.2rem;
+  }
+  
+  // Adjust grid spacing
+  .grid {
+    gap: 1.2rem;
+  }
+}
+
+// Fix for mobile navigation
+@media (max-width: 768px) {
+  .site-nav {
+    .page-link {
+      display: block;
+      padding: 0.7rem 0;
+      margin-left: 0;
+      
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+  
+  .site-header {
+    padding: 1rem 0;
+  }
+}
+
+// Fix for content overflow on mobile
+.wrapper {
+  overflow-x: hidden;
+  max-width: 100%;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 } 

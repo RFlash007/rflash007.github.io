@@ -21,24 +21,33 @@ permalink: /blog/
     </div>
     
     <div class="blog-grid">
-      <div class="blog-card fade-in-up">
-        <span class="blog-date">July 10, 2024</span>
+      {% for post in site.posts %}
+      <div class="blog-card fade-in-up" style="animation-delay: {{ forloop.index | times: 0.2 }}s;">
+        <span class="blog-date">{{ post.date | date: "%B %-d, %Y" }}</span>
         <div class="blog-content">
-          <h2 class="blog-title">Research Project Proposal: Exploring Local LLMs with Ollama</h2>
+          <h2 class="blog-title">{{ post.title }}</h2>
           <div class="blog-tags">
-            <span class="blog-tag">LLMs</span>
-            <span class="blog-tag">Ollama</span>
-            <span class="blog-tag">Research</span>
+            {% for tag in post.tags limit:3 %}
+            <span class="blog-tag">{{ tag }}</span>
+            {% endfor %}
           </div>
-          <p class="blog-excerpt">A class research project proposal exploring how to run large language models (LLMs) directly on your own computer using Ollama. This project will investigate the benefits of local deployment for privacy, customization, and security...</p>
+          <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
           <div class="blog-footer">
             <div class="blog-author">
-              <span class="blog-author-name">Ian Mullins</span>
+              <span class="blog-author-name">{{ post.author | default: site.author }}</span>
             </div>
-            <a href="/blog/2024/07/10/locally-run-llms-using-ollama/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="{{ post.url }}" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
+      {% endfor %}
+      
+      {% if site.posts.size == 0 %}
+      <div class="no-posts-message" style="text-align: center; padding: 3rem 0;">
+        <h3>No posts found</h3>
+        <p>Check back soon for new content!</p>
+      </div>
+      {% endif %}
     </div>
     
     {%- if paginator.total_pages > 1 -%}

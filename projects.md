@@ -176,6 +176,8 @@ permalink: /projects/
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
     transition: all 0.4s ease;
     border: 1px solid #F0F0F0;
+    width: 100%;
+    max-width: 100%;
   }
   
   .project-card:hover {
@@ -237,6 +239,7 @@ permalink: /projects/
   
   .project-features {
     margin-bottom: 2rem;
+    width: 100%;
   }
   
   .project-features h4 {
@@ -250,6 +253,7 @@ permalink: /projects/
   .feature-list {
     margin: 0;
     padding-left: 1.8rem;
+    width: 100%;
   }
   
   .feature-list li {
@@ -257,6 +261,8 @@ permalink: /projects/
     line-height: 1.6;
     color: #4A4A4A;
     position: relative;
+    word-wrap: break-word;
+    hyphens: auto;
   }
   
   .feature-list li::before {
@@ -284,6 +290,8 @@ permalink: /projects/
     color: #4A4A4A;
     transition: all 0.2s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    display: inline-block;
+    margin-bottom: 0.5rem;
   }
   
   .ai-card .project-tag:hover {
@@ -308,6 +316,7 @@ permalink: /projects/
     transform: translateY(-2px);
   }
   
+  /* Responsive Design */
   @media (min-width: 992px) {
     .project-card {
       flex-direction: row;
@@ -331,30 +340,144 @@ permalink: /projects/
     }
   }
   
+  /* Tablet Adjustments */
   @media (max-width: 991px) {
+    .wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    
+    .projects-grid {
+      gap: 2.5rem;
+    }
+    
+    .project-card {
+      flex-direction: column;
+    }
+    
     .project-icon {
-      height: 200px;
+      height: 180px;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
     }
     
     .project-icon i {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
-  }
-  
-  @media (max-width: 768px) {
+    
     .project-content {
-      padding: 2rem;
+      width: 100%;
+      padding: 2.2rem;
     }
     
     .project-title {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
+    }
+    
+    .feature-list {
+      padding-left: 1.5rem;
+    }
+  }
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .section {
+      padding: 2rem 0;
+    }
+    
+    .projects-grid {
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .project-content {
+      padding: 1.8rem;
+    }
+    
+    .project-title {
+      font-size: 1.6rem;
     }
     
     .project-description {
       font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    
+    .project-features h4 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .feature-list {
+      padding-left: 1.3rem;
+    }
+    
+    .feature-list li {
+      margin-bottom: 0.7rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    
+    .project-tag {
+      padding: 0.4rem 1rem;
+      font-size: 0.85rem;
+    }
+    
+    .btn-primary {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+  /* Small Mobile Adjustments */
+  @media (max-width: 480px) {
+    .wrapper {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    
+    .section-title h1 {
+      font-size: 1.8rem;
+    }
+    
+    .section-title p {
+      font-size: 0.95rem;
+    }
+    
+    .project-icon {
+      height: 150px;
+    }
+    
+    .project-icon i {
+      font-size: 3.5rem;
+    }
+    
+    .project-content {
+      padding: 1.5rem;
+    }
+    
+    .project-title {
+      font-size: 1.4rem;
+    }
+    
+    .project-description {
+      font-size: 0.95rem;
+    }
+    
+    .project-features h4 {
+      font-size: 1.1rem;
+    }
+    
+    .feature-list li {
+      font-size: 0.9rem;
+    }
+    
+    .project-tag {
+      padding: 0.3rem 0.8rem;
+      font-size: 0.8rem;
     }
   }
 </style> 
