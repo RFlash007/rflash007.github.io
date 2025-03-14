@@ -191,6 +191,20 @@ layout: home
   </div>
 </section>
 
+<section class="section">
+  <div class="wrapper">
+    <div class="card text-center" style="max-width: 800px; margin: 0 auto; padding: var(--spacing-xl);">
+      <div style="display: flex; align-items: center; justify-content: center; margin-bottom: var(--spacing-md);">
+        <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+          <i class="fas fa-robot" style="color: var(--primary); font-size: 1.25rem;"></i>
+        </div>
+        <h3 style="margin: 0; color: var(--secondary);">Built with AI</h3>
+      </div>
+      <p>This website was designed and built through iterative refinement and prompt engineering using Claude 3.7 Sonnet from Anthropic.</p>
+    </div>
+  </div>
+</section>
+
 <script>
   // Add active class to current navigation item
   document.addEventListener('DOMContentLoaded', function() {

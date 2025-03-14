@@ -61,7 +61,7 @@ permalink: /about/
     
     <div class="skills-grid fade-in-up">
       <div class="skill-category">
-        <h3>AI & Machine Learning</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">AI & Machine Learning</h3>
         <div class="skill-container">
           <span class="skill-tag">Large Language Models (LLMs)</span>
           <span class="skill-tag">RAG</span>
@@ -74,7 +74,7 @@ permalink: /about/
       </div>
       
       <div class="skill-category">
-        <h3>Programming Languages</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">Programming Languages</h3>
         <div class="skill-container">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Java</span>
@@ -83,7 +83,7 @@ permalink: /about/
       </div>
       
       <div class="skill-category">
-        <h3>Tools & Frameworks</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">Tools & Frameworks</h3>
         <div class="skill-container">
           <span class="skill-tag">Hugging Face</span>
           <span class="skill-tag">Git/GitHub</span>
@@ -93,7 +93,7 @@ permalink: /about/
       </div>
       
       <div class="skill-category">
-        <h3>System & DevOps</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">System & DevOps</h3>
         <div class="skill-container">
           <span class="skill-tag">Linux Administration</span>
           <span class="skill-tag">Shell Scripting</span>
@@ -113,7 +113,7 @@ permalink: /about/
     
     <div class="experience-card fade-in-up">
       <div class="experience-header">
-        <h3>Fire Sprinkler Service | Technical Inspector Assistant</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">Fire Sprinkler Service | Technical Inspector Assistant</h3>
         <span class="experience-date">May 2023 - Present</span>
       </div>
       <div class="experience-content">
@@ -139,7 +139,7 @@ permalink: /about/
         <div class="activity-icon">
           <i class="fas fa-robot"></i>
         </div>
-        <h3>AI Community</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">AI Community</h3>
         <p>Active member of Ollama, Anthropic, and OpenAI Discord servers discussing latest prompting and language model techniques</p>
       </div>
       
@@ -147,7 +147,7 @@ permalink: /about/
         <div class="activity-icon">
           <i class="fas fa-terminal"></i>
         </div>
-        <h3>Linux Command Line</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">Linux Command Line</h3>
         <p>Completed certification in essential Linux commands, gaining skills in system management and administration</p>
       </div>
       
@@ -155,7 +155,7 @@ permalink: /about/
         <div class="activity-icon">
           <i class="fas fa-fist-raised"></i>
         </div>
-        <h3>VCU Grappling Club</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">VCU Grappling Club</h3>
         <p>Competed in tournaments, demonstrating discipline and resilience</p>
       </div>
       
@@ -163,7 +163,7 @@ permalink: /about/
         <div class="activity-icon">
           <i class="fas fa-users"></i>
         </div>
-        <h3>VCU Inter-Varsity</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">VCU Inter-Varsity</h3>
         <p>Engaged in campus outreach events, fostering teamwork and leadership skills</p>
       </div>
       
@@ -171,7 +171,7 @@ permalink: /about/
         <div class="activity-icon">
           <i class="fas fa-shield-alt"></i>
         </div>
-        <h3>Cyber CTF</h3>
+        <h3 style="color: var(--secondary); font-weight: 700;">Cyber CTF</h3>
         <p>Participated in RAM CTF Cyber-Security Competition</p>
       </div>
     </div>
