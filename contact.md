@@ -60,7 +60,7 @@ permalink: /contact/
               </div>
               <div>
                 <h4 style="margin: 0;">Location</h4>
-                <p style="margin: 0;">Richmond, Virginia</p>
+                <p style="margin: 0;">Mechanicsville, Virginia</p>
               </div>
             </div>
           </li>

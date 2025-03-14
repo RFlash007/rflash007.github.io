@@ -39,7 +39,7 @@ permalink: /projects/
           </div>
           
           <div class="project-links">
-            <a href="https://github.com/RFlash007/FRED" target="_blank" class="btn btn-primary btn-icon">
+            <a href="https://github.com/RFlash007/F.R.E.D." target="_blank" class="btn btn-primary btn-icon">
               <i class="fab fa-github"></i> View on GitHub
             </a>
           </div>
@@ -72,40 +72,7 @@ permalink: /projects/
           </div>
           
           <div class="project-links">
-            <a href="https://github.com/RFlash007/PortfolioWebsite" target="_blank" class="btn btn-primary btn-icon">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="project-card fade-in-up" id="cybersecurity-tools">
-        <div class="project-icon">
-          <i class="fas fa-shield-alt"></i>
-        </div>
-        <div class="project-content">
-          <span class="project-category">Cybersecurity</span>
-          <h3 class="project-title">Cybersecurity Tools</h3>
-          <p class="project-description">A collection of security tools developed for educational purposes, demonstrating various cybersecurity concepts and techniques. These tools were created as part of my learning journey in cybersecurity.</p>
-          
-          <h4>Key Features:</h4>
-          <ul class="feature-list">
-            <li>Network scanning and reconnaissance tools</li>
-            <li>Password strength analysis utilities</li>
-            <li>Encryption/decryption demonstrations</li>
-            <li>Security auditing scripts</li>
-            <li>Educational resources on common vulnerabilities</li>
-          </ul>
-          
-          <div class="project-tags">
-            <span class="project-tag">Python</span>
-            <span class="project-tag">Linux</span>
-            <span class="project-tag">Network Security</span>
-            <span class="project-tag">Cryptography</span>
-          </div>
-          
-          <div class="project-links">
-            <a href="https://github.com/RFlash007/CyberSecTools" target="_blank" class="btn btn-primary btn-icon">
+            <a href="https://github.com/RFlash007/RFlash007.github.io" target="_blank" class="btn btn-primary btn-icon">
               <i class="fab fa-github"></i> View on GitHub
             </a>
           </div>
@@ -139,8 +106,8 @@ permalink: /projects/
           </div>
           
           <div class="project-links">
-            <a href="https://github.com/RFlash007/EmotionDetection" target="_blank" class="btn btn-primary btn-icon">
-              <i class="fab fa-github"></i> View on GitHub
+            <a href="https://huggingface.co/RFlash/emotion-detector" target="_blank" class="btn btn-primary btn-icon">
+              <i class="fas fa-brain"></i> View on Hugging Face
             </a>
           </div>
         </div>

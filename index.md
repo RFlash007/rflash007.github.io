@@ -84,6 +84,17 @@ layout: home
           <a href="/projects#portfolio-website" class="btn btn-outline">Learn More</a>
         </div>
       </div>
+
+      <div class="project-card fade-in-up" style="animation-delay: 0.4s;">
+        <div class="project-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <div class="project-content">
+          <h3>RoBERTa Emotion Detection</h3>
+          <p>Fine-tuned RoBERTa model for emotion classification with 81.5% accuracy across 6 emotional categories.</p>
+          <a href="/projects#roberta-emotion" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
     </div>
     
     <div class="section-cta">
@@ -120,65 +131,61 @@ layout: home
 <section class="section bg-light">
   <div class="wrapper">
     <div class="section-title">
-      <h2 style="color: var(--secondary);">Get In Touch</h2>
-      <p style="color: var(--text-dark);">Let's connect and discuss potential collaborations</p>
+      <h2 style="color: var(--secondary);">Contact Information</h2>
+      <p style="color: var(--text-dark);">Let's connect</p>
     </div>
     
-    <div class="two-column-grid">
-      <div class="contact-info fade-in-right">
-        <div class="card">
-          <h3>Contact Information</h3>
-          <p>Feel free to reach out to me through any of these channels:</p>
+    <div class="contact-info" style="max-width: 600px; margin: 0 auto;">
+      <div class="card fade-in-up">
+        <ul style="list-style: none; margin-left: 0;">
+          <li style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-envelope" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">Email</h4>
+                <a href="mailto:mullinsij@vcu.edu">mullinsij@vcu.edu</a>
+              </div>
+            </div>
+          </li>
           
-          <ul style="list-style: none; margin-left: 0;">
-            <li style="margin-bottom: 1rem;">
-              <i class="fas fa-envelope" style="color: var(--secondary); margin-right: 0.5rem;"></i>
-              <a href="mailto:mullinsij@vcu.edu">mullinsij@vcu.edu</a>
-            </li>
-            <li style="margin-bottom: 1rem;">
-              <i class="fab fa-github" style="color: var(--secondary); margin-right: 0.5rem;"></i>
-              <a href="https://github.com/RFlash007" target="_blank">github.com/RFlash007</a>
-            </li>
-            <li style="margin-bottom: 1rem;">
-              <i class="fab fa-linkedin" style="color: var(--secondary); margin-right: 0.5rem;"></i>
-              <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank">linkedin.com/in/ianjcmullins</a>
-            </li>
-            <li style="margin-bottom: 1rem;">
-              <i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-right: 0.5rem;"></i>
-              Richmond, Virginia
-            </li>
-          </ul>
+          <li style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fab fa-github" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">GitHub</h4>
+                <a href="https://github.com/RFlash007" target="_blank">github.com/RFlash007</a>
+              </div>
+            </div>
+          </li>
           
-          <p>I'm currently open to internship opportunities, research collaborations, and interesting projects in the field of AI and software development.</p>
-        </div>
-      </div>
-      
-      <div class="contact-form-container fade-in-up">
-        <form class="contact-form" action="https://formspree.io/f/xdoqgkrw" method="POST">
-          <div class="form-group">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" name="name" class="form-control" required>
-          </div>
+          <li style="margin-bottom: 1.5rem;">
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fab fa-linkedin" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">LinkedIn</h4>
+                <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank">linkedin.com/in/ianjcmullins</a>
+              </div>
+            </div>
+          </li>
           
-          <div class="form-group">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" id="email" name="_replyto" class="form-control" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="subject" class="form-label">Subject</label>
-            <input type="text" id="subject" name="subject" class="form-control" required>
-          </div>
-          
-          <div class="form-group">
-            <label for="message" class="form-label">Message</label>
-            <textarea id="message" name="message" class="form-control" required></textarea>
-          </div>
-          
-          <button type="submit" class="btn btn-primary btn-icon">
-            <i class="fas fa-paper-plane"></i> Send Message
-          </button>
-        </form>
+          <li>
+            <div style="display: flex; align-items: center;">
+              <div style="width: 50px; height: 50px; border-radius: 50%; background-color: var(--secondary-light); display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                <i class="fas fa-map-marker-alt" style="color: var(--primary); font-size: 1.25rem;"></i>
+              </div>
+              <div>
+                <h4 style="margin: 0;">Location</h4>
+                <p style="margin: 0;">Mechanicsville, Virginia</p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -297,7 +297,7 @@ permalink: /about/
     bottom: 0;
     width: 50px;
     height: 3px;
-    background: #0055ff;
+    background: var(--secondary);
   }
   
   .experience-card {
@@ -378,5 +378,17 @@ permalink: /about/
     background-color: var(--secondary);
     color: var(--text-dark);
     transform: translateY(-5px);
+  }
+  
+  .skill-tag {
+    display: inline-block;
+    background-color: var(--secondary-light);
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
   }
 </style> 

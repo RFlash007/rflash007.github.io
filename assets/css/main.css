@@ -3,7 +3,7 @@
   --primary: #0D3B66; /* Navy */
   --primary-light: rgba(13, 59, 102, 0.1);
   --secondary: #F4D35E; /* Yellow */
-  --secondary-light: rgba(244, 211, 94, 0.4);
+  --secondary-light: rgba(244, 211, 94, 0.7); /* Increased opacity from 0.4 to 0.7 */
   --accent: #EE964B; /* Soft orange as a complementary accent */
   --bg-dark: #0D3B66; /* Navy */
   --bg-light: #F5F5DC; /* Beige */
@@ -1215,7 +1215,7 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
     --bg-white: #0D3B66; /* Navy for card backgrounds */
     --bg-dark: #071E34; /* Darker navy for headers and footers */
     --primary-light: rgba(13, 59, 102, 0.3);
-    --secondary-light: rgba(244, 211, 94, 0.3);
+    --secondary-light: rgba(244, 211, 94, 0.7); /* Match light mode opacity */
   }
 
   body {
@@ -1432,6 +1432,17 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
   }
   
   .project-card:hover .project-icon i {
+    color: var(--bg-dark);
+  }
+
+  .skill-tag {
+    background-color: var(--secondary-light);
+    color: var(--bg-dark);
+    font-weight: 700;
+  }
+  
+  .skill-tag:hover {
+    background-color: var(--secondary);
     color: var(--bg-dark);
   }
 }
