@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Locally Run LLMs Using Ollama"
+title: "Research Project Proposal: Exploring Local LLMs with Ollama"
 date: 2024-07-10 09:00:00 -0400
 categories: research llm ai
-tags: [ollama, llm, ai, privacy, prompt-engineering]
+tags: [ollama, llm, ai, privacy, research, class-project]
 ---
 
 Ollama is a software tool that lets you run large language models (LLMs) directly on your own computer. It supports any open-source model that your hardware can handle. This means that, unlike enterprise/cloud-based models like ChatGPT, Grok, or Claude, your data stays on your computer, offering better privacy and control (Kumari). Ollama stands out because it is free and lets you customize how the models respond by "prompt engineering" your system prompts, which is something I have really grown to enjoy ("Prompt Engineering Guide").

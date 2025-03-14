@@ -23,36 +23,18 @@ permalink: /blog/
     <div class="blog-grid">
       <div class="blog-card fade-in-up">
         <div class="blog-content">
-          <h2 class="blog-title">Locally Run LLMs Using Ollama</h2>
+          <h2 class="blog-title">Research Project Proposal: Exploring Local LLMs with Ollama</h2>
           <div class="blog-tags">
             <span class="blog-tag">LLMs</span>
             <span class="blog-tag">Ollama</span>
-            <span class="blog-tag">AI Privacy</span>
+            <span class="blog-tag">Research</span>
           </div>
-          <p class="blog-excerpt">Ollama is a software tool that lets you run large language models (LLMs) directly on your own computer. It supports any open-source model that your hardware can handle. This means that, unlike enterprise/cloud-based models like ChatGPT, Grok, or Claude, your data stays on your computer, offering better privacy and control...</p>
+          <p class="blog-excerpt">A class research project proposal exploring how to run large language models (LLMs) directly on your own computer using Ollama. This project will investigate the benefits of local deployment for privacy, customization, and security...</p>
           <div class="blog-footer">
             <div class="blog-author">
               <span class="blog-author-name">Ian Mullins</span>
             </div>
             <a href="/blog/2024/07/10/locally-run-llms-using-ollama/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="blog-card fade-in-up" style="animation-delay: 0.4s;">
-        <div class="blog-content">
-          <h2 class="blog-title">The Art of Prompt Engineering: Crafting Effective Instructions</h2>
-          <div class="blog-tags">
-            <span class="blog-tag">Prompt Engineering</span>
-            <span class="blog-tag">LLMs</span>
-            <span class="blog-tag">AI Interaction</span>
-          </div>
-          <p class="blog-excerpt">Prompt engineering has evolved into a crucial skill for AI practitioners. This post explores advanced techniques for creating prompts that elicit the best responses from language models...</p>
-          <div class="blog-footer">
-            <div class="blog-author">
-              <span class="blog-author-name">Ian Mullins</span>
-            </div>
-            <a href="/blog/2024/03/12/prompt-engineering-techniques/" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
           </div>
         </div>
       </div>
@@ -63,8 +45,6 @@ permalink: /blog/
         <i class="fas fa-chevron-left"></i> Previous
       </a>
       <a href="#" class="blog-page-link active">1</a>
-      <a href="#" class="blog-page-link">2</a>
-      <a href="#" class="blog-page-link">3</a>
       <a href="#" class="blog-page-nav">
         Next <i class="fas fa-chevron-right"></i>
       </a>

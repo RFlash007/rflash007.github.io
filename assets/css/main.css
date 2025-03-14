@@ -2,16 +2,16 @@
 :root {
   --primary: #0D3B66; /* Navy */
   --primary-light: rgba(13, 59, 102, 0.1);
-  --secondary: #F4D35E; /* Yellow */
-  --secondary-light: rgba(244, 211, 94, 0.7); /* Increased opacity from 0.4 to 0.7 */
+  --secondary: #F9C922; /* Yellow - made more vibrant from F4D35E */
+  --secondary-light: rgba(249, 201, 34, 0.7); /* Adjusted for new secondary color */
   --accent: #EE964B; /* Soft orange as a complementary accent */
   --bg-dark: #0D3B66; /* Navy */
   --bg-light: #F5F5DC; /* Beige */
   --bg-white: #FFFDF6; /* Off-white/lighter beige */
-  --text-dark: #0D3B66; /* Navy for text on light backgrounds */
+  --text-dark: #06223d; /* Darker navy for text on light backgrounds - made darker from 0D3B66 */
   --text-light: #F5F5DC; /* Beige for text on dark backgrounds */
   --text-lighter: #FFFDF6; /* Off-white for text on dark backgrounds */
-  --text-accent: #F4D35E; /* Yellow for accent text */
+  --text-accent: #F9C922; /* Yellow for accent text - made more vibrant */
   --shadow-sm: 0 5px 10px rgba(13, 59, 102, 0.05);
   --shadow-md: 0 10px 20px rgba(13, 59, 102, 0.08);
   --shadow-lg: 0 20px 30px rgba(13, 59, 102, 0.1);
@@ -436,10 +436,10 @@ pre code {
 }
 
 .btn-accent:hover {
-  background-color: #f0c93a; /* Slightly darker yellow */
   color: var(--text-dark);
-  box-shadow: 0 6px 20px rgba(240, 201, 58, 0.3);
-  transform: translateY(-3px);
+  background-color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-icon {
@@ -1208,14 +1208,17 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
 /* Improve contrast in dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg-white: #0F172A;
+    --bg-light: #1E293B;
     --text-dark: #F5F5DC; /* Beige for text on dark backgrounds */
     --text-light: #F5F5DC; /* Beige for text on dark backgrounds */
     --text-lighter: #FFFDF6; /* Off-white for text */
-    --bg-light: #112D4E; /* Slightly lighter navy for backgrounds */
-    --bg-white: #0D3B66; /* Navy for card backgrounds */
-    --bg-dark: #071E34; /* Darker navy for headers and footers */
-    --primary-light: rgba(13, 59, 102, 0.3);
-    --secondary-light: rgba(244, 211, 94, 0.7); /* Match light mode opacity */
+    --secondary: #F9C922; /* Making yellow consistent with light mode */
+    --secondary-light: rgba(249, 201, 34, 0.7); /* Making yellow consistent with light mode */
+    --text-accent: #F9C922; /* Making yellow consistent with light mode */
+    --shadow-sm: 0 5px 10px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 20px 30px rgba(0, 0, 0, 0.35);
   }
 
   body {
@@ -1500,7 +1503,8 @@ p, li, blockquote, td, th, .project-description, .blog-excerpt {
 
 .about-content p {
   color: var(--text-dark);
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: var(--spacing-md);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
 } 
