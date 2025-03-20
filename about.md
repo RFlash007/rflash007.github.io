@@ -13,7 +13,7 @@ permalink: /about/
 
     <div class="about-container fade-in-up">
       <div class="about-image">
-        <img src="/assets/images/unnamed.jpg" alt="Ian Joseph-Carl Mullins" class="profile-image" />
+        <img src="/assets/images/new.jpg" alt="Ian Joseph-Carl Mullins" class="profile-image" />
         <div class="about-social">
           <a href="https://github.com/RFlash007" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
           <a href="https://www.linkedin.com/in/ianjcmullins" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
