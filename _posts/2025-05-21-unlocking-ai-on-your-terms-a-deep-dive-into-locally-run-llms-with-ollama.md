@@ -3,7 +3,8 @@ layout: post
 title: "Unlocking AI on Your Terms: A Deep Dive into Locally Run LLMs with Ollama"
 date: 2025-05-21
 author: Ian Mullins
-categories: [AI, LLMs, Ollama, Local AI, Prompt Engineering]
+categories: ai llms ollama local-ai prompt-engineering research
+tags: [ollama, llm, local-ai, prompt-engineering, privacy, open-source]
 description: "An exploration of running large language models locally using Ollama, detailing experiments with different models and the implications for privacy, control, and customization."
 show_excerpts: true
 ---
@@ -52,6 +53,7 @@ The results were fascinating, revealing unique characteristics for each model.
 - In contrast, `phi4-mini:latest` and `qwen2.5:3b` used fewer explicit emotion words but consistently projected an optimistic dominant emotion across most prompts (8 out of 11 prompts for both). They convey positivity more subtly.
 
 ### 4. Certainty Language:
+
 - `qwen2.5:3b` demonstrated the greatest flexibility in expressing certainty, ranging from very certain (0.00 difference between certainty and uncertainty markers on SP-1) to very uncertain (5.00 on SP-8).
 - `phi4-mini:latest` interestingly showed it could be more certain than uncertain (a negative difference score of -0.12 on SP-7), while also reaching high levels of uncertainty (3.50 on SP-6).
 - `llama3.2:3b` maintained a narrower, more consistently neutral-to-slightly-uncertain stance in its language.
@@ -105,4 +107,4 @@ What are your thoughts on local LLMs? Have you experimented with Ollama or simil
 - Kumari, Janvi. "How to Run LLM Models Locally with Ollama." *Analytics Vidhya*, 23 July 2024, www.analyticsvidhya.com/blog/2024/07/local-llm-deployment-with-ollama/. Accessed 20 Apr. 2025.
 - Labonne, Maxime. "Uncensor Any LLM with Abliteration." *Hugging Face Blog*, 13 June 2024, huggingface.co/blog/mlabonne/abliteration. Accessed 20 Apr. 2025.
 - Ollama. Ollama Inc., 2025, ollama.com/. Accessed 20 Apr. 2025.
-- Prompt Engineering Guide. DAIR.AI, 21 Jan. 2025, www.promptingguide.ai/. Accessed 20 Apr. 2025. 
+- Prompt Engineering Guide. DAIR.AI, 21 Jan. 2025, www.promptingguide.ai/. Accessed 20 Apr. 2025.
