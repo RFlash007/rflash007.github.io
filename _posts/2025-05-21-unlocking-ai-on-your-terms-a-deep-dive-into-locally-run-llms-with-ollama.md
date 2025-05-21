@@ -37,45 +37,45 @@ The results were fascinating, revealing unique characteristics for each model.
 
 ### 1. Emotional Range & Sentiment:
 
-- `qwen2.5:3b` showcased the widest sentiment range, capable of expressing complete neutrality (a sentiment score of 0.00 on SP-1) all the way to high positivity (0.98 on SP-8). It's the most emotionally flexible of the trio.
-- `llama3.2:3b` had a more moderate range, with its most negative response still leaning slightly positive (0.15 on SP-7).
-- `phi4-mini:latest` was the most consistently optimistic, with its lowest sentiment score being a fairly positive 0.44 (on SP-1). It seems to have stronger guardrails against negativity.
+- Qwen2.5:3b showcased the widest sentiment range, capable of expressing complete neutrality (a sentiment score of 0.00 on SP-1) all the way to high positivity (0.98 on SP-8). It's the most emotionally flexible of the trio.
+- Llama3.2:3b had a more moderate range, with its most negative response still leaning slightly positive (0.15 on SP-7).
+- Phi4-mini:latest was the most consistently optimistic, with its lowest sentiment score being a fairly positive 0.44 (on SP-1). It seems to have stronger guardrails against negativity.
 
 ### 2. Talkativeness (Verbosity) & Readability:
 
-- When it came to detail, `qwen2.5:3b` could be the most verbose, churning out up to 416 words when prompted for detail (SP-8).
-- `phi4-mini:latest` consistently produced longer responses, even when asked for conciseness (its minimum was 68.8 words on SP-7). However, this detail came at the cost of readability; its responses were often the hardest to read, sometimes requiring a post-graduate reading level (Flesch score as low as 6.3 on SP-10).
-- `llama3.2:3b` was the champion of clarity and conciseness when needed. It produced the shortest responses (a mere 21.5 words on SP-7) and boasted the highest readability, with some responses easily understandable by a 7th grader (Flesch score of 70.3 on SP-7).
+- When it came to detail, Qwen2.5:3b could be the most verbose, churning out up to 416 words when prompted for detail (SP-8).
+- Phi4-mini:latest consistently produced longer responses, even when asked for conciseness (its minimum was 68.8 words on SP-7). However, this detail came at the cost of readability; its responses were often the hardest to read, sometimes requiring a post-graduate reading level (Flesch score as low as 6.3 on SP-10).
+- Llama3.2:3b was the champion of clarity and conciseness when needed. It produced the shortest responses (a mere 21.5 words on SP-7) and boasted the highest readability, with some responses easily understandable by a 7th grader (Flesch score of 70.3 on SP-7).
 
 ### 3. Emotional Expression & Tone:
 
-- `llama3.2:3b` was the most "visibly" emotional, using the most explicit emotion words (average of 0.6 on SP-4) and displaying the most diverse range of dominant emotions (often "unknown," but also joy and sadness).
-- In contrast, `phi4-mini:latest` and `qwen2.5:3b` used fewer explicit emotion words but consistently projected an optimistic dominant emotion across most prompts (8 out of 11 prompts for both). They convey positivity more subtly.
+- Llama3.2:3b was the most "visibly" emotional, using the most explicit emotion words (average of 0.6 on SP-4) and displaying the most diverse range of dominant emotions (often "unknown," but also joy and sadness).
+- In contrast, Phi4-mini:latest and Qwen2.5:3b used fewer explicit emotion words but consistently projected an optimistic dominant emotion across most prompts (8 out of 11 prompts for both). They convey positivity more subtly.
 
 ### 4. Certainty Language:
 
-- `qwen2.5:3b` demonstrated the greatest flexibility in expressing certainty, ranging from very certain (0.00 difference between certainty and uncertainty markers on SP-1) to very uncertain (5.00 on SP-8).
-- `phi4-mini:latest` interestingly showed it could be more certain than uncertain (a negative difference score of -0.12 on SP-7), while also reaching high levels of uncertainty (3.50 on SP-6).
-- `llama3.2:3b` maintained a narrower, more consistently neutral-to-slightly-uncertain stance in its language.
+- Qwen2.5:3b demonstrated the greatest flexibility in expressing certainty, ranging from very certain (0.00 difference between certainty and uncertainty markers on SP-1) to very uncertain (5.00 on SP-8).
+- Phi4-mini:latest interestingly showed it could be more certain than uncertain (a negative difference score of -0.12 on SP-7), while also reaching high levels of uncertainty (3.50 on SP-6).
+- Llama3.2:3b maintained a narrower, more consistently neutral-to-slightly-uncertain stance in its language.
 
 ## Meet the Models: Distinct Personalities Emerge
 
 Based on these findings, distinct "personalities" for each model became clear:
 
-- **`llama3.2:3b`**: "The Adaptable Communicator"
+- Llama3.2:3b: "The Adaptable Communicator"
   This model feels the most human-like. It's highly readable, can be very concise or reasonably detailed, and expresses a wider, more nuanced range of emotions. It often asks questions (most questions asked on SP-9) and refers to itself, making interactions feel more conversational.
 
-- **`phi4-mini:latest`**: "The Academic Optimist"
-  If you need detailed, consistently optimistic responses couched in more formal, academic language, `phi4-mini` is your go-to. It's verbose by nature and its output is generally more complex to read. It's less about chit-chat and more about delivering comprehensive, if sometimes dense, information.
+- Phi4-mini:latest: "The Academic Optimist"
+  If you need detailed, consistently optimistic responses couched in more formal, academic language, Phi4-mini is your go-to. It's verbose by nature and its output is generally more complex to read. It's less about chit-chat and more about delivering comprehensive, if sometimes dense, information.
 
-- **`qwen2.5:3b`**: "The Flexible Specialist"
+- Qwen2.5:3b: "The Flexible Specialist"
   This model is a powerhouse of flexibility. It can be incredibly detailed when asked, boasts the widest sentiment range, and can vary its certainty significantly. While generally optimistic, it can adapt its output dramatically based on the prompt.
 
 ## Why This Matters: Implications for Users & Prompt Engineers
 
-Understanding these nuances is crucial. If you're building an application for a general audience, `llama3.2:3b`'s readability is a huge plus. For technical documentation or expert systems, `phi4-mini:latest`'s detail might be preferred. If you need an AI that can adapt to a wide array of tones and tasks, `qwen2.5:3b` is a strong contender.
+Understanding these nuances is crucial. If you're building an application for a general audience, Llama3.2:3b's readability is a huge plus. For technical documentation or expert systems, Phi4-mini:latest's detail might be preferred. If you need an AI that can adapt to a wide array of tones and tasks, Qwen2.5:3b is a strong contender.
 
-For prompt engineers, this research underscores that one-size-fits-all prompting doesn't work. The same system prompt can yield vastly different results depending on the model. For example, SP-7 (the conciseness prompt) made `llama3.2:3b` incredibly brief, while `phi4-mini:latest` remained relatively wordy.
+For prompt engineers, this research underscores that one-size-fits-all prompting doesn't work. The same system prompt can yield vastly different results depending on the model. For example, SP-7 (the conciseness prompt) made Llama3.2:3b incredibly brief, while Phi4-mini:latest remained relatively wordy.
 
 ## The Bigger Picture: Benefits, Challenges, and the Road Ahead
 
@@ -89,8 +89,8 @@ The ability to run LLMs locally with tools like Ollama is democratizing AI. It o
 
 ### Challenges & Ethical Thoughts:
 
-- **Hardware Demands**: While I tested 3B models, larger, more powerful open-source models can require significant computing resources, creating an accessibility gap.
-- **The "Abliteration" Concern**: The open nature of these models means users can remove built-in safety filters and censorship (a process sometimes called "Abliterating"). This raises ethical questions about potential misuse, as models could be prompted to generate harmful or problematic content that mainstream commercial models would refuse. The responsibility shifts heavily to the user.
+- Hardware Demands: While I tested 3B models, larger, more powerful open-source models can require significant computing resources, creating an accessibility gap.
+- The "Abliteration" Concern: The open nature of these models means users can remove built-in safety filters and censorship (a process sometimes called "Abliterating"). This raises ethical questions about potential misuse, as models could be prompted to generate harmful or problematic content that mainstream commercial models would refuse. The responsibility shifts heavily to the user.
 
 ## The Future is Local (and Customizable):
 
