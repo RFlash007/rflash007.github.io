@@ -15,19 +15,19 @@ The world of AI is buzzing, and Large Language Models (LLMs) like ChatGPT, Claud
 
 Running LLMs locally isn't just a niche hobby; it's a significant step towards a more private, secure, and customizable AI experience. Here's the lowdown:
 
-- **Privacy First**: Your data, your prompts, your conversations – they never leave your machine. This is huge for handling sensitive information or simply for peace of mind.
-- **Cost-Effective**: Say goodbye to API fees and usage limits. Once you've downloaded a model, it's yours to use as much as you want, for free.
-- **Ultimate Control**: This is where it gets exciting for prompt engineers like me! You can tweak system prompts, fine-tune models on your own data, and truly tailor the AI's personality and responses.
-- **Offline Accessibility**: No internet? No problem. Local LLMs work offline, making them reliable companions wherever you are.
-- **Enhanced Security**: For industries with stringent data security needs, like government or healthcare, local LLMs offer a robust solution.
+- Privacy First: Your data, your prompts, your conversations – they never leave your machine. This is huge for handling sensitive information or simply for peace of mind.
+- Cost-Effective: Say goodbye to API fees and usage limits. Once you've downloaded a model, it's yours to use as much as you want, for free.
+- Ultimate Control: This is where it gets exciting for prompt engineers like me! You can tweak system prompts, fine-tune models on your own data, and truly tailor the AI's personality and responses.
+- Offline Accessibility: No internet? No problem. Local LLMs work offline, making them reliable companions wherever you are.
+- Enhanced Security: For industries with stringent data security needs, like government or healthcare, local LLMs offer a robust solution.
 
 ## My Ollama Experiment: Uncovering Model Personalities
 
 Intrigued by the possibilities, I embarked on a research project to see how different open-source LLMs behave when run locally via Ollama. I focused on three popular models, all around the 3-billion parameter mark, making them manageable for local hardware:
 
-- `llama3.2:3b` (Meta)
-- `phi4-mini:latest` (Microsoft)
-- `qwen2.5:3b` (Alibaba)
+- Llama3.2:3b (Meta)
+- Phi4-mini:latest (Microsoft)
+- Qwen2.5:3b (Alibaba)
 
 I put them through their paces using a series of 11 distinct system prompts (SP-0 to SP-10), designed to elicit a range of responses. I then analyzed their outputs based on several metrics: sentiment, verbosity, certainty language, readability, and emotional expression. The goal? To see how prompt modifications affect AI behavior and if distinct "model personalities" emerge.
 
@@ -104,7 +104,7 @@ What are your thoughts on local LLMs? Have you experimented with Ollama or simil
 
 ## Works Cited
 
-- Kumari, Janvi. "How to Run LLM Models Locally with Ollama." *Analytics Vidhya*, 23 July 2024, www.analyticsvidhya.com/blog/2024/07/local-llm-deployment-with-ollama/. Accessed 20 Apr. 2025.
-- Labonne, Maxime. "Uncensor Any LLM with Abliteration." *Hugging Face Blog*, 13 June 2024, huggingface.co/blog/mlabonne/abliteration. Accessed 20 Apr. 2025.
+- Kumari, Janvi. "How to Run LLM Models Locally with Ollama." Analytics Vidhya, 23 July 2024, www.analyticsvidhya.com/blog/2024/07/local-llm-deployment-with-ollama/. Accessed 20 Apr. 2025.
+- Labonne, Maxime. "Uncensor Any LLM with Abliteration." Hugging Face Blog, 13 June 2024, huggingface.co/blog/mlabonne/abliteration. Accessed 20 Apr. 2025.
 - Ollama. Ollama Inc., 2025, ollama.com/. Accessed 20 Apr. 2025.
 - Prompt Engineering Guide. DAIR.AI, 21 Jan. 2025, www.promptingguide.ai/. Accessed 20 Apr. 2025.
